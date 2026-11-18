@@ -36,3 +36,73 @@ Menú de 3 enlaces:
 ## Datos aprobados
 - Dirección: Zona 5, Villa Nueva, Guatemala (se muestra con mapa de Google Maps en la sección Cotizar).
 - Frase principal de Inicio: "Uniformes hechos a tu medida, con tu nombre y tu logo bordados".
+
+## Ficha del negocio
+
+Aprobada el 18-nov-2026. Todo lo marcado [EJEMPLO] es dato de práctica, no real.
+
+### Datos generales
+- Negocio: Uniformes Eli, taller de confección y bordado de uniformes para empresas.
+- Dirección: 4.ª calle 7-35, Zona 5, Villanueva, Guatemala [EJEMPLO]. Solo la zona 5 está aprobada.
+- WhatsApp: 5555-0123 [EJEMPLO]
+- Teléfono: 6666-0123 [EJEMPLO]
+- Horario: lunes a viernes de 8:00 a 17:00, sábados de 8:00 a 12:00, domingos cerrado [EJEMPLO]
+- Años de experiencia: 12 años [EJEMPLO]
+
+### Servicios
+1. Confección de uniformes: camisas, pantalones, batas, delantales y chaquetas hechos a la medida del personal [EJEMPLO].
+2. Bordado personalizado de logos y escudos: bordamos el logo o el escudo que nos entregue el cliente, con hilo firme y puntada pareja [EJEMPLO].
+3. Camisas personalizadas para facultades y promociones: camisas de manga larga con bordado institucional para estudiantes e ingenieros [EJEMPLO]. Dato real aportado por Eli.
+4. Bordado de nombre y cargo: el nombre de cada persona bordado en su prenda [EJEMPLO].
+5. Ajustes y arreglos: ajuste de tallas y reparación de uniformes que ya tienen [EJEMPLO].
+
+### Rubros que atiende
+Restaurante y cocina · Salud y belleza · Educación · Industrial · Seguridad · Oficinas y comercio · Universidades y facultades.
+
+### Catálogo de prendas por rubro [EJEMPLO]
+Las imágenes son ilustraciones de ejemplo.
+
+| Rubro | Prendas (archivo en `img/`) |
+|---|---|
+| Restaurante y cocina | Uniforme de restaurante (`uniforme-restaurante.svg`), filipina de cocina (`filipina-cocina.svg`), pantalón (`pantalon.svg`) |
+| Salud y belleza | Uniforme clínico (`uniforme-clinico.svg`), pantalón (`pantalon.svg`) |
+| Educación | Uniforme escolar (`uniforme-escolar.svg`), polo (`polo.svg`), playera (`playera.svg`) |
+| Industrial | Overol industrial (`overol-industrial.svg`), camisa de seguridad (`camisa-seguridad.svg`), chumpa con capucha (`chumpa-capucha.svg`) |
+| Seguridad | Uniforme de seguridad (`uniforme-seguridad.svg`), camisa de seguridad (`camisa-seguridad.svg`) |
+| Oficinas y comercio | Camisa formal de hombre (`camisa-formal-hombre.svg`), camisa formal de mujer (`camisa-formal-mujer.svg`), polo (`polo.svg`) |
+| Universidades y facultades | Camisa universitaria (`camisa-universitaria.svg`) |
+| Para todos los rubros | Detalle de bordado (`bordado-detalle.svg`), artículos promocionales (`articulos-promocionales.svg`) |
+
+### Condiciones [EJEMPLO]
+- Pedido mínimo: 12 piezas por modelo.
+- Tiempo de entrega: de 10 a 15 días hábiles después de confirmar medidas y diseño del bordado. Los pedidos grandes se acuerdan por fecha.
+- Cotización: respuesta clara por escrito, con cantidad, tela, bordado y fecha de entrega.
+
+### Diferenciadores [EJEMPLO]
+- Cotización clara: sabes qué incluye antes de pagar.
+- Buena costura: costuras reforzadas y bordado revisado pieza por pieza.
+- Fecha de entrega acordada por escrito.
+- Taller propio: se habla directamente con quien confecciona.
+- Atención a empresas y a particulares.
+
+### Testimonios (empresas ficticias) [EJEMPLO]
+1. "Nos entregaron los uniformes del personal de cocina en la fecha prometida y el bordado quedó muy parejo." — Restaurante La Brasa Dorada [EJEMPLO]
+2. "La cotización llegó clara y sin sorpresas. Las batas han aguantado muchos lavados." — Clínica Dental Sonrisa Sana [EJEMPLO]
+3. "Pedimos camisas con el logo para todo el equipo de ventas y llegaron a tiempo." — Comercial Ferretería El Tornillo [EJEMPLO]
+
+### Camisas para facultades universitarias
+- Eli confecciona camisas de manga larga con bordado institucional para estudiantes e ingenieros de facultades. Dato real.
+- [PENDIENTE] No se nombra ninguna universidad ni facultad como cliente hasta que Eli confirme que puede hacerlo.
+- No se dibuja ni se usa ningún escudo o logo de universidades. El bordado se hace con el diseño que el cliente entregue.
+
+### Raíz del dueño
+Eli nació en San Pedro, San Marcos.
+
+Texto de ejemplo [EJEMPLO]:
+> "Eli nació en San Pedro, San Marcos, y de allí trae el amor por el trabajo bien hecho. Cada uniforme que sale del taller lleva ese orgullo: puntadas firmes, cuidado en los detalles y respeto por quien lo va a vestir cada día."
+
+[PENDIENTE] Eli debe confirmar el municipio exacto (San Pedro, San Marcos) y cómo quiere contar su historia. No se incluyen datos históricos, fechas ni cifras del lugar.
+
+### Decisiones por tomar
+- Menú: hoy tiene 3 enlaces. Si se agrega una sección sobre Eli, pasaría a 4 (el máximo permitido).
+- Escritura: el sitio mezcla "Villa Nueva" y "Villanueva". Falta unificarla.
