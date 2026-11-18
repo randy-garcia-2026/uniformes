@@ -37,11 +37,75 @@ Elegida el 18-nov-2026: **A. Hilo y marfil**.
 - Botón de WhatsApp.
 - Llamada telefónica.
 
-## Estructura de la página (una sola página)
-Menú de 3 enlaces:
-1. **Inicio**: frase que dice qué hace el taller y botón para cotizar.
-2. **Lo que hacemos**: las prendas y los bordados.
-3. **Cotizar**: formulario, botón de WhatsApp y teléfono.
+## Estructura de la página (versión anterior)
+Reemplazada por la sección "Estructura y textos" de más abajo (aprobada el 18-nov-2026).
+
+## Estructura y textos
+
+Aprobado el 18-nov-2026, sección por sección. Una sola página, 6 secciones más el pie. Sin carrito, buscador, cuentas ni precios. Lo marcado [EJEMPLO] es dato de práctica.
+
+**Decisiones:** se quitan los testimonios (empresas inventadas) y la sección "Por qué elegirnos" (sus ideas pasan a "Cómo cotizar" y "Nuestra raíz"). No se usa `articulos-promocionales.svg`.
+
+**[PENDIENTE]** ¿Barra lateral fija con teléfono y WhatsApp además de la barra superior, o solo la superior? El dueño aún no responde.
+
+### Barra superior (fija)
+- Logo de texto: **Uniformes Eli**, con subrayado de puntadas y ojo de aguja.
+- 3 enlaces: Servicios · Para quién trabajamos · Cotizar.
+- Botón: **Cotizar por WhatsApp**.
+
+### 1. Portada
+- Imagen: `san-pedro.jpg` de fondo, con capa marfil lisa.
+- Titular (mayúsculas): UNIFORMES HECHOS A TU MEDIDA, CON TU NOMBRE Y TU LOGO BORDADOS.
+- Apoyo: "Taller de confección y bordado en Villa Nueva, Guatemala. Trabajamos con empresas y con particulares."
+- Botón: **Cotizar por WhatsApp**. Enlace: "O llámanos al 6666-0123 [EJEMPLO]".
+- Dato pequeño: "12 años cosiendo y bordando [EJEMPLO] · Pedido mínimo: 12 piezas por modelo [EJEMPLO]".
+
+### 2. Servicios (título: LO QUE HACEMOS)
+Entrada: "Cinco servicios, todos hechos en nuestro taller." Lista vertical de 5 filas con la ilustración alternando de lado, sin botones "Ver más".
+1. **Confección de uniformes**: camisas, pantalones, batas, delantales y chaquetas hechos a la medida del personal. [EJEMPLO] (`uniforme-restaurante.svg`)
+2. **Bordado de logos y escudos**: bordamos el logo o el escudo que nos entregue el cliente, con hilo firme y puntada pareja. [EJEMPLO] (`bordado-detalle.svg`)
+3. **Camisas para facultades y promociones**: camisas de manga larga con bordado institucional para estudiantes e ingenieros. Dato real. (`camisa-universitaria.svg`)
+4. **Bordado de nombre y cargo**: el nombre de cada persona, bordado en su prenda. [EJEMPLO] (`polo.svg`)
+5. **Ajustes y arreglos**: ajuste de tallas y reparación de uniformes que ya tienes. [EJEMPLO] (`pantalon.svg`)
+
+### 3. Para quién trabajamos
+Entrada: "Trabajamos con empresas y con particulares. Estos son los rubros que atendemos." Lista editorial de 7 filas (nombre del rubro, línea de prendas e ilustraciones pequeñas a la derecha), sin tarjetas.
+- **Restaurante y cocina**: uniforme de restaurante, filipina de cocina y pantalón.
+- **Salud y belleza**: uniforme clínico y pantalón.
+- **Educación**: uniforme escolar, polo y playera.
+- **Industrial**: overol industrial, camisa de seguridad y chumpa con capucha.
+- **Seguridad**: uniforme de seguridad y camisa de seguridad.
+- **Oficinas y comercio**: camisa formal de hombre, camisa formal de mujer y polo.
+- **Universidades y facultades**: camisa de manga larga con bordado institucional (sin nombres ni escudos de universidades).
+
+Nota pequeña: "Prendas y rubros de ejemplo [EJEMPLO]. Las ilustraciones son de ejemplo." Cierre: "¿No ves tu rubro? Escríbenos y te decimos si podemos hacerlo."
+
+### 4. Cómo cotizar
+Tres pasos con número cosido con puntada, sin imagen:
+1. **Escríbenos**: cuéntanos por WhatsApp qué prendas necesitas y para quién son.
+2. **Envía tu logo o escudo y las cantidades**: mándanos el diseño que quieres bordar y cuántas piezas de cada prenda.
+3. **Recibe tu cotización y fecha de entrega**: te respondemos por escrito, con cantidad, tela, bordado y fecha de entrega. Así sabes qué incluye antes de pagar. [EJEMPLO]
+
+Condiciones: pedido mínimo de 12 piezas por modelo; entrega de 10 a 15 días hábiles después de confirmar medidas y diseño del bordado, y los pedidos grandes se acuerdan por fecha. [EJEMPLO] Botón: **Cotizar por WhatsApp**.
+
+### 5. Nuestra raíz
+Imagen: `bordado-detalle.svg`, con la línea de rombos arriba. Texto:
+> Eli nació en San Pedro, San Marcos, y de allí trae el amor por el trabajo bien hecho. Cada uniforme que sale del taller lleva ese orgullo: puntadas firmes, cuidado en los detalles y respeto por quien lo va a vestir cada día. [EJEMPLO]
+>
+> En el taller hablas directamente con quien confecciona. [EJEMPLO]
+
+No se afirma nada histórico ni cultural sobre San Pedro. [PENDIENTE] Eli debe confirmar el municipio y cómo quiere contar su historia.
+
+### 6. Cotizar
+Dos columnas (se apilan en celular). Entrada: "Cuéntanos qué necesitas y te respondemos con una cotización clara."
+- Formulario: **Tu nombre** (ej. Ana López) · **¿Qué uniformes necesitas?** (ej. 15 camisas con el logo bordado) · **¿Cuántas piezas?** (ej. 15).
+- Botón: **Enviar por WhatsApp**. Nota: "Se abrirá WhatsApp con tu pedido ya escrito. Solo tienes que enviarlo."
+- Contacto: WhatsApp 5555-0123 [EJEMPLO] · Teléfono 6666-0123 [EJEMPLO] · Zona 5, Villa Nueva, Guatemala (sin calle ni número, porque solo la zona está aprobada).
+- Horario [EJEMPLO]: lunes a viernes de 8:00 a 17:00; sábados de 8:00 a 12:00; domingos cerrado.
+- Mapa de Google Maps de la Zona 5, Villa Nueva.
+
+### Pie de página
+Línea de rombos arriba y tres bloques: logo con "Taller de confección y bordado de uniformes en Villa Nueva, Guatemala."; contacto (WhatsApp y teléfono [EJEMPLO], Zona 5); horario [EJEMPLO]. Línea final: "© 2026 Uniformes Eli. Los datos marcados [EJEMPLO] son de práctica y se cambiarán por los reales." Sin menú repetido ni redes sociales.
 
 ## Datos pendientes (hasta tenerlos, van como [EJEMPLO])
 - Número de teléfono.
