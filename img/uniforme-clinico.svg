@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ilustración de ejemplo: conjunto clínico (blusa y pantalón) de Uniformes Eli. No es una foto real de una prenda del taller. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img">
+  <title>Uniforme clínico, blusa y pantalón</title>
+
+  <!-- Blusa de cuello en V (dibujada en 600 x 600 y reducida) -->
+  <g transform="translate(155,10) scale(0.54)">
+    <path d="M250 85 L150 115 L70 215 L140 255 L160 225 L160 510 L440 510 L440 225 L460 255 L530 215 L450 115 L350 85 L300 195 Z"
+          fill="#6F8FA6" stroke="#3E5A70" stroke-width="5" stroke-linejoin="round"/>
+    <!-- Ribete del cuello en V -->
+    <path d="M262 92 L300 172 L338 92" fill="none" stroke="#3E5A70" stroke-width="3" stroke-linejoin="round"/>
+    <g fill="none" stroke="#3E5A70" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M150 115 Q177 170 160 225"/>
+      <path d="M450 115 Q423 170 440 225"/>
+      <path d="M77 203 L150 241"/>
+      <path d="M523 203 L450 241"/>
+      <path d="M168 497 L432 497" stroke-dasharray="8 6"/>
+      <!-- Aberturas laterales -->
+      <path d="M160 450 L160 510"/>
+      <path d="M440 450 L440 510"/>
+      <!-- Bolsillo del pecho y dos bolsillos bajos -->
+      <path d="M185 235 L240 235 L240 285 L185 285 Z"/>
+      <path d="M180 360 L262 360 L262 435 L180 435 Z"/>
+      <path d="M338 360 L420 360 L420 435 L338 435 Z"/>
+    </g>
+    <!-- Recuadro del bordado del cliente, vacío -->
+    <rect x="345" y="225" width="58" height="46" rx="3" fill="none"
+          stroke="#DCE6EE" stroke-width="3" stroke-dasharray="6 5"/>
+  </g>
+
+  <!-- Pantalón recto -->
+  <path d="M215 308 L385 308 L398 578 L308 578 L300 410 L292 578 L202 578 Z"
+        fill="#6F8FA6" stroke="#3E5A70" stroke-width="3" stroke-linejoin="round"/>
+  <g fill="none" stroke="#3E5A70" stroke-width="1.5" stroke-linecap="round">
+    <path d="M214 328 L386 328"/>
+    <path d="M296 328 Q290 350 288 372"/>
+    <path d="M304 328 Q310 350 312 372"/>
+    <path d="M220 340 Q240 352 244 385"/>
+    <path d="M380 340 Q360 352 356 385"/>
+    <path d="M205 562 L291 562" stroke-dasharray="6 4"/>
+    <path d="M309 562 L395 562" stroke-dasharray="6 4"/>
+  </g>
+</svg>

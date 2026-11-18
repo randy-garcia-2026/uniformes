@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ilustración de ejemplo: camisa polo de Uniformes Eli. No es una foto real de una prenda del taller. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img">
+  <title>Camisa polo</title>
+
+  <!-- Cuerpo y mangas: azul marino liso, contorno del mismo tono más oscuro -->
+  <path d="M250 85 L150 115 L70 215 L140 255 L160 225 L160 510 L440 510 L440 225 L460 255 L530 215 L450 115 L350 85 Q300 125 250 85 Z"
+        fill="#22406B" stroke="#12233D" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Cuello (dos solapas) -->
+  <path d="M250 82 L226 102 L270 148 L300 122 Q275 112 250 82 Z"
+        fill="#22406B" stroke="#12233D" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M350 82 L374 102 L330 148 L300 122 Q325 112 350 82 Z"
+        fill="#22406B" stroke="#12233D" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Tapeta con botones -->
+  <rect x="288" y="122" width="24" height="120" fill="#22406B" stroke="#12233D" stroke-width="2"/>
+  <g fill="#22406B" stroke="#12233D" stroke-width="1.5">
+    <circle cx="300" cy="150" r="4.5"/>
+    <circle cx="300" cy="188" r="4.5"/>
+    <circle cx="300" cy="226" r="4.5"/>
+  </g>
+
+  <!-- Costuras finas: sisas, puños, dobladillo -->
+  <g fill="none" stroke="#12233D" stroke-width="1.5" stroke-linecap="round">
+    <path d="M150 115 Q177 170 160 225"/>
+    <path d="M450 115 Q423 170 440 225"/>
+    <path d="M77 203 L150 241"/>
+    <path d="M523 203 L450 241"/>
+    <path d="M168 497 L432 497" stroke-dasharray="6 4"/>
+  </g>
+
+  <!-- Recuadro del bordado del cliente (pecho), vacío -->
+  <rect x="195" y="185" width="62" height="50" rx="3" fill="none"
+        stroke="#9FB3CC" stroke-width="1.5" stroke-dasharray="4 3"/>
+</svg>

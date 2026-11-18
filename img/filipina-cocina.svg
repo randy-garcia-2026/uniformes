@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ilustración de ejemplo: filipina de cocinero con gorro de Uniformes Eli. No es una foto real de una prenda del taller. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img">
+  <title>Filipina de cocina con gorro</title>
+
+  <!-- Filipina negra de manga corta (dibujada en 600 x 600 y reducida) -->
+  <g transform="translate(20,90) scale(0.72)">
+    <path d="M255 82 L150 115 L70 215 L140 255 L160 225 L160 510 L440 510 L440 225 L460 255 L530 215 L450 115 L345 82 Q300 112 255 82 Z"
+          fill="#2B2B2B" stroke="#0D0D0D" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- Cuello alto -->
+    <path d="M255 80 Q300 105 345 80 L345 102 Q300 130 255 102 Z"
+          fill="#2B2B2B" stroke="#0D0D0D" stroke-width="3.5" stroke-linejoin="round"/>
+
+    <!-- Doble botonadura: panel delantero con ribete en contraste -->
+    <rect x="255" y="108" width="90" height="402" fill="#2B2B2B" stroke="#F2F2F2" stroke-width="3"/>
+    <path d="M300 112 L300 506" fill="none" stroke="#0D0D0D" stroke-width="2"/>
+    <g fill="#F2F2F2" stroke="#8C8C8C" stroke-width="1.5">
+      <circle cx="277" cy="150" r="6"/>
+      <circle cx="323" cy="150" r="6"/>
+      <circle cx="277" cy="215" r="6"/>
+      <circle cx="323" cy="215" r="6"/>
+      <circle cx="277" cy="280" r="6"/>
+      <circle cx="323" cy="280" r="6"/>
+      <circle cx="277" cy="345" r="6"/>
+      <circle cx="323" cy="345" r="6"/>
+      <circle cx="277" cy="410" r="6"/>
+      <circle cx="323" cy="410" r="6"/>
+    </g>
+
+    <!-- Costuras finas y ribetes de las mangas -->
+    <g fill="none" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round">
+      <path d="M150 115 Q177 170 160 225"/>
+      <path d="M450 115 Q423 170 440 225"/>
+      <path d="M170 497 L430 497" stroke-dasharray="7 5"/>
+    </g>
+    <g fill="none" stroke="#F2F2F2" stroke-width="3" stroke-linecap="round">
+      <path d="M77 203 L150 241"/>
+      <path d="M523 203 L450 241"/>
+    </g>
+
+    <!-- Bolsillo del pecho -->
+    <path d="M178 215 L232 215 L232 262 L178 262 Z" fill="none" stroke="#0D0D0D" stroke-width="2"/>
+
+    <!-- Recuadro del bordado del cliente, vacío -->
+    <rect x="368" y="205" width="56" height="44" rx="3" fill="none"
+          stroke="#9A9A9A" stroke-width="2" stroke-dasharray="5 4"/>
+  </g>
+
+  <!-- Gorro de cocinero, blanco -->
+  <g stroke="#8C8C8C" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M470 372 Q440 368 442 322 Q440 272 478 262 Q486 218 516 228 Q548 208 562 256 Q596 270 584 322 Q584 366 556 372 Z"
+          fill="#F4F4F4"/>
+    <path d="M466 372 L560 372 L556 428 L470 428 Z" fill="#F4F4F4"/>
+  </g>
+  <g fill="none" stroke="#8C8C8C" stroke-width="1.5" stroke-linecap="round">
+    <path d="M488 300 Q492 340 490 370"/>
+    <path d="M513 285 Q515 330 514 370"/>
+    <path d="M538 300 Q534 340 536 370"/>
+    <path d="M472 414 L554 414" stroke-dasharray="5 4"/>
+  </g>
+</svg>

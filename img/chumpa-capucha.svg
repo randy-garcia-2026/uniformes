@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ilustración de ejemplo: chumpa con capucha de Uniformes Eli. No es una foto real de una prenda del taller. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img">
+  <title>Chumpa con capucha</title>
+
+  <!-- Cuerpo y mangas largas -->
+  <path d="M235 118 L150 135 L85 420 L150 452 L178 268 L175 510 L425 510 L422 268 L450 452 L515 420 L450 135 L365 118 Q300 160 235 118 Z"
+        fill="#2B2B2B" stroke="#0D0D0D" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Capucha: exterior e interior -->
+  <path d="M222 128 Q200 38 300 32 Q400 38 378 128 Q340 170 300 170 Q260 170 222 128 Z"
+        fill="#2B2B2B" stroke="#0D0D0D" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M250 118 Q244 66 300 62 Q356 66 350 118 Q326 152 300 152 Q274 152 250 118 Z"
+        fill="#161616" stroke="#0D0D0D" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Cierre frontal -->
+  <g fill="none" stroke="#0D0D0D" stroke-linecap="round">
+    <path d="M299 152 L299 510" stroke-width="1.5"/>
+    <path d="M301 152 L301 510" stroke-width="1.5"/>
+    <path d="M300 152 L300 510" stroke-width="4" stroke-dasharray="2 3" stroke-opacity="0.7"/>
+  </g>
+  <path d="M296 164 L304 164 L304 186 L296 186 Z" fill="#2B2B2B" stroke="#0D0D0D" stroke-width="1.5"/>
+
+  <!-- Cordones de la capucha -->
+  <g fill="none" stroke="#0D0D0D" stroke-width="1.5" stroke-linecap="round">
+    <path d="M276 156 L274 225"/>
+    <path d="M324 156 L326 225"/>
+  </g>
+  <g fill="#2B2B2B" stroke="#0D0D0D" stroke-width="1.5">
+    <circle cx="274" cy="230" r="4"/>
+    <circle cx="326" cy="230" r="4"/>
+  </g>
+
+  <!-- Bolsillo tipo canguro -->
+  <path d="M208 365 L392 365 L412 462 L188 462 Z" fill="none" stroke="#0D0D0D" stroke-width="1.5" stroke-linejoin="round"/>
+
+  <!-- Costuras finas: sisas, puños, banda del dobladillo -->
+  <g fill="none" stroke="#0D0D0D" stroke-width="1.5" stroke-linecap="round">
+    <path d="M150 135 Q182 200 178 268"/>
+    <path d="M450 135 Q418 200 422 268"/>
+    <path d="M91 392 L151 420"/>
+    <path d="M509 392 L449 420"/>
+    <path d="M176 484 L424 484"/>
+  </g>
+
+  <!-- Recuadro del bordado del cliente, vacío -->
+  <rect x="205" y="215" width="54" height="40" rx="3" fill="none"
+        stroke="#9A9A9A" stroke-width="1.5" stroke-dasharray="4 3"/>
+</svg>

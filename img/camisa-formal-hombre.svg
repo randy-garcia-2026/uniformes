@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ilustración de ejemplo: camisa formal de hombre de Uniformes Eli. No es una foto real de una prenda del taller. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img">
+  <title>Camisa formal de hombre</title>
+
+  <!-- Cuerpo y mangas largas -->
+  <path d="M250 85 L150 110 L80 420 L142 445 L174 255 L170 510 L430 510 L426 255 L458 445 L520 420 L450 110 L350 85 Q300 125 250 85 Z"
+        fill="#22406B" stroke="#12233D" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Cuello clásico -->
+  <path d="M250 82 L222 108 L262 150 L300 122 Q275 112 250 82 Z"
+        fill="#22406B" stroke="#12233D" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M350 82 L378 108 L338 150 L300 122 Q325 112 350 82 Z"
+        fill="#22406B" stroke="#12233D" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Tapeta y botones -->
+  <rect x="288" y="122" width="24" height="388" fill="#22406B" stroke="#12233D" stroke-width="2"/>
+  <g fill="#22406B" stroke="#12233D" stroke-width="1.5">
+    <circle cx="300" cy="160" r="4.5"/>
+    <circle cx="300" cy="215" r="4.5"/>
+    <circle cx="300" cy="270" r="4.5"/>
+    <circle cx="300" cy="325" r="4.5"/>
+    <circle cx="300" cy="380" r="4.5"/>
+    <circle cx="300" cy="435" r="4.5"/>
+    <circle cx="300" cy="485" r="4.5"/>
+  </g>
+
+  <!-- Costuras finas: sisas, puños, dobladillo -->
+  <g fill="none" stroke="#12233D" stroke-width="1.5" stroke-linecap="round">
+    <path d="M150 110 Q180 180 174 255"/>
+    <path d="M450 110 Q420 180 426 255"/>
+    <path d="M86 390 L146 418"/>
+    <path d="M514 390 L454 418"/>
+    <path d="M178 498 L422 498" stroke-dasharray="6 4"/>
+  </g>
+  <!-- Botones de los puños -->
+  <g fill="#22406B" stroke="#12233D" stroke-width="1.5">
+    <circle cx="115" cy="419" r="3.5"/>
+    <circle cx="485" cy="419" r="3.5"/>
+  </g>
+
+  <!-- Bolsillo del pecho -->
+  <g fill="none" stroke="#12233D" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M195 190 L255 190 L255 238 L225 254 L195 238 Z"/>
+    <path d="M195 202 L255 202"/>
+  </g>
+
+  <!-- Recuadro del bordado del cliente, vacío -->
+  <rect x="340" y="190" width="58" height="42" rx="3" fill="none"
+        stroke="#9FB3CC" stroke-width="1.5" stroke-dasharray="4 3"/>
+</svg>

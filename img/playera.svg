@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ilustración de ejemplo: playera de cuello redondo de Uniformes Eli. No es una foto real de una prenda del taller. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img">
+  <title>Playera de cuello redondo</title>
+
+  <!-- Cuerpo y mangas cortas -->
+  <path d="M240 85 L150 115 L70 215 L140 255 L160 225 L160 510 L440 510 L440 225 L460 255 L530 215 L450 115 L360 85 Q300 160 240 85 Z"
+        fill="#22406B" stroke="#12233D" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Cuello redondo con rib -->
+  <path d="M240 85 Q300 160 360 85 L346 84 Q300 132 254 84 Z"
+        fill="#22406B" stroke="#12233D" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Costuras finas: sisas, dobladillos de mangas y cuerpo -->
+  <g fill="none" stroke="#12233D" stroke-width="1.5" stroke-linecap="round">
+    <path d="M150 115 Q177 170 160 225"/>
+    <path d="M450 115 Q423 170 440 225"/>
+    <path d="M77 203 L150 241"/>
+    <path d="M523 203 L450 241"/>
+    <path d="M168 497 L432 497" stroke-dasharray="6 4"/>
+  </g>
+
+  <!-- Recuadro del bordado del cliente (pecho), vacío -->
+  <rect x="195" y="185" width="62" height="50" rx="3" fill="none"
+        stroke="#9FB3CC" stroke-width="1.5" stroke-dasharray="4 3"/>
+</svg>

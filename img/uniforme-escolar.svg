@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ilustración de ejemplo: uniforme escolar (suéter, camisa y falda) de Uniformes Eli. No es una foto real de una prenda del taller. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img">
+  <title>Uniforme escolar, suéter, camisa y falda de cuadros</title>
+  <defs>
+    <clipPath id="falda">
+      <path d="M205 330 L395 330 L440 570 L160 570 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Camisa blanca de manga corta y suéter sin mangas (dibujados en 600 x 600 y reducidos) -->
+  <g transform="translate(155,10) scale(0.54)">
+    <!-- Camisa -->
+    <path d="M250 85 L150 115 L70 215 L140 255 L160 225 L160 510 L440 510 L440 225 L460 255 L530 215 L450 115 L350 85 Q300 125 250 85 Z"
+          fill="#F4F4F4" stroke="#8C8C8C" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M77 203 L150 241" fill="none" stroke="#8C8C8C" stroke-width="3" stroke-linecap="round"/>
+    <path d="M523 203 L450 241" fill="none" stroke="#8C8C8C" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Suéter verde oscuro sin mangas, cuello en V -->
+    <path d="M250 92 L222 100 Q216 205 166 252 L166 505 L434 505 L434 252 Q384 205 378 100 L350 92 L300 215 Z"
+          fill="#1F4D33" stroke="#10301E" stroke-width="5" stroke-linejoin="round"/>
+    <g fill="none" stroke="#10301E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M262 98 L300 186 L338 98"/>
+      <path d="M166 470 L434 470"/>
+      <path d="M232 110 Q230 200 176 250"/>
+      <path d="M368 110 Q370 200 424 250"/>
+    </g>
+
+    <!-- Cuello de la camisa asomando en la V -->
+    <path d="M252 84 L226 104 L272 158 L298 190 L298 146 Z"
+          fill="#F4F4F4" stroke="#8C8C8C" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M348 84 L374 104 L328 158 L302 190 L302 146 Z"
+          fill="#F4F4F4" stroke="#8C8C8C" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- Recuadro del bordado del cliente (pecho), vacío -->
+    <rect x="320" y="270" width="60" height="46" rx="4" fill="none"
+          stroke="#9CC0A8" stroke-width="3" stroke-dasharray="7 5"/>
+  </g>
+
+  <!-- Falda de cuadros -->
+  <g clip-path="url(#falda)">
+    <rect x="150" y="320" width="300" height="260" fill="#2E5A3E"/>
+    <g stroke="#6E9C79" stroke-width="5" fill="none">
+      <path d="M221 330 L185 570"/>
+      <path d="M253 330 L233 570"/>
+      <path d="M285 330 L278 570"/>
+      <path d="M317 330 L325 570"/>
+      <path d="M349 330 L372 570"/>
+      <path d="M381 330 L419 570"/>
+      <path d="M150 358 L450 358"/>
+      <path d="M150 408 L450 408"/>
+      <path d="M150 458 L450 458"/>
+      <path d="M150 508 L450 508"/>
+      <path d="M150 558 L450 558"/>
+    </g>
+    <g stroke="#1B3A27" stroke-width="2" fill="none">
+      <path d="M237 330 L209 570"/>
+      <path d="M301 330 L301 570"/>
+      <path d="M365 330 L396 570"/>
+      <path d="M150 383 L450 383"/>
+      <path d="M150 433 L450 433"/>
+      <path d="M150 483 L450 483"/>
+      <path d="M150 533 L450 533"/>
+    </g>
+  </g>
+  <path d="M205 330 L395 330 L440 570 L160 570 Z" fill="none" stroke="#1B3A27" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M205 330 L395 330 L395 346 L205 346 Z" fill="#2E5A3E" stroke="#1B3A27" stroke-width="2"/>
+  <path d="M168 556 L432 556" fill="none" stroke="#1B3A27" stroke-width="1.5" stroke-dasharray="6 4"/>
+</svg>

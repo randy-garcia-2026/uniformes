@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ilustración de ejemplo: overol industrial de Uniformes Eli. No es una foto real de una prenda del taller. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img">
+  <title>Overol industrial</title>
+
+  <!-- Overol de una pieza -->
+  <path d="M250 55 L170 78 L105 330 L160 352 L196 175 L195 300 L182 565 L292 565 L300 360 L308 565 L418 565 L405 300 L404 175 L440 352 L495 330 L430 78 L350 55 Q300 90 250 55 Z"
+        fill="#22406B" stroke="#12233D" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Franjas reflectivas amarillo verdoso: torso, mangas y piernas -->
+  <g fill="#C5D82E" stroke="#7F8E10" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M196 240 L404 240 L404 254 L196 254 Z"/>
+    <path d="M196 266 L404 266 L404 280 L196 280 Z"/>
+    <path d="M128 240 L125 254 L180 254 L183 240 Z"/>
+    <path d="M122 266 L118 280 L175 280 L178 266 Z"/>
+    <path d="M472 240 L475 254 L420 254 L417 240 Z"/>
+    <path d="M478 266 L482 280 L425 280 L422 266 Z"/>
+    <path d="M187 470 L296 470 L295 484 L186 484 Z"/>
+    <path d="M185 496 L295 496 L294 510 L185 510 Z"/>
+    <path d="M413 470 L304 470 L305 484 L414 484 Z"/>
+    <path d="M415 496 L305 496 L306 510 L415 510 Z"/>
+  </g>
+
+  <!-- Cuello alto -->
+  <path d="M250 52 L230 74 L268 108 L300 88 Q276 78 250 52 Z" fill="#22406B" stroke="#12233D" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M350 52 L370 74 L332 108 L300 88 Q324 78 350 52 Z" fill="#22406B" stroke="#12233D" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Cierre frontal y costuras finas -->
+  <g fill="none" stroke="#12233D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M298 88 L298 360"/>
+    <path d="M302 88 L302 360"/>
+    <path d="M170 78 Q205 125 196 175"/>
+    <path d="M430 78 Q395 125 404 175"/>
+    <path d="M195 300 L405 300"/>
+    <path d="M114 308 L168 332"/>
+    <path d="M486 308 L432 332"/>
+    <path d="M202 312 Q225 322 232 352"/>
+    <path d="M398 312 Q375 322 368 352"/>
+    <path d="M186 548 L291 548" stroke-dasharray="6 4"/>
+    <path d="M414 548 L309 548" stroke-dasharray="6 4"/>
+  </g>
+  <path d="M295 92 L305 92 L305 112 L295 112 Z" fill="#22406B" stroke="#12233D" stroke-width="1.5"/>
+
+  <!-- Bolsillos del pecho con solapa -->
+  <g fill="#22406B" stroke="#12233D" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M218 168 L272 168 L272 218 L218 218 Z"/>
+    <path d="M328 168 L382 168 L382 218 L328 218 Z"/>
+    <path d="M218 168 L272 168 L272 184 L245 192 L218 184 Z"/>
+    <path d="M328 168 L382 168 L382 184 L355 192 L328 184 Z"/>
+  </g>
+
+  <!-- Recuadro del bordado del cliente, vacío -->
+  <rect x="330" y="118" width="50" height="34" rx="3" fill="none"
+        stroke="#9FB3CC" stroke-width="1.5" stroke-dasharray="4 3"/>
+</svg>
