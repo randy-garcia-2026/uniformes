@@ -307,7 +307,7 @@ h3 { font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.7rem); line-height: 1.2; }
 .barra-contacto__enlace[aria-disabled="true"] { opacity: 0.45; cursor: not-allowed; }
 
 /* ---------- Aparición suave al hacer scroll (máximo 400 ms) ---------- */
-.con-aparicion [data-aparece] { opacity: 0; transform: translateY(10px); transition: opacity 0.4s ease-out, transform 0.4s ease-out; }
+.con-aparicion [data-aparece] { opacity: 0; transform: translateY(6px); transition: opacity 0.2s ease-out, transform 0.2s ease-out; }
 .con-aparicion [data-aparece].visible { opacity: 1; transform: none; }
 
 /* ==========================================================
