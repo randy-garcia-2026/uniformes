@@ -2,7 +2,7 @@
 
 // [EJEMPLO] Número de WhatsApp de prueba. Se cambia por el real cuando lo tengamos.
 // Formato: código de país (502) + número, sin espacios ni signos.
-const NUMERO_WHATSAPP = "50200000000";
+const NUMERO_WHATSAPP = "50255550123";
 
 const formulario = document.getElementById("formulario-cotizacion");
 const mensajeError = document.getElementById("formulario-error");
