@@ -13,10 +13,10 @@ Personas particulares y empresas que quieren uniformes.
 Artesanal: que se note el trabajo de costura y bordado.
 
 ## Colores y letra
-- Fondo con degradado: blanco arriba, celeste en medio y azul suave (`#6CA7FF`) abajo.
-- Texto, botones y puntadas casi negros (`#080808`). Recuadros blancos.
+- (Cambio aprobado 18-nov-2026) Inicio con la ilustración de San Pedro (`img/san-pedro.jpg`) de fondo, con capa marfil lisa y recuadro de texto legible.
+- Fondo de la página: marfil liso `#FBF6EA`, sin degradados (el degradado azul se quitó por decisión del dueño). Texto café `#2A1F17`, botones verde `#2E5E34`, puntadas y detalles color teja `#B5532F`. Recuadros blancos.
 - Sin neón.
-- Letra: Inter.
+- Letra: Fraunces para títulos e Inter para el texto.
 
 ## Cómo piden cotización
 - Formulario (nombre, qué necesitan y cuántas piezas).

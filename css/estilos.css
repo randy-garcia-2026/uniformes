@@ -3,17 +3,15 @@
 
 /* ---------- Colores y medidas ---------- */
 :root {
-  /* PRUEBA: fondo azul suave. Valores de la versión anterior (fondo blanco):
-     tela #FFFFFF, acento #146EF5, acento-oscuro #1366E2, tierra #5A5A5A, linea #D8D8D8, hilo #F0F0F0 */
-  --tela: #6CA7FF;        /* fondo: azul suave */
-  --texto: #080808;       /* textos y títulos */
-  --acento: #080808;      /* botones, enlaces y puntadas (negro, para que se vean sobre el azul) */
-  --acento-oscuro: #26262B; /* el botón se aclara un poco al pasar el cursor */
-  --tierra: #12233D;      /* textos secundarios */
-  --linea: #2F66BD;       /* líneas finas de 1 píxel */
+  /* Colores tomados de la ilustración de San Pedro */
+  --tela: #FBF6EA;        /* fondo: marfil liso */
+  --texto: #2A1F17;       /* textos y títulos: café muy oscuro */
+  --acento: #2E5E34;      /* botones y enlaces: verde de las montañas */
+  --acento-oscuro: #1F4425; /* el botón se oscurece al pasar el cursor */
+  --teja: #B5532F;        /* color de los techos: puntadas y detalles */
+  --tierra: #5A4636;      /* textos secundarios */
+  --linea: #D9CBB0;       /* líneas finas de 1 píxel */
   --hilo: #FFFFFF;        /* recuadros y formulario */
-  /* Fondo: empieza blanco arriba y se va poniendo celeste y azul al bajar */
-  --fondo-degradado: linear-gradient(180deg, #FFFFFF 0%, #DCEAFF 40%, #A9CBFF 70%, #6CA7FF 100%);
   --ancho: 75rem;
   --espacio: clamp(1.25rem, 4vw, 2.5rem);
 }
@@ -26,7 +24,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
 body {
   margin: 0;
   background-color: var(--tela);
-  background-image: var(--fondo-degradado);
   color: var(--texto);
   font-family: "Inter", system-ui, sans-serif;
   font-size: 1.125rem;
@@ -34,7 +31,8 @@ body {
 }
 
 h1, h2, h3 {
-  font-weight: 600;
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 700;
   line-height: 1.15;
   margin: 0 0 1rem;
 }
@@ -54,7 +52,7 @@ a { color: var(--acento); }
 /* ---------- Línea de puntadas (el detalle memorable) ---------- */
 .puntadas {
   border: 0;
-  border-top: 3px dashed var(--acento);
+  border-top: 3px dashed var(--teja);
   max-width: var(--ancho);
   margin: 0 auto;
   width: calc(100% - 2 * var(--espacio));
@@ -71,13 +69,14 @@ a { color: var(--acento); }
   justify-content: space-between;
   gap: 0.5rem 2rem;
   padding: 0.9rem var(--espacio);
-  background: #FFFFFF;
+  background: var(--tela);
   border-bottom: 1px solid transparent;
 }
 /* La línea fina aparece solo cuando se baja la página */
 .cabecera.con-linea { border-bottom-color: var(--linea); }
 .marca {
-  font-weight: 600;
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 700;
   font-size: 1.5rem;
   color: var(--texto);
   text-decoration: none;
@@ -97,7 +96,7 @@ a { color: var(--acento); }
   padding: 0.25rem 0;
   border-bottom: 2px solid transparent;
 }
-.cabecera nav a:hover { border-bottom-color: var(--acento); }
+.cabecera nav a:hover { border-bottom-color: var(--teja); }
 
 /* ---------- Secciones ---------- */
 main > section {
@@ -115,7 +114,7 @@ main > section {
   font: 500 1.05rem "Inter", system-ui, sans-serif;
   text-decoration: none;
   border: 2px solid var(--acento);
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
 }
 .boton:hover { background: var(--acento-oscuro); border-color: var(--acento-oscuro); }
@@ -132,24 +131,40 @@ main > section {
   font-style: italic;
 }
 
-/* ---------- Inicio ---------- */
-.inicio {
-  display: grid;
-  gap: 2.5rem;
-  align-items: center;
-}
-.inicio__apoyo { font-size: 1.25rem; }
-.inicio__foto {
-  min-height: 18rem;
+/* ---------- Inicio: la ilustración ocupa todo el ancho ---------- */
+main > section.inicio {
+  position: relative;
+  max-width: none;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1.5rem;
-  background: var(--hilo);
-  border: 2px dashed var(--tierra);
-  border-radius: 8px;
-  color: var(--tierra);
+  align-items: center;
+  min-height: min(80vh, 46rem);
+  padding: clamp(2.5rem, 8vw, 5rem) var(--espacio);
+  overflow: hidden;
 }
+.inicio__fondo {
+  position: absolute;
+  inset: 0;
+  background: url("../img/san-pedro.jpg") center / cover no-repeat;
+}
+/* Capa marfil semitransparente y lisa (sin degradado) sobre la ilustración */
+.inicio__fondo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(251, 246, 234, 0.25);
+}
+.inicio__texto {
+  position: relative;
+  width: min(100%, 40rem);
+  margin-left: max(0px, calc((100% - var(--ancho)) / 2));
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background: rgba(255, 252, 243, 0.93);
+  border: 1px solid var(--linea);
+  border-radius: 10px;
+  box-shadow: 0 6px 0 rgba(181, 83, 47, 0.35);
+}
+.inicio__texto h1 { font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.1; }
+.inicio__apoyo { font-size: 1.2rem; }
 
 /* ---------- Lo que hacemos ---------- */
 .prendas {
@@ -158,14 +173,28 @@ main > section {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0;
-  max-width: 40rem;
+  gap: 1rem;
+  max-width: 58rem;
 }
+/* Cada prenda: recuadro blanco, dibujo grande a la izquierda y nombre al lado */
 .prendas li {
-  font-weight: 500;
-  font-size: 1.6rem;
-  padding: 0.6rem 0;
-  border-bottom: 1px solid var(--linea);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+  background: var(--hilo);
+  border: 1px solid var(--linea);
+  border-radius: 10px;
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+.prendas img {
+  flex: none;
+  display: block;
+  width: 7.5rem;
+  height: 7.5rem;
 }
 
 /* Recuadro que imita un parche bordado a punto de cruz.
@@ -175,15 +204,26 @@ main > section {
   max-width: 40rem;
   padding: 2.25rem 2.5rem;
   background: var(--hilo);
-  border-radius: 8px;
+  border-radius: 10px;
 }
 .parche::before {
   content: "";
   position: absolute;
   inset: 8px;
   border: 12px solid transparent;
-  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36' fill='none' stroke='%23080808' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M3 3L9 9M9 3L3 9M15 3L21 9M21 3L15 9M27 3L33 9M33 3L27 9M3 15L9 21M9 15L3 21M27 15L33 21M33 15L27 21M3 27L9 33M9 27L3 33M15 27L21 33M21 27L15 33M27 27L33 33M33 27L27 33'/%3E%3C/svg%3E") 12 round;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36' fill='none' stroke='%23B5532F' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M3 3L9 9M9 3L3 9M15 3L21 9M21 3L15 9M27 3L33 9M33 3L27 9M3 15L9 21M9 15L3 21M27 15L33 21M33 15L27 21M3 27L9 33M9 27L3 33M15 27L21 33M21 27L15 33M27 27L33 33M33 27L27 33'/%3E%3C/svg%3E") 12 round;
   pointer-events: none;
+}
+.parche {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.parche__imagen {
+  position: relative;
+  flex: none;
+  width: 96px;
+  height: 96px;
 }
 .parche h3 { margin-bottom: 0.5rem; }
 .parche p { margin: 0; }
@@ -198,7 +238,7 @@ main > section {
   background: var(--hilo);
   padding: 1.75rem;
   border: 1px solid var(--linea);
-  border-radius: 8px;
+  border-radius: 10px;
 }
 .formulario label {
   display: block;
@@ -214,11 +254,11 @@ main > section {
   color: var(--texto);
   background: #FFFFFF;
   border: 1px solid var(--tierra);
-  border-radius: 4px;
+  border-radius: 6px;
 }
 .formulario .boton { margin-top: 1.5rem; }
 .formulario__nota { font-size: 0.95rem; color: var(--tierra); margin: 0.75rem 0 0; }
-.formulario__error { color: var(--texto); font-weight: 700; margin: 1rem 0 0; padding-left: 0.75rem; border-left: 3px solid var(--acento); }
+.formulario__error { color: var(--texto); font-weight: 700; margin: 1rem 0 0; padding-left: 0.75rem; border-left: 3px solid var(--teja); }
 
 .contacto__dato { font-size: 1.25rem; margin-top: 1.25rem; }
 .contacto__subtitulo { margin-top: 2rem; }
@@ -229,7 +269,7 @@ main > section {
   width: 100%;
   height: 18rem;
   border: 1px solid var(--linea);
-  border-radius: 8px;
+  border-radius: 10px;
   background: var(--hilo);
 }
 
@@ -243,8 +283,8 @@ main > section {
 
 /* ---------- Pantallas anchas ---------- */
 @media (min-width: 52rem) {
-  .inicio { grid-template-columns: 1.3fr 1fr; }
-  .prendas { grid-template-columns: 1fr 1fr; column-gap: 3rem; }
+  .prendas { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+  .prendas img { width: 9rem; height: 9rem; }
   .cotizar__cuerpo { grid-template-columns: 1.2fr 1fr; align-items: start; }
 }
 
