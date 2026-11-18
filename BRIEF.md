@@ -88,7 +88,7 @@ Tres pasos con número cosido con puntada, sin imagen:
 
 Condiciones: pedido mínimo de 12 piezas por modelo; entrega de 10 a 15 días hábiles después de confirmar medidas y diseño del bordado, y los pedidos grandes se acuerdan por fecha. [EJEMPLO] Botón: **Cotizar por WhatsApp**.
 
-### 5. Nuestra raíz
+### 5. Nuestro oficio (antes "Nuestra raíz")
 Imagen: `bordado-detalle.svg`, con la línea de rombos arriba. Texto:
 > En Uniformes Eli creemos en el trabajo bien hecho. Cada uniforme que sale del taller lleva ese cuidado: puntadas firmes, atención a los detalles y respeto por quien lo va a vestir cada día. [EJEMPLO]
 
