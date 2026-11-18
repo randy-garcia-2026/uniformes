@@ -4,11 +4,119 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Uniformes Eli</title>
+  <meta name="description" content="Confección y bordado de uniformes para empresas y particulares en Villanueva, Guatemala.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <h1>Uniformes Eli</h1>
-  <p>Hola, esto es una prueba</p>
+
+  <header class="cabecera">
+    <a class="marca" href="#inicio">Uniformes Eli</a>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#que-hacemos">Lo que hacemos</a></li>
+        <li><a href="#cotizar">Cotizar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- INICIO -->
+    <section class="inicio" id="inicio">
+      <div class="inicio__texto">
+        <h1>Uniformes bien cosidos para tu empresa y tu equipo</h1>
+        <p class="inicio__apoyo">Confeccionamos y bordamos uniformes en Villanueva, Guatemala. Para empresas y para particulares.</p>
+        <p class="aviso-ejemplo">[EJEMPLO] Frase de inicio pendiente de aprobación.</p>
+        <a class="boton" href="#cotizar">Pedir cotización</a>
+      </div>
+      <div class="inicio__foto" role="img" aria-label="Espacio reservado para una foto del taller">
+        <p>Aquí irá una foto del taller o de un uniforme terminado.</p>
+        <p class="aviso-ejemplo">[EJEMPLO] Foto pendiente.</p>
+      </div>
+    </section>
+
+    <hr class="puntadas" aria-hidden="true">
+
+    <!-- LO QUE HACEMOS -->
+    <section class="hacemos" id="que-hacemos">
+      <h2>Lo que hacemos</h2>
+      <p class="hacemos__intro">Confeccionamos estas prendas a la medida de tu equipo.</p>
+
+      <ul class="prendas">
+        <li>Camisas</li>
+        <li>Pantalones</li>
+        <li>Batas</li>
+        <li>Delantales</li>
+        <li>Gorras</li>
+        <li>Chaquetas</li>
+      </ul>
+
+      <div class="parche">
+        <h3>Bordado de nombre y de logo</h3>
+        <p>Bordamos el nombre de cada persona y el logo de tu empresa en las prendas que elijas.</p>
+      </div>
+    </section>
+
+    <hr class="puntadas" aria-hidden="true">
+
+    <!-- COTIZAR -->
+    <section class="cotizar" id="cotizar">
+      <h2>Pide tu cotización</h2>
+      <p class="cotizar__intro">Cuéntanos qué necesitas. Te respondemos con una cotización.</p>
+
+      <div class="cotizar__cuerpo">
+        <form class="formulario" id="formulario-cotizacion" novalidate>
+          <label for="nombre">Tu nombre o el de tu empresa</label>
+          <input type="text" id="nombre" name="nombre" required autocomplete="name">
+
+          <label for="prenda">¿Qué necesitas?</label>
+          <select id="prenda" name="prenda" required>
+            <option value="">Elige una opción</option>
+            <option>Camisas</option>
+            <option>Pantalones</option>
+            <option>Batas</option>
+            <option>Delantales</option>
+            <option>Gorras</option>
+            <option>Chaquetas</option>
+            <option>Varias prendas</option>
+          </select>
+
+          <label for="cantidad">¿Cuántas piezas?</label>
+          <input type="number" id="cantidad" name="cantidad" min="1" inputmode="numeric" required>
+
+          <label for="bordado">¿Quieres bordado?</label>
+          <select id="bordado" name="bordado">
+            <option>No lo sé todavía</option>
+            <option>Sin bordado</option>
+            <option>Bordado de nombre</option>
+            <option>Bordado de logo</option>
+            <option>Bordado de nombre y de logo</option>
+          </select>
+
+          <p class="formulario__error" id="formulario-error" role="alert" hidden></p>
+          <button type="submit" class="boton">Enviar por WhatsApp</button>
+          <p class="formulario__nota">Al enviar, se abre WhatsApp con tu pedido ya escrito.</p>
+        </form>
+
+        <div class="contacto">
+          <h3>También puedes escribirnos o llamarnos</h3>
+          <a class="boton boton--claro" id="enlace-whatsapp" href="#">Escribir por WhatsApp</a>
+          <p class="contacto__dato">Teléfono: <a href="tel:+50200000000">0000 0000</a></p>
+          <p class="aviso-ejemplo">[EJEMPLO] Teléfono y WhatsApp pendientes. Dirección del taller pendiente.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>Uniformes Eli · Villanueva, Guatemala</p>
+  </footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -12,13 +12,11 @@ Personas particulares y empresas que quieren uniformes.
 ## Sensación del diseño
 Artesanal: que se note el trabajo de costura y bordado.
 
-## Colores
-Tonos tierra: beige, café y un acento rojo ladrillo.
-
-## Prohibido en el diseño
-- Neón.
-- Degradados.
-- Filas de tres tarjetas idénticas.
+## Colores y letra
+- Fondo con degradado: blanco arriba, celeste en medio y azul suave (`#6CA7FF`) abajo.
+- Texto, botones y puntadas casi negros (`#080808`). Recuadros blancos.
+- Sin neón.
+- Letra: Inter.
 
 ## Cómo piden cotización
 - Formulario (nombre, qué necesitan y cuántas piezas).
