@@ -14,6 +14,7 @@
   - Quitado el origen personal del dueño y la frase "hablas directamente con quien confecciona"; la sección ahora se llama "Nuestro oficio".
   - Cómo cotizar rediseñado (pasos unidos por una puntada y recuadro de condiciones).
   - Prendas en cuadrícula compacta con filtro por rubro, nombre al pasar el cursor y ventana de detalle (tallas y colores [EJEMPLO]).
+- Correcciones tras la revisión en Chrome (18-nov-2026): formulario reducido a los 3 campos del brief, filtros de rubro en una sola fila deslizable en celular, nombres de prendas más legibles y ventana de detalle sin imagen vacía.
 
 ## Pendiente
 - [PENDIENTE] Enlaces de Facebook e Instagram (CONFIG en `js/main.js`) cuando existan las cuentas.
@@ -21,3 +22,4 @@
 - [PENDIENTE] Decidir si se deja la barra lateral fija además de la barra superior.
 - Renombrar `img/san-pedro.jpg` a un nombre neutro (opcional) y limpiar del brief la sección "Raíz del dueño".
 - Antes de publicar: cambiar los datos [EJEMPLO] (incluidos los datos estructurados) y revisar el sitio en celular real.
+- Revisión visual pendiente de decidir: ilustraciones de Servicios muy parecidas al catálogo; sección Nuestro oficio con mucho espacio vacío; renombrar `san-pedro.jpg` (pide aprobación); confirmar que `bordado-detalle.svg` no parezca sello de una institución.

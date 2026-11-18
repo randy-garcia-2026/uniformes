@@ -363,49 +363,15 @@
           </div>
 
           <div class="campo">
-            <label for="empresa">Empresa o institución</label>
-            <input type="text" id="empresa" name="empresa" autocomplete="organization" placeholder="Si pides como particular, déjalo en blanco">
+            <label for="prenda">¿Qué uniformes necesitas? *</label>
+            <input type="text" id="prenda" name="prenda" placeholder="15 camisas con el logo bordado" required aria-describedby="error-prenda">
+            <p class="error" id="error-prenda" hidden>Cuéntanos qué uniformes necesitas.</p>
           </div>
 
           <div class="campo">
-            <label for="rubro">Rubro *</label>
-            <select id="rubro" name="rubro" required aria-describedby="error-rubro">
-              <option value="">Elige un rubro</option>
-              <option>Restaurante y cocina</option>
-              <option>Salud y belleza</option>
-              <option>Educación</option>
-              <option>Industrial</option>
-              <option>Seguridad</option>
-              <option>Oficinas y comercio</option>
-              <option>Universidades y facultades</option>
-              <option>Otro</option>
-            </select>
-            <p class="error" id="error-rubro" hidden>Elige el rubro de tu negocio.</p>
-          </div>
-
-          <div class="campo">
-            <label for="prenda">Prenda que necesitas *</label>
-            <input type="text" id="prenda" name="prenda" placeholder="Camisas con el logo bordado" required aria-describedby="error-prenda">
-            <p class="error" id="error-prenda" hidden>Escribe qué prenda necesitas.</p>
-          </div>
-
-          <div class="campo">
-            <label for="cantidad">Cantidad aproximada de piezas *</label>
+            <label for="cantidad">¿Cuántas piezas? *</label>
             <input type="number" id="cantidad" name="cantidad" inputmode="numeric" min="1" step="1" placeholder="15" required aria-describedby="error-cantidad">
             <p class="error" id="error-cantidad" hidden>Escribe cuántas piezas necesitas (un número mayor que cero).</p>
-          </div>
-
-          <fieldset class="campo campo--opciones" aria-describedby="error-logo">
-            <legend>¿Ya tienes tu logo o escudo en digital? *</legend>
-            <label class="opcion"><input type="radio" name="logo" value="Sí" required> Sí</label>
-            <label class="opcion"><input type="radio" name="logo" value="No"> No</label>
-            <label class="opcion"><input type="radio" name="logo" value="Necesito ayuda"> Necesito ayuda</label>
-            <p class="error" id="error-logo" hidden>Elige una opción.</p>
-          </fieldset>
-
-          <div class="campo">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Colores, tallas, fecha en que lo necesitas…"></textarea>
           </div>
 
           <button class="boton boton--completo" type="submit">Enviar por WhatsApp</button>
@@ -461,7 +427,7 @@
   <!-- VENTANA DE DETALLE DE PRENDA (se llena desde js/main.js) -->
   <dialog class="detalle" id="detalle" aria-labelledby="detalle-titulo">
     <div class="detalle__cuerpo">
-      <figure class="marco"><img id="detalle-img" src="" width="160" height="160" alt=""></figure>
+      <figure class="marco"><img id="detalle-img" src="img/pantalon.svg" width="160" height="160" alt=""></figure>
       <div>
         <h3 id="detalle-titulo"></h3>
         <dl class="detalle__datos">

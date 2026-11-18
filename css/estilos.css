@@ -198,7 +198,8 @@ h3 { font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.7rem); line-height: 1.2; }
 .servicio__texto p { margin-top: 8px; max-width: 52ch; color: var(--cafe-suave); }
 
 /* ---------- Prendas por rubro: cuadrícula compacta ---------- */
-.filtros { display: flex; flex-wrap: wrap; gap: 8px; }
+.filtros { display: flex; flex-wrap: nowrap; gap: 8px; overflow-x: auto; padding-bottom: 6px; scrollbar-width: thin; }
+.filtro { flex-shrink: 0; white-space: nowrap; }
 .filtro {
   font: inherit; font-size: 0.9rem; font-weight: 500; color: var(--cafe);
   background: transparent; border: 1px solid var(--cafe-suave); border-radius: 0;
@@ -219,11 +220,12 @@ h3 { font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.7rem); line-height: 1.2; }
 .prenda__nombre {
   position: absolute; left: 0; right: 0; bottom: 0; padding: 6px 6px;
   background: var(--cafe); color: var(--marfil);
-  font-size: 0.72rem; font-weight: 500; line-height: 1.2; text-align: center;
+  font-size: 0.78rem; font-weight: 500; line-height: 1.15; text-align: center;
 }
 .prenda:hover { border-color: var(--cafe); }
 .rubros__cierre { margin-top: 32px; font-family: var(--letra-titulo); font-size: 1.35rem; font-weight: 600; max-width: 30ch; line-height: 1.25; }
 
+@media (min-width: 900px) { .filtros { flex-wrap: wrap; overflow: visible; } }
 @media (min-width: 600px) and (max-width: 899px) { .prendas-rejilla { grid-template-columns: repeat(5, 1fr); } }
 
 /* En pantallas con cursor, el nombre se oculta hasta pasar sobre la prenda */

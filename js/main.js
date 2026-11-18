@@ -129,7 +129,6 @@ function activarFormulario() {
   // Cada regla: campo, id del error y condición de validez
   const reglas = [
     { campo: "nombre", ok: function (v) { return v.trim().length > 1; } },
-    { campo: "rubro", ok: function (v) { return v !== ""; } },
     { campo: "prenda", ok: function (v) { return v.trim().length > 1; } },
     { campo: "cantidad", ok: function (v) { return Number(v) >= 1; } }
   ];
@@ -150,10 +149,6 @@ function activarFormulario() {
       if (!valido && !primerError) primerError = campo;
     });
 
-    const logo = form.querySelector('input[name="logo"]:checked');
-    mostrarError("logo", !logo);
-    if (!logo && !primerError) primerError = form.querySelector('input[name="logo"]');
-
     if (primerError) primerError.focus();
     return !primerError;
   }
@@ -166,7 +161,6 @@ function activarFormulario() {
       campo.setAttribute("aria-invalid", "false");
       mostrarError(campo.name, false);
     }
-    if (campo.name === "logo") mostrarError("logo", false);
   });
 
   form.addEventListener("submit", function (e) {
@@ -177,19 +171,14 @@ function activarFormulario() {
     }
 
     const v = function (nombre) { return form.elements[nombre].value.trim(); };
-    const logo = form.querySelector('input[name="logo"]:checked').value;
 
     // Mensaje armado con los datos del formulario
     const lineas = [
       "Hola, quiero cotizar uniformes con Uniformes Eli.",
       "",
       "Nombre: " + v("nombre"),
-      "Empresa o institución: " + (v("empresa") || "No aplica"),
-      "Rubro: " + v("rubro"),
-      "Prenda: " + v("prenda"),
-      "Cantidad aproximada: " + v("cantidad") + " piezas",
-      "¿Tiene su logo o escudo en digital?: " + logo,
-      "Mensaje: " + (v("mensaje") || "Sin mensaje")
+      "Uniformes que necesita: " + v("prenda"),
+      "Cantidad: " + v("cantidad") + " piezas"
     ];
     const url = enlaceWhatsapp(lineas.join("\n"));
 
