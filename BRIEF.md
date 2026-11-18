@@ -13,7 +13,7 @@ Personas particulares y empresas que quieren uniformes.
 Artesanal: que se note el trabajo de costura y bordado.
 
 ## Colores y letra
-- (Cambio aprobado 18-nov-2026) Inicio con la ilustración de San Pedro (`img/san-pedro.jpg`) de fondo, con capa marfil lisa y recuadro de texto legible.
+- (Cambio aprobado 18-nov-2026) Inicio con la ilustración de portada (`img/portada.jpg`) de fondo, con capa marfil lisa y recuadro de texto legible.
 - Fondo de la página: marfil liso `#FBF6EA`, sin degradados (el degradado azul se quitó por decisión del dueño). Texto café `#2A1F17`, botones verde `#2E5E34`, puntadas y detalles color teja `#B5532F`. Recuadros blancos.
 - Sin neón.
 - Letra: Fraunces para títulos e Inter para el texto.
@@ -54,7 +54,7 @@ Aprobado el 18-nov-2026, sección por sección. Una sola página, 6 secciones m�
 - Botón: **Cotizar por WhatsApp**.
 
 ### 1. Portada
-- Imagen: `san-pedro.jpg` de fondo, con capa marfil lisa.
+- Imagen: `portada.jpg` de fondo, con capa marfil lisa.
 - Titular (mayúsculas): UNIFORMES HECHOS A TU MEDIDA, CON TU NOMBRE Y TU LOGO BORDADOS.
 - Apoyo: "Taller de confección y bordado en Villa Nueva, Guatemala. Trabajamos con empresas y con particulares."
 - Botón: **Cotizar por WhatsApp**. Enlace: "O llámanos al 6666-0123 [EJEMPLO]".

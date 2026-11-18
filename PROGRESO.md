@@ -20,7 +20,8 @@
 - [PENDIENTE] Enlaces de Facebook e Instagram (CONFIG en `js/main.js`) cuando existan las cuentas.
 - [PENDIENTE] Teléfono y WhatsApp reales; tallas y colores reales; logo real.
 - [PENDIENTE] Decidir si se deja la barra lateral fija además de la barra superior.
-- Renombrar `img/san-pedro.jpg` a un nombre neutro (opcional) y limpiar del brief la sección "Raíz del dueño".
+- Limpiar del brief la sección "Raíz del dueño".
 - Antes de publicar: cambiar los datos [EJEMPLO] (incluidos los datos estructurados) y revisar el sitio en celular real.
 - Servicios: ilustraciones con borde cosido teja y número 01 a 05. Nuestro oficio: más compacto (solo estilos, sin archivos nuevos).
-- Pendiente de decidir: renombrar `san-pedro.jpg` (pide aprobación); confirmar que `bordado-detalle.svg` no parezca sello de una institución.
+- Imagen de portada renombrada a `img/portada.jpg` (nombre neutro).
+- Pendiente de decidir: confirmar que `bordado-detalle.svg` no parezca sello de una institución.
