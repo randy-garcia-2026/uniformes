@@ -30,6 +30,10 @@ const CONFIG = {
   facebook: "",
   instagram: "",
 
+  // Ventana de cada prenda: tallas y colores [EJEMPLO], cambiar por los reales
+  tallas: "De la S a la XXL",
+  colores: "Azul, negro, blanco y gris; otros colores a elección del cliente",
+
   // Mensaje del botón "Cotizar por WhatsApp"
   mensajeBoton: "Hola, quiero cotizar uniformes con Uniformes Eli."
 };
@@ -202,6 +206,67 @@ function activarFormulario() {
   });
 }
 
+/* ---------- Prendas: filtro por rubro y ventana de detalle ---------- */
+function activarPrendas() {
+  const rejilla = document.getElementById("prendas-rejilla");
+  if (!rejilla) return;
+  const prendas = Array.from(rejilla.querySelectorAll("li"));
+  const filtros = document.querySelectorAll(".filtro");
+  const estado = document.getElementById("filtros-estado");
+
+  // Filtro por rubro
+  filtros.forEach(function (boton) {
+    boton.addEventListener("click", function () {
+      const rubro = boton.dataset.rubro;
+      filtros.forEach(function (b) { b.setAttribute("aria-pressed", String(b === boton)); });
+      let visibles = 0;
+      prendas.forEach(function (li) {
+        const coincide = !rubro || li.dataset.rubros.split("|").includes(rubro);
+        li.hidden = !coincide;
+        if (coincide) visibles++;
+      });
+      estado.textContent = rubro
+        ? "Mostrando " + visibles + " prendas de " + rubro + "."
+        : "Mostrando las " + visibles + " prendas.";
+    });
+  });
+
+  // Ventana de detalle
+  const ventana = document.getElementById("detalle");
+  if (!ventana || typeof ventana.showModal !== "function") return;
+  let prendaActual = "";
+
+  rejilla.addEventListener("click", function (e) {
+    const boton = e.target.closest(".prenda");
+    if (!boton) return;
+    prendaActual = boton.dataset.nombre;
+    const img = document.getElementById("detalle-img");
+    img.src = boton.dataset.img;
+    img.alt = prendaActual;
+    document.getElementById("detalle-titulo").textContent = prendaActual;
+    document.getElementById("detalle-rubros").textContent = boton.dataset.rubros.split("|").join(", ");
+    document.getElementById("detalle-tallas").textContent = CONFIG.tallas;
+    document.getElementById("detalle-colores").textContent = CONFIG.colores;
+    const mensaje = "Hola, quiero cotizar esta prenda con Uniformes Eli: " + prendaActual + ".";
+    const wa = document.getElementById("detalle-whatsapp");
+    wa.href = enlaceWhatsapp(mensaje);
+    wa.target = "_blank";
+    wa.rel = "noopener";
+    ventana.showModal();
+  });
+
+  // Poner la prenda en el formulario y bajar a esa sección
+  document.getElementById("detalle-formulario").addEventListener("click", function () {
+    document.getElementById("prenda").value = prendaActual;
+    ventana.close();
+    document.getElementById("cotizar").scrollIntoView();
+    document.getElementById("nombre").focus({ preventScroll: true });
+  });
+  document.getElementById("detalle-cerrar").addEventListener("click", function () { ventana.close(); });
+  // Clic fuera de la ventana también la cierra
+  ventana.addEventListener("click", function (e) { if (e.target === ventana) ventana.close(); });
+}
+
 /* ---------- Aparición suave al hacer scroll ---------- */
 function activarAparicion() {
   const elementos = document.querySelectorAll("[data-aparece]");
@@ -224,4 +289,5 @@ document.documentElement.classList.add("js");
 rellenarDatos();
 activarMenu();
 activarFormulario();
+activarPrendas();
 activarAparicion();

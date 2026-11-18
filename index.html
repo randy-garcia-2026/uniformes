@@ -66,7 +66,7 @@
       <nav class="menu" id="menu" aria-label="Menú principal">
         <ul class="menu__lista">
           <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#rubros">Para quién trabajamos</a></li>
+          <li><a href="#rubros">Prendas</a></li>
           <li><a href="#cotizar">Cotizar</a></li>
         </ul>
         <a class="boton boton--chico" href="#cotizar" data-enlace="whatsapp">Cotizar por WhatsApp</a>
@@ -143,92 +143,116 @@
       </div>
     </section>
 
-    <!-- 3. PARA QUIÉN TRABAJAMOS: lista editorial (no tarjetas). Ilustraciones de 600 px mostradas a 84 px (celular) y 112 px (computadora). -->
+    <!-- 3. PRENDAS PARA CADA RUBRO: cuadrícula compacta. Al pasar el cursor se ve el nombre; al hacer clic se abre una ventana en la misma página.
+         Para agregar una prenda: copiar un <li>, cambiar nombre, imagen (img/) y rubros (separados por |). -->
     <section class="seccion rubros" id="rubros" aria-labelledby="titulo-rubros">
       <div class="contenedor">
         <header class="seccion__encabezado">
-          <h2 id="titulo-rubros">Para quién trabajamos</h2>
-          <p>Trabajamos con empresas y con particulares. Estos son los rubros que atendemos.</p>
+          <h2 id="titulo-rubros">Prendas para cada rubro</h2>
+          <p>Trabajamos con empresas y con particulares. Elige tu rubro o toca una prenda para ver más.</p>
         </header>
 
-        <ul class="rubros__lista">
-          <li class="rubro" data-aparece>
-            <h3 class="rubro__nombre">Restaurante y cocina</h3>
-            <div class="rubro__detalle">
-              <p>Uniforme de restaurante, filipina de cocina y pantalón.</p>
-              <ul class="prendas">
-                <li><img src="img/uniforme-restaurante.svg" width="112" height="112" loading="lazy" alt="Uniforme de restaurante"></li>
-                <li><img src="img/filipina-cocina.svg" width="112" height="112" loading="lazy" alt="Filipina de cocina"></li>
-                <li><img src="img/pantalon.svg" width="112" height="112" loading="lazy" alt="Pantalón"></li>
-              </ul>
-            </div>
+        <div class="filtros" role="group" aria-label="Filtrar prendas por rubro">
+          <button class="filtro" type="button" aria-pressed="true" data-rubro="">Todos</button>
+            <button class="filtro" type="button" aria-pressed="false" data-rubro="Restaurante y cocina">Restaurante y cocina</button>
+            <button class="filtro" type="button" aria-pressed="false" data-rubro="Salud y belleza">Salud y belleza</button>
+            <button class="filtro" type="button" aria-pressed="false" data-rubro="Educación">Educación</button>
+            <button class="filtro" type="button" aria-pressed="false" data-rubro="Industrial">Industrial</button>
+            <button class="filtro" type="button" aria-pressed="false" data-rubro="Seguridad">Seguridad</button>
+            <button class="filtro" type="button" aria-pressed="false" data-rubro="Oficinas y comercio">Oficinas y comercio</button>
+            <button class="filtro" type="button" aria-pressed="false" data-rubro="Universidades y facultades">Universidades y facultades</button>
+        </div>
+        <p class="filtros__estado" id="filtros-estado" role="status">Mostrando las 14 prendas.</p>
+
+        <ul class="prendas-rejilla" id="prendas-rejilla">
+          <li data-rubros="Restaurante y cocina">
+            <button class="prenda" type="button" data-nombre="Uniforme de restaurante" data-img="img/uniforme-restaurante.svg" data-rubros="Restaurante y cocina">
+              <img src="img/uniforme-restaurante.svg" width="150" height="150" loading="lazy" alt="Uniforme de restaurante">
+              <span class="prenda__nombre" aria-hidden="true">Uniforme de restaurante</span>
+            </button>
           </li>
-          <li class="rubro" data-aparece>
-            <h3 class="rubro__nombre">Salud y belleza</h3>
-            <div class="rubro__detalle">
-              <p>Uniforme clínico y pantalón.</p>
-              <ul class="prendas">
-                <li><img src="img/uniforme-clinico.svg" width="112" height="112" loading="lazy" alt="Uniforme clínico"></li>
-                <li><img src="img/pantalon.svg" width="112" height="112" loading="lazy" alt="Pantalón"></li>
-              </ul>
-            </div>
+          <li data-rubros="Restaurante y cocina">
+            <button class="prenda" type="button" data-nombre="Filipina de cocina" data-img="img/filipina-cocina.svg" data-rubros="Restaurante y cocina">
+              <img src="img/filipina-cocina.svg" width="150" height="150" loading="lazy" alt="Filipina de cocina">
+              <span class="prenda__nombre" aria-hidden="true">Filipina de cocina</span>
+            </button>
           </li>
-          <li class="rubro" data-aparece>
-            <h3 class="rubro__nombre">Educación</h3>
-            <div class="rubro__detalle">
-              <p>Uniforme escolar, polo y playera.</p>
-              <ul class="prendas">
-                <li><img src="img/uniforme-escolar.svg" width="112" height="112" loading="lazy" alt="Uniforme escolar"></li>
-                <li><img src="img/polo.svg" width="112" height="112" loading="lazy" alt="Polo"></li>
-                <li><img src="img/playera.svg" width="112" height="112" loading="lazy" alt="Playera"></li>
-              </ul>
-            </div>
+          <li data-rubros="Restaurante y cocina|Salud y belleza">
+            <button class="prenda" type="button" data-nombre="Pantalón" data-img="img/pantalon.svg" data-rubros="Restaurante y cocina|Salud y belleza">
+              <img src="img/pantalon.svg" width="150" height="150" loading="lazy" alt="Pantalón">
+              <span class="prenda__nombre" aria-hidden="true">Pantalón</span>
+            </button>
           </li>
-          <li class="rubro" data-aparece>
-            <h3 class="rubro__nombre">Industrial</h3>
-            <div class="rubro__detalle">
-              <p>Overol industrial, camisa de seguridad y chumpa con capucha.</p>
-              <ul class="prendas">
-                <li><img src="img/overol-industrial.svg" width="112" height="112" loading="lazy" alt="Overol industrial"></li>
-                <li><img src="img/camisa-seguridad.svg" width="112" height="112" loading="lazy" alt="Camisa de seguridad"></li>
-                <li><img src="img/chumpa-capucha.svg" width="112" height="112" loading="lazy" alt="Chumpa con capucha"></li>
-              </ul>
-            </div>
+          <li data-rubros="Salud y belleza">
+            <button class="prenda" type="button" data-nombre="Uniforme clínico" data-img="img/uniforme-clinico.svg" data-rubros="Salud y belleza">
+              <img src="img/uniforme-clinico.svg" width="150" height="150" loading="lazy" alt="Uniforme clínico">
+              <span class="prenda__nombre" aria-hidden="true">Uniforme clínico</span>
+            </button>
           </li>
-          <li class="rubro" data-aparece>
-            <h3 class="rubro__nombre">Seguridad</h3>
-            <div class="rubro__detalle">
-              <p>Uniforme de seguridad y camisa de seguridad.</p>
-              <ul class="prendas">
-                <li><img src="img/uniforme-seguridad.svg" width="112" height="112" loading="lazy" alt="Uniforme de seguridad"></li>
-                <li><img src="img/camisa-seguridad.svg" width="112" height="112" loading="lazy" alt="Camisa de seguridad"></li>
-              </ul>
-            </div>
+          <li data-rubros="Educación">
+            <button class="prenda" type="button" data-nombre="Uniforme escolar" data-img="img/uniforme-escolar.svg" data-rubros="Educación">
+              <img src="img/uniforme-escolar.svg" width="150" height="150" loading="lazy" alt="Uniforme escolar">
+              <span class="prenda__nombre" aria-hidden="true">Uniforme escolar</span>
+            </button>
           </li>
-          <li class="rubro" data-aparece>
-            <h3 class="rubro__nombre">Oficinas y comercio</h3>
-            <div class="rubro__detalle">
-              <p>Camisa formal de hombre, camisa formal de mujer y polo.</p>
-              <ul class="prendas">
-                <li><img src="img/camisa-formal-hombre.svg" width="112" height="112" loading="lazy" alt="Camisa formal de hombre"></li>
-                <li><img src="img/camisa-formal-mujer.svg" width="112" height="112" loading="lazy" alt="Camisa formal de mujer"></li>
-                <li><img src="img/polo.svg" width="112" height="112" loading="lazy" alt="Polo"></li>
-              </ul>
-            </div>
+          <li data-rubros="Educación|Oficinas y comercio">
+            <button class="prenda" type="button" data-nombre="Polo" data-img="img/polo.svg" data-rubros="Educación|Oficinas y comercio">
+              <img src="img/polo.svg" width="150" height="150" loading="lazy" alt="Polo">
+              <span class="prenda__nombre" aria-hidden="true">Polo</span>
+            </button>
           </li>
-          <li class="rubro" data-aparece>
-            <h3 class="rubro__nombre">Universidades y facultades</h3>
-            <div class="rubro__detalle">
-              <p>Camisa de manga larga con bordado institucional.</p>
-              <ul class="prendas">
-                <li><img src="img/camisa-universitaria.svg" width="112" height="112" loading="lazy" alt="Camisa universitaria de manga larga"></li>
-              </ul>
-            </div>
+          <li data-rubros="Educación">
+            <button class="prenda" type="button" data-nombre="Playera" data-img="img/playera.svg" data-rubros="Educación">
+              <img src="img/playera.svg" width="150" height="150" loading="lazy" alt="Playera">
+              <span class="prenda__nombre" aria-hidden="true">Playera</span>
+            </button>
+          </li>
+          <li data-rubros="Industrial">
+            <button class="prenda" type="button" data-nombre="Overol industrial" data-img="img/overol-industrial.svg" data-rubros="Industrial">
+              <img src="img/overol-industrial.svg" width="150" height="150" loading="lazy" alt="Overol industrial">
+              <span class="prenda__nombre" aria-hidden="true">Overol industrial</span>
+            </button>
+          </li>
+          <li data-rubros="Industrial|Seguridad">
+            <button class="prenda" type="button" data-nombre="Camisa de seguridad" data-img="img/camisa-seguridad.svg" data-rubros="Industrial|Seguridad">
+              <img src="img/camisa-seguridad.svg" width="150" height="150" loading="lazy" alt="Camisa de seguridad">
+              <span class="prenda__nombre" aria-hidden="true">Camisa de seguridad</span>
+            </button>
+          </li>
+          <li data-rubros="Industrial">
+            <button class="prenda" type="button" data-nombre="Chumpa con capucha" data-img="img/chumpa-capucha.svg" data-rubros="Industrial">
+              <img src="img/chumpa-capucha.svg" width="150" height="150" loading="lazy" alt="Chumpa con capucha">
+              <span class="prenda__nombre" aria-hidden="true">Chumpa con capucha</span>
+            </button>
+          </li>
+          <li data-rubros="Seguridad">
+            <button class="prenda" type="button" data-nombre="Uniforme de seguridad" data-img="img/uniforme-seguridad.svg" data-rubros="Seguridad">
+              <img src="img/uniforme-seguridad.svg" width="150" height="150" loading="lazy" alt="Uniforme de seguridad">
+              <span class="prenda__nombre" aria-hidden="true">Uniforme de seguridad</span>
+            </button>
+          </li>
+          <li data-rubros="Oficinas y comercio">
+            <button class="prenda" type="button" data-nombre="Camisa formal de hombre" data-img="img/camisa-formal-hombre.svg" data-rubros="Oficinas y comercio">
+              <img src="img/camisa-formal-hombre.svg" width="150" height="150" loading="lazy" alt="Camisa formal de hombre">
+              <span class="prenda__nombre" aria-hidden="true">Camisa formal de hombre</span>
+            </button>
+          </li>
+          <li data-rubros="Oficinas y comercio">
+            <button class="prenda" type="button" data-nombre="Camisa formal de mujer" data-img="img/camisa-formal-mujer.svg" data-rubros="Oficinas y comercio">
+              <img src="img/camisa-formal-mujer.svg" width="150" height="150" loading="lazy" alt="Camisa formal de mujer">
+              <span class="prenda__nombre" aria-hidden="true">Camisa formal de mujer</span>
+            </button>
+          </li>
+          <li data-rubros="Universidades y facultades">
+            <button class="prenda" type="button" data-nombre="Camisa universitaria" data-img="img/camisa-universitaria.svg" data-rubros="Universidades y facultades">
+              <img src="img/camisa-universitaria.svg" width="150" height="150" loading="lazy" alt="Camisa universitaria">
+              <span class="prenda__nombre" aria-hidden="true">Camisa universitaria</span>
+            </button>
           </li>
         </ul>
 
         <p class="nota">Prendas y rubros de ejemplo <small class="ejemplo">[EJEMPLO]</small>. Las ilustraciones son de ejemplo.</p>
-        <p class="rubros__cierre">¿No ves tu rubro? Escríbenos y te decimos si podemos hacerlo.</p>
+        <p class="rubros__cierre">¿No ves tu prenda o tu rubro? Escríbenos y te decimos si podemos hacerlo.</p>
       </div>
     </section>
 
@@ -433,6 +457,27 @@
       <svg class="icono" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg>
     </a>
   </aside>
+
+  <!-- VENTANA DE DETALLE DE PRENDA (se llena desde js/main.js) -->
+  <dialog class="detalle" id="detalle" aria-labelledby="detalle-titulo">
+    <div class="detalle__cuerpo">
+      <figure class="marco"><img id="detalle-img" src="" width="160" height="160" alt=""></figure>
+      <div>
+        <h3 id="detalle-titulo"></h3>
+        <dl class="detalle__datos">
+          <div><dt>Se hace para</dt><dd id="detalle-rubros"></dd></div>
+          <div><dt>Tallas</dt><dd><span id="detalle-tallas"></span> <small class="ejemplo">[EJEMPLO]</small></dd></div>
+          <div><dt>Colores</dt><dd><span id="detalle-colores"></span> <small class="ejemplo">[EJEMPLO]</small></dd></div>
+          <div><dt>Bordado</dt><dd>De nombre y de logo, según lo que necesites.</dd></div>
+        </dl>
+      </div>
+    </div>
+    <div class="detalle__acciones">
+      <a class="boton" id="detalle-whatsapp" href="#cotizar">Cotizar por WhatsApp</a>
+      <button class="boton boton--claro" type="button" id="detalle-formulario">Pedirla en el formulario</button>
+      <button class="boton boton--claro" type="button" id="detalle-cerrar">Cerrar</button>
+    </div>
+  </dialog>
 
   <script src="js/main.js"></script>
 </body>

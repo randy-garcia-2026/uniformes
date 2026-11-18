@@ -80,6 +80,8 @@ Entrada: "Trabajamos con empresas y con particulares. Estos son los rubros que a
 
 Nota pequeña: "Prendas y rubros de ejemplo [EJEMPLO]. Las ilustraciones son de ejemplo." Cierre: "¿No ves tu rubro? Escríbenos y te decimos si podemos hacerlo."
 
+**Cambio del dueño (18-nov-2026):** la sección 3 pasó de lista editorial a una cuadrícula compacta de las 14 prendas ("Prendas para cada rubro"), con filtro por rubro, nombre al pasar el cursor y una ventana en la misma página al hacer clic (tallas y colores [EJEMPLO]). El menú cambió a: Servicios · Prendas · Cotizar. Sigue siendo una sola página.
+
 ### 4. Cómo cotizar
 Tres pasos con número cosido con puntada, sin imagen:
 1. **Escríbenos**: cuéntanos por WhatsApp qué prendas necesitas y para quién son.
