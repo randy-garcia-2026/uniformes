@@ -90,11 +90,9 @@ Condiciones: pedido mínimo de 12 piezas por modelo; entrega de 10 a 15 días h�
 
 ### 5. Nuestra raíz
 Imagen: `bordado-detalle.svg`, con la línea de rombos arriba. Texto:
-> Eli nació en San Pedro, San Marcos, y de allí trae el amor por el trabajo bien hecho. Cada uniforme que sale del taller lleva ese orgullo: puntadas firmes, cuidado en los detalles y respeto por quien lo va a vestir cada día. [EJEMPLO]
->
-> En el taller hablas directamente con quien confecciona. [EJEMPLO]
+> En Uniformes Eli creemos en el trabajo bien hecho. Cada uniforme que sale del taller lleva ese cuidado: puntadas firmes, atención a los detalles y respeto por quien lo va a vestir cada día. [EJEMPLO]
 
-No se afirma nada histórico ni cultural sobre San Pedro. [PENDIENTE] Eli debe confirmar el municipio y cómo quiere contar su historia.
+Decisión del dueño (18-nov-2026): no se menciona el lugar de nacimiento de Eli ni otros datos personales en el sitio. Tampoco se usa la frase sobre hablar con quien confecciona.
 
 ### 6. Cotizar
 Dos columnas (se apilan en celular). Entrada: "Cuéntanos qué necesitas y te respondemos con una cotización clara."
@@ -160,7 +158,6 @@ Las imágenes son ilustraciones de ejemplo.
 - Cotización clara: sabes qué incluye antes de pagar.
 - Buena costura: costuras reforzadas y bordado revisado pieza por pieza.
 - Fecha de entrega acordada por escrito.
-- Taller propio: se habla directamente con quien confecciona.
 - Atención a empresas y a particulares.
 
 ### Testimonios (empresas ficticias) [EJEMPLO]
