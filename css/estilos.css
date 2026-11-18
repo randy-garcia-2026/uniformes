@@ -1,376 +1,389 @@
 /* Estilos de Uniformes Eli
-   Dirección: limpio y sobrio, un solo azul, la línea de puntadas como hilo conductor. */
+   Diseño "Hilo y marfil": fondo marfil liso, sin degradados y sin sombras.
+   Pensado primero para celular; las reglas @media (min-width) lo adaptan a computadora. */
 
-/* ---------- Colores y medidas ---------- */
+/* ==========================================================
+   COLORES Y LETRAS: cambiar aquí y se actualiza toda la página
+   ========================================================== */
 :root {
-  /* Colores tomados de la ilustración de San Pedro */
-  --tela: #FBF6EA;        /* fondo: marfil liso */
-  --texto: #2A1F17;       /* textos y títulos: café muy oscuro */
-  --acento: #2E5E34;      /* botones y enlaces: verde de las montañas */
-  --acento-oscuro: #1F4425; /* el botón se oscurece al pasar el cursor */
-  --teja: #B5532F;        /* color de los techos: puntadas y detalles */
-  --tierra: #5A4636;      /* textos secundarios */
-  --linea: #D9CBB0;       /* líneas finas de 1 píxel */
-  --hilo: #FFFFFF;        /* recuadros y formulario */
-  --ancho: 75rem;
-  --espacio: clamp(1.25rem, 4vw, 2.5rem);
+  /* Colores */
+  --marfil: #FBF6EA;        /* fondo de la página */
+  --cafe: #2A1F17;          /* texto principal */
+  --cafe-suave: #5E4B3C;    /* texto secundario y marcas [EJEMPLO] */
+  --verde: #2E5E34;         /* botones */
+  --verde-oscuro: #214726;  /* botones al pasar el cursor */
+  --teja: #B5532F;          /* puntadas y detalles (no para texto chico) */
+  --blanco: #FFFFFF;        /* recuadros */
+  --linea: #D8CCB4;         /* líneas finas */
+
+  /* Letras */
+  --letra-titulo: "Fraunces", Georgia, "Times New Roman", serif;
+  --letra-texto: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Medidas */
+  --margen: 16px;           /* espacio a los lados en celular */
+  --ancho: 1120px;          /* ancho máximo del contenido */
+  --alto-cabecera: 64px;
 }
 
 /* ---------- Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--alto-cabecera) + 8px);
+  -webkit-text-size-adjust: 100%;
+}
 
 body {
   margin: 0;
-  background-color: var(--tela);
-  color: var(--texto);
-  font-family: "Inter", system-ui, sans-serif;
-  font-size: 1.125rem;
+  background: var(--marfil);
+  color: var(--cafe);
+  font-family: var(--letra-texto);
+  font-size: 1rem;
   line-height: 1.6;
+  padding-bottom: 56px; /* espacio para la barra de contacto en celular */
 }
 
-h1, h2, h3 {
-  font-family: "Fraunces", Georgia, serif;
-  font-weight: 700;
-  line-height: 1.15;
-  margin: 0 0 1rem;
-}
-h1 { font-size: clamp(2.4rem, 7vw, 5rem); line-height: 1.05; letter-spacing: -0.01em; max-width: 16em; }
-h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
-h3 { font-size: 1.4rem; }
+img { max-width: 100%; height: auto; display: block; }
+h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; }
 
-p { margin: 0 0 1rem; max-width: 60ch; }
+/* Enfoque visible para quien navega con teclado */
+:focus-visible { outline: 3px solid var(--verde); outline-offset: 3px; }
 
-a { color: var(--acento); }
+.saltar {
+  position: absolute; left: var(--margen); top: -100px; z-index: 100;
+  background: var(--blanco); border: 1px solid var(--cafe); padding: 8px 14px;
+}
+.saltar:focus { top: 8px; }
 
-:focus-visible {
-  outline: 3px solid var(--acento);
-  outline-offset: 3px;
-}
-
-/* ---------- Línea de puntadas (el detalle memorable) ---------- */
-.puntadas {
-  border: 0;
-  border-top: 3px dashed var(--teja);
-  max-width: var(--ancho);
-  margin: 0 auto;
-  width: calc(100% - 2 * var(--espacio));
-}
-
-/* ---------- Cabecera y menú ---------- */
-.cabecera {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem 2rem;
-  padding: 0.9rem var(--espacio);
-  background: var(--tela);
-  border-bottom: 1px solid transparent;
-}
-/* La línea fina aparece solo cuando se baja la página */
-.cabecera.con-linea { border-bottom-color: var(--linea); }
-.marca {
-  font-family: "Fraunces", Georgia, serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: var(--texto);
-  text-decoration: none;
-}
-.cabecera ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem 1.75rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.cabecera nav a {
-  color: var(--texto);
-  text-decoration: none;
+/* Marcas [EJEMPLO]: pequeñas y discretas, para no competir con los títulos */
+.ejemplo {
+  font-family: var(--letra-texto);
+  font-size: 0.68rem;
   font-weight: 500;
-  padding: 0.25rem 0;
-  border-bottom: 2px solid transparent;
+  letter-spacing: 0.02em;
+  color: var(--cafe-suave);
+  white-space: nowrap;
+  vertical-align: baseline;
 }
-.cabecera nav a:hover { border-bottom-color: var(--teja); }
 
-/* ---------- Secciones ---------- */
-main > section {
-  max-width: var(--ancho);
-  margin: 0 auto;
-  padding: clamp(3rem, 8vw, 5rem) var(--espacio);
+.contenedor { width: 100%; max-width: var(--ancho); margin: 0 auto; padding-inline: var(--margen); }
+
+/* ---------- Títulos ---------- */
+h1, h2, h3 { font-family: var(--letra-titulo); font-weight: 700; line-height: 1.1; }
+
+h1 {
+  font-size: clamp(1.7rem, 1.1rem + 3.2vw, 3.4rem);
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+  word-spacing: 0.16em;   /* evita que las palabras se vean pegadas */
+  overflow-wrap: break-word;
 }
+
+h2 {
+  font-size: clamp(2rem, 1.3rem + 3.6vw, 3.6rem);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  word-spacing: 0.16em;
+}
+
+h3 { font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.7rem); line-height: 1.2; }
 
 /* ---------- Botones ---------- */
 .boton {
   display: inline-block;
-  padding: 0.85rem 1.6rem;
-  background: var(--acento);
-  color: var(--hilo);
-  font: 500 1.05rem "Inter", system-ui, sans-serif;
-  text-decoration: none;
-  border: 2px solid var(--acento);
-  border-radius: 6px;
-  cursor: pointer;
-}
-.boton:hover { background: var(--acento-oscuro); border-color: var(--acento-oscuro); }
-.boton--claro {
-  background: transparent;
-  color: var(--acento);
-}
-.boton--claro:hover { color: var(--hilo); }
-
-/* ---------- Avisos de datos de ejemplo ---------- */
-.aviso-ejemplo {
-  font-size: 0.95rem;
-  color: var(--tierra);
-  font-style: italic;
-}
-
-/* ---------- Inicio: la ilustración ocupa todo el ancho ---------- */
-main > section.inicio {
-  position: relative;
-  max-width: none;
-  display: flex;
-  align-items: center;
-  min-height: min(80vh, 46rem);
-  padding: clamp(2.5rem, 8vw, 5rem) var(--espacio);
-  overflow: hidden;
-}
-.inicio__fondo {
-  position: absolute;
-  inset: 0;
-  background: url("../img/san-pedro.jpg") center / cover no-repeat;
-}
-/* Capa marfil semitransparente y lisa (sin degradado) sobre la ilustración */
-.inicio__fondo::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(251, 246, 234, 0.25);
-}
-.inicio__texto {
-  position: relative;
-  width: min(100%, 40rem);
-  margin-left: max(0px, calc((100% - var(--ancho)) / 2));
-  padding: clamp(1.5rem, 4vw, 2.5rem);
-  background: rgba(255, 252, 243, 0.93);
-  border: 1px solid var(--linea);
-  border-radius: 10px;
-  box-shadow: 0 6px 0 rgba(181, 83, 47, 0.35);
-}
-.inicio__texto h1 { font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.1; }
-.inicio__apoyo { font-size: 1.2rem; }
-
-/* ---------- Lo que hacemos ---------- */
-.prendas {
-  list-style: none;
-  margin: 2rem 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  max-width: 58rem;
-}
-/* Cada prenda: recuadro blanco, dibujo grande a la izquierda y nombre al lado */
-.prendas li {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  padding: 0.5rem 1.25rem 0.5rem 0.5rem;
-  background: var(--hilo);
-  border: 1px solid var(--linea);
-  border-radius: 10px;
-  font-family: "Fraunces", Georgia, serif;
+  background: var(--verde);
+  color: var(--blanco);
+  font-family: var(--letra-texto);
   font-weight: 600;
-  font-size: 1.35rem;
+  font-size: 1rem;
   line-height: 1.2;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 24px;
+  border: 2px solid var(--verde);
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
-.prendas img {
-  flex: none;
-  display: block;
-  width: 7.5rem;
-  height: 7.5rem;
-}
+.boton:hover { background: var(--verde-oscuro); border-color: var(--verde-oscuro); }
+.boton--chico { padding: 10px 18px; font-size: 0.95rem; }
+.boton--completo { width: 100%; }
 
-/* Recuadro que imita un parche bordado a punto de cruz.
-   El borde es una hilera de crucecitas dibujadas con código (no es imagen ni degradado). */
-.parche {
-  position: relative;
-  max-width: 40rem;
-  padding: 2.25rem 2.5rem;
-  background: var(--hilo);
-  border-radius: 10px;
+/* ---------- Barra superior ---------- */
+.cabecera {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--marfil);
+  border-bottom: 1px solid var(--linea);
 }
-.parche::before {
-  content: "";
-  position: absolute;
-  inset: 8px;
-  border: 12px solid transparent;
-  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36' fill='none' stroke='%23B5532F' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M3 3L9 9M9 3L3 9M15 3L21 9M21 3L15 9M27 3L33 9M33 3L27 9M3 15L9 21M9 15L3 21M27 15L33 21M33 15L27 21M3 27L9 33M9 27L3 33M15 27L21 33M21 27L15 33M27 27L33 33M33 27L27 33'/%3E%3C/svg%3E") 12 round;
-  pointer-events: none;
-}
-.parche {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-.parche__imagen {
-  position: relative;
-  flex: none;
-  width: 96px;
-  height: 96px;
-}
-.parche h3 { margin-bottom: 0.5rem; }
-.parche p { margin: 0; }
-
-/* ---------- Servicios, rubros y condiciones ---------- */
-.subtitulo { margin-top: 3rem; }
-.servicios {
-  list-style: none;
-  margin: 0 0 1rem;
-  padding: 0;
-  max-width: 48rem;
-}
-.servicios li {
-  padding: 0.9rem 0 0.9rem 1.25rem;
-  border-left: 3px solid var(--teja);
-  margin-bottom: 0.75rem;
-}
-.rubros {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+.cabecera__fila {
+  max-width: 1376px; margin: 0 auto;
+  min-height: var(--alto-cabecera);
+  padding-inline: var(--margen);
+  display: flex; align-items: center; justify-content: space-between;
   flex-wrap: wrap;
-  gap: 0.6rem;
 }
-.rubros li {
-  padding: 0.4rem 1rem;
-  background: var(--hilo);
-  border: 1px solid var(--linea);
-  border-radius: 999px;
-  font-weight: 500;
-}
-.condiciones { margin: 0; max-width: 48rem; }
-.condiciones div {
-  display: grid;
-  gap: 0.25rem 1.5rem;
-  padding: 0.9rem 0;
-  border-bottom: 1px dashed var(--teja);
-}
-.condiciones dt { font-weight: 700; }
-.condiciones dd { margin: 0; }
+.marca { display: block; line-height: 0; flex-shrink: 0; } /* la marca queda en una sola línea */
+.marca img { width: 168px; height: auto; }
 
-/* ---------- Por qué elegirnos ---------- */
-.porque__experiencia {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 1.6rem;
-  font-weight: 600;
+/* Botón de tres rayas */
+.menu-boton {
+  width: 44px; height: 44px; padding: 0;
+  background: transparent; border: 1px solid var(--cafe); border-radius: 0;
+  cursor: pointer; display: grid; place-items: center;
 }
-.diferenciadores { padding-left: 1.25rem; max-width: 48rem; }
-.diferenciadores li { margin-bottom: 0.4rem; }
-.testimonios { display: grid; gap: 1.25rem; margin: 1.5rem 0 1rem; }
-.testimonio {
-  margin: 0;
-  padding: 1.5rem;
-  background: var(--hilo);
-  border: 1px solid var(--linea);
-  border-radius: 10px;
+.menu-boton__rayas,
+.menu-boton__rayas::before,
+.menu-boton__rayas::after {
+  content: ""; display: block; width: 20px; height: 2px; background: var(--cafe);
 }
-.testimonio p { margin-bottom: 0.75rem; }
-.testimonio footer { font-weight: 600; color: var(--tierra); }
-.testimonio--grande p {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 1.5rem;
-  line-height: 1.3;
+.menu-boton__rayas { position: relative; }
+.menu-boton__rayas::before { position: absolute; top: -7px; }
+.menu-boton__rayas::after { position: absolute; top: 7px; }
+
+/* Menú en celular: se despliega debajo de la barra */
+.menu { flex-basis: 100%; padding-block: 8px 20px; }
+.js .menu { display: none; }
+.js .menu.abierto { display: block; }
+.menu__lista { display: grid; margin-bottom: 16px; }
+.menu__lista a {
+  display: block; padding: 14px 0; text-decoration: none; font-weight: 500;
+  border-bottom: 1px solid var(--linea);
+}
+.menu .boton { display: block; }
+
+/* ---------- Portada ---------- */
+.portada { max-width: 1376px; margin: 0 auto; padding-inline: var(--margen); padding-top: 16px; }
+.portada__imagen { position: relative; border: 1px solid var(--linea); background: var(--blanco); }
+.portada__imagen img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+/* Capa marfil lisa (un solo color, sin degradado) */
+.portada__imagen::after {
+  content: ""; position: absolute; inset: 0; background: rgba(251, 246, 234, 0.6);
 }
 
-/* ---------- Raíz del dueño ---------- */
-.raiz__texto {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 1.4rem;
-  line-height: 1.5;
-  max-width: 40rem;
+.portada__caja {
+  position: relative;
+  background: var(--blanco);
+  border: 1px solid var(--linea);
+  margin: -48px 8px 0;
+  padding: 24px 20px 28px;
 }
+.portada__apoyo { margin-top: 16px; max-width: 46ch; color: var(--cafe-suave); }
+.portada__acciones { margin-top: 24px; display: grid; gap: 14px; justify-items: start; }
+.enlace-tel { font-weight: 500; text-underline-offset: 4px; text-decoration-color: var(--teja); text-decoration-thickness: 2px; }
+.enlace-tel:hover { text-decoration-color: var(--cafe); }
+.portada__dato { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--linea); font-size: 0.9rem; color: var(--cafe-suave); }
+
+/* ---------- Secciones ---------- */
+.seccion { padding-block: 72px; }
+.seccion__encabezado { margin-bottom: 40px; }
+.seccion__encabezado p { margin-top: 14px; max-width: 48ch; color: var(--cafe-suave); }
+.nota { margin-top: 24px; font-size: 0.9rem; color: var(--cafe-suave); }
+
+/* Marco blanco con borde fino y esquinas rectas para las ilustraciones */
+.marco { background: var(--blanco); border: 1px solid var(--linea); padding: 10px; line-height: 0; }
+
+/* ---------- Servicios: filas que alternan de lado ---------- */
+.servicios__lista { display: grid; }
+.servicio {
+  display: grid; grid-template-columns: 96px 1fr; gap: 20px; align-items: start;
+  padding-block: 24px; border-top: 1px solid var(--linea);
+}
+.servicio:last-child { border-bottom: 1px solid var(--linea); }
+.servicio .marco img { width: 100%; height: auto; }
+.servicio__texto p { margin-top: 8px; max-width: 52ch; color: var(--cafe-suave); }
+
+/* ---------- Rubros: lista editorial ---------- */
+.rubros__lista { border-bottom: 1px solid var(--linea); }
+.rubro { padding-block: 24px; border-top: 1px solid var(--linea); display: grid; gap: 14px; }
+.rubro__nombre {
+  font-size: clamp(1.6rem, 1.1rem + 2.6vw, 2.8rem);
+  font-weight: 600; line-height: 1.05; overflow-wrap: break-word;
+}
+.rubro__detalle p { color: var(--cafe-suave); max-width: 44ch; }
+.prendas { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.prendas li { background: var(--blanco); border: 1px solid var(--linea); padding: 4px; line-height: 0; }
+.prendas img { width: 64px; height: 64px; }
+.rubros__cierre { margin-top: 32px; font-family: var(--letra-titulo); font-size: 1.35rem; font-weight: 600; max-width: 28ch; line-height: 1.25; }
+
+/* ---------- Cómo cotizar ---------- */
+.pasos { background: var(--blanco); border-block: 1px solid var(--linea); }
+.pasos__lista { display: grid; gap: 28px; }
+.paso { display: grid; grid-template-columns: 52px 1fr; gap: 16px; align-items: start; }
+.paso__numero {
+  font-family: var(--letra-titulo); font-weight: 700; font-size: 2.4rem; line-height: 1;
+  text-align: center; padding-bottom: 8px;
+  /* número "cosido": puntadas debajo */
+  border-bottom: 3px dashed var(--teja);
+}
+.paso p { margin-top: 6px; max-width: 50ch; color: var(--cafe-suave); }
+
+.condiciones { display: grid; gap: 28px; margin-block: 48px 8px; }
+.condicion { display: flex; flex-direction: column-reverse; gap: 6px; }
+.condicion dt { max-width: 34ch; font-size: 0.92rem; color: var(--cafe-suave); }
+.cifra { font-family: var(--letra-titulo); font-weight: 700; font-size: clamp(3.4rem, 2rem + 7vw, 6.4rem); line-height: 1; letter-spacing: -0.01em; }
+.pasos .boton { margin-top: 32px; }
+
+/* ---------- Línea de tejido: rombos unidos por una puntada, de un solo color ----------
+   El color sale de --teja (arriba). Es un dibujo propio, no copia ningún traje típico. */
+.tejido {
+  height: 16px;
+  max-width: var(--ancho);
+  margin-inline: auto;
+  width: calc(100% - 2 * var(--margen));
+  background-color: var(--teja);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='16' viewBox='0 0 36 16'%3E%3Cpath d='M18 2 L25 8 L18 14 L11 8 Z' fill='none' stroke='black' stroke-width='1.6'/%3E%3Cpath d='M0 8 H8 M28 8 H36' stroke='black' stroke-width='1.6' stroke-dasharray='3 3'/%3E%3C/svg%3E") repeat-x center / 36px 16px;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='16' viewBox='0 0 36 16'%3E%3Cpath d='M18 2 L25 8 L18 14 L11 8 Z' fill='none' stroke='black' stroke-width='1.6'/%3E%3Cpath d='M0 8 H8 M28 8 H36' stroke='black' stroke-width='1.6' stroke-dasharray='3 3'/%3E%3C/svg%3E") repeat-x center / 36px 16px;
+}
+
+/* ---------- Nuestra raíz ---------- */
+.raiz__rejilla { display: grid; gap: 32px; }
+.marco--grande { justify-self: start; width: 200px; }
+.marco--grande img { width: 100%; height: auto; }
+.raiz__texto h2 { margin-bottom: 24px; }
+.raiz__texto p + p { margin-top: 16px; color: var(--cafe-suave); }
+.raiz__cita { font-family: var(--letra-titulo); font-size: clamp(1.25rem, 1.05rem + 1vw, 1.65rem); line-height: 1.45; max-width: 36ch; }
 
 /* ---------- Cotizar ---------- */
-.cotizar__cuerpo {
-  display: grid;
-  gap: 2.5rem;
-  margin-top: 2rem;
-}
-.formulario {
-  background: var(--hilo);
-  padding: 1.75rem;
-  border: 1px solid var(--linea);
-  border-radius: 10px;
-}
-.formulario label {
-  display: block;
-  font-weight: 700;
-  margin: 1rem 0 0.35rem;
-}
-.formulario label:first-child { margin-top: 0; }
-.formulario input,
-.formulario select {
-  width: 100%;
-  padding: 0.7rem 0.8rem;
-  font: inherit;
-  color: var(--texto);
-  background: #FFFFFF;
-  border: 1px solid var(--tierra);
-  border-radius: 6px;
-}
-.formulario .boton { margin-top: 1.5rem; }
-.formulario__nota { font-size: 0.95rem; color: var(--tierra); margin: 0.75rem 0 0; }
-.formulario__error { color: var(--texto); font-weight: 700; margin: 1rem 0 0; padding-left: 0.75rem; border-left: 3px solid var(--teja); }
+.cotizar__rejilla { display: grid; gap: 48px; }
+.cotizar__entrada { margin-top: 14px; max-width: 40ch; color: var(--cafe-suave); }
+.contacto { margin-top: 32px; display: grid; gap: 12px; }
+.contacto__rotulo { display: block; font-size: 0.85rem; color: var(--cafe-suave); }
+.contacto a { font-family: var(--letra-titulo); font-weight: 600; font-size: 1.5rem; text-decoration-color: var(--teja); text-underline-offset: 4px; text-decoration-thickness: 2px; }
+.cotizar__subtitulo { margin-top: 32px; font-size: 1.2rem; }
 
-.contacto__dato { font-size: 1.25rem; margin-top: 1.25rem; }
-.contacto__subtitulo { margin-top: 2rem; }
+.horario { margin-top: 8px; display: grid; gap: 4px; }
+.horario div { display: flex; justify-content: space-between; gap: 16px; max-width: 320px; border-bottom: 1px solid var(--linea); padding-block: 4px; }
+.horario dt { color: var(--cafe-suave); }
+.horario dd { font-weight: 500; }
 
-/* Recuadro del mapa */
-.mapa {
-  display: block;
-  width: 100%;
-  height: 18rem;
-  border: 1px solid var(--linea);
-  border-radius: 10px;
-  background: var(--hilo);
+.mapa { margin-top: 32px; border: 1px solid var(--linea); background: var(--blanco); }
+.mapa iframe { display: block; width: 100%; height: 260px; border: 0; }
+
+/* Formulario */
+.formulario { background: var(--blanco); border: 1px solid var(--linea); padding: 24px 20px 28px; }
+.formulario__ayuda { margin: 8px 0 20px; font-size: 0.9rem; color: var(--cafe-suave); }
+.campo { margin-bottom: 18px; border: 0; padding: 0; min-width: 0; }
+.campo label, .campo legend { display: block; font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; padding: 0; }
+.campo input[type="text"], .campo input[type="number"], .campo select, .campo textarea {
+  width: 100%; font: inherit; color: var(--cafe); background: var(--marfil);
+  border: 1px solid var(--cafe-suave); border-radius: 0; padding: 12px; min-height: 48px;
 }
+.campo textarea { resize: vertical; }
+.campo ::placeholder { color: #75675A; opacity: 1; }
+.campo [aria-invalid="true"] { border-color: #A12B1B; border-width: 2px; }
+.campo .opcion { display: flex; align-items: center; gap: 10px; font-weight: 400; min-height: 44px; margin: 0; cursor: pointer; }
+.campo .opcion input { width: 20px; height: 20px; accent-color: var(--verde); margin: 0; }
+.error { margin-top: 6px; font-size: 0.88rem; font-weight: 500; color: #A12B1B; }
+.formulario__nota { margin-top: 14px; font-size: 0.9rem; color: var(--cafe-suave); }
 
 /* ---------- Pie ---------- */
-.pie {
-  padding: 1.5rem var(--espacio);
-  border-top: 1px solid var(--linea);
-  text-align: center;
-}
-.pie p { margin: 0 auto; }
+.pie { padding-block: 40px 32px; }
+.pie__rejilla { display: grid; gap: 32px; }
+.pie__rejilla p { margin-top: 8px; max-width: 34ch; }
+.pie__chico { font-size: 0.85rem; color: var(--cafe-suave); }
+.pie__titulo { font-size: 1.2rem; text-transform: none; letter-spacing: 0; word-spacing: 0; margin-bottom: 4px; }
+.pie__final { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--linea); font-size: 0.85rem; color: var(--cafe-suave); }
 
-/* ---------- Pantallas anchas ---------- */
-@media (min-width: 52rem) {
-  .prendas { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
-  .prendas img { width: 9rem; height: 9rem; }
-  .cotizar__cuerpo { grid-template-columns: 1.2fr 1fr; align-items: start; }
-  .condiciones div { grid-template-columns: 12rem 1fr; }
-  /* Un testimonio grande y dos más pequeños a su lado (no tres iguales) */
-  .testimonios { grid-template-columns: 1.4fr 1fr; }
-  .testimonio--grande { grid-row: span 2; }
+/* ---------- Barra de contacto fija ---------- */
+.icono { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+/* Celular: abajo, solo WhatsApp y teléfono */
+.barra-contacto {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+  display: flex; background: var(--blanco); border-top: 1px solid var(--cafe);
+}
+.barra-contacto__enlace {
+  flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 48px; text-decoration: none; font-weight: 600; font-size: 0.95rem; color: var(--cafe);
+}
+.barra-contacto__enlace + .barra-contacto__enlace { border-left: 1px solid var(--linea); }
+.barra-contacto__enlace--red { display: none; }
+.barra-contacto__enlace:hover { background: var(--marfil); }
+.barra-contacto__enlace[aria-disabled="true"] { opacity: 0.45; cursor: not-allowed; }
+
+/* ---------- Aparición suave al hacer scroll (máximo 400 ms) ---------- */
+.con-aparicion [data-aparece] { opacity: 0; transform: translateY(10px); transition: opacity 0.4s ease-out, transform 0.4s ease-out; }
+.con-aparicion [data-aparece].visible { opacity: 1; transform: none; }
+
+/* ==========================================================
+   COMPUTADORA
+   ========================================================== */
+@media (min-width: 900px) {
+  :root { --margen: 32px; --alto-cabecera: 72px; }
+
+  body { padding-bottom: 0; }
+
+  /* Barra superior: marca, 3 enlaces y el botón al extremo derecho */
+  .menu-boton { display: none; }
+  .js .menu, .menu { display: flex; flex-basis: auto; flex: 1; align-items: center; justify-content: flex-end; gap: 36px; padding: 0; }
+  .menu__lista { display: flex; gap: 32px; margin: 0; margin-left: auto; }
+  .menu__lista a { padding: 8px 0; border: 0; font-size: 0.95rem; }
+  .menu__lista a:hover { text-decoration: underline; text-decoration-color: var(--teja); text-decoration-thickness: 2px; text-underline-offset: 6px; }
+  .menu .boton { display: inline-block; }
+
+  /* Portada: caja de texto sobre la ilustración */
+  .portada { padding-top: 32px; padding-right: 60px; position: relative; } /* 60px: deja libre el borde de la barra de contacto */
+  .portada__imagen img { aspect-ratio: 1376 / 768; }
+  .portada__caja {
+    position: absolute; left: calc(var(--margen) + 48px); top: calc(50% + 16px); transform: translateY(-50%);
+    width: min(560px, 52%); margin: 0; padding: 40px 40px 36px;
+  }
+  .portada__acciones { grid-auto-flow: column; justify-content: start; align-items: center; gap: 24px; }
+
+  .seccion { padding-block: 112px; }
+  .seccion__encabezado { margin-bottom: 64px; }
+
+  /* Servicios: filas desplazadas y con la ilustración alternando de lado */
+  .servicio { grid-template-columns: 160px 1fr; gap: 40px; align-items: center; padding-block: 32px; width: 82%; }
+  .servicio:nth-child(even) { grid-template-columns: 1fr 160px; margin-left: auto; text-align: right; }
+  .servicio:nth-child(even) .marco { order: 2; }
+  .servicio:nth-child(even) .servicio__texto p { margin-left: auto; }
+  .servicio:nth-child(3n) { width: 74%; }
+
+  /* Rubros: nombre a la izquierda, descripción e ilustraciones a la derecha */
+  .rubro { grid-template-columns: 5fr 4fr; gap: 48px; align-items: center; padding-block: 32px; }
+  .rubro__detalle { justify-self: start; }
+
+  /* Pasos escalonados */
+  .pasos__lista { grid-template-columns: repeat(3, 1fr); gap: 56px; align-items: start; }
+  .paso { grid-template-columns: 1fr; gap: 20px; }
+  .paso__numero { text-align: left; font-size: 3.4rem; width: 90px; }
+  .paso:nth-child(2) { margin-top: 48px; }
+  .paso:nth-child(3) { margin-top: 96px; }
+  .condiciones { grid-template-columns: auto auto; justify-content: start; gap: 96px; margin-top: 80px; }
+
+  /* Raíz: ilustración chica a la izquierda y texto desplazado */
+  .raiz__rejilla { grid-template-columns: 320px 1fr; gap: 96px; align-items: start; }
+  .marco--grande { width: 320px; }
+  .raiz__texto { padding-top: 48px; }
+
+  /* Cotizar: dos columnas */
+  .cotizar__rejilla { grid-template-columns: 5fr 6fr; gap: 80px; align-items: start; }
+  .formulario { padding: 40px; }
+
+  .pie__rejilla { grid-template-columns: 1.3fr 1fr 1fr; gap: 64px; }
+
+  /* Barra de contacto: discreta, al borde derecho */
+  .barra-contacto {
+    left: auto; right: 0; top: 50%; bottom: auto; transform: translateY(-50%);
+    width: 48px; flex-direction: column;
+    border: 1px solid var(--cafe); border-right: 0;
+  }
+  .barra-contacto__enlace { min-height: 48px; }
+  .barra-contacto__enlace span { /* en computadora solo ícono; el texto queda para lectores de pantalla */
+    position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+  }
+  .barra-contacto__enlace + .barra-contacto__enlace { border-left: 0; border-top: 1px solid var(--linea); }
+  .barra-contacto__enlace--red { display: flex; }
 }
 
-/* ---------- Celulares angostos ---------- */
-@media (max-width: 30rem) {
-  /* El parche bordado pasa a una sola columna para que el texto no quede apretado */
-  .parche { flex-direction: column; align-items: flex-start; padding: 2rem 1.75rem; }
-  .prendas img { width: 6rem; height: 6rem; }
-  .formulario { padding: 1.25rem; }
-}
-
-/* ---------- Respeto a quien pide menos movimiento ---------- */
+/* ---------- Si el usuario pide menos movimiento: sin animaciones ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+  .con-aparicion [data-aparece] { opacity: 1; transform: none; }
 }

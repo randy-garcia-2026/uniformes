@@ -1,19 +1,17 @@
 # Progreso: Uniformes Eli
 
 ## Hecho
-- Estructura del sitio: `index.html`, `css/estilos.css`, `js/main.js` e `img/`.
-- Reglas de trabajo en `CLAUDE.md` y brief de diseño en `BRIEF.md`.
+- Reglas de trabajo en `CLAUDE.md` y brief de diseño en `BRIEF.md` (dirección "Hilo y marfil", estructura y textos aprobados).
 - Git iniciado, con puntos de restauración.
-- Página real de una sola página: Inicio, Lo que hacemos y Cotizar (menú de 3 enlaces).
-- Formulario de cotización que abre WhatsApp con el pedido escrito.
-- Diseño aprobado: fondo con degradado de blanco a azul suave, texto y botones casi negros, letra Inter, línea de puntadas y recuadro de bordado a punto de cruz.
+- **Primera versión del sitio** (18-nov-2026): `index.html`, `css/estilos.css`, `js/main.js`, `img/logo.svg` provisional [EJEMPLO].
+  - 6 secciones: portada, servicios, para quién trabajamos, cómo cotizar, nuestra raíz y cotizar, más el pie.
+  - Barra de contacto fija (WhatsApp, teléfono, Facebook e Instagram en computadora; solo los dos primeros en celular).
+  - Formulario que valida y abre WhatsApp con el pedido escrito.
+  - Datos que se repiten (WhatsApp, teléfono, dirección, horario) se cambian en el bloque CONFIG de `js/main.js`.
+  - Datos estructurados LocalBusiness en el `<head>` con datos [EJEMPLO]: editarlos a mano antes de publicar.
 
-- Frase de inicio aprobada, y dirección (Zona 5, Villa Nueva) con mapa de Google Maps en Cotizar.
-- Ficha del negocio aprobada y aplicada en la página: servicios, rubros, pedido y entrega, por qué elegirnos, testimonios, raíz de Eli, horario y contacto (todo de ejemplo marcado [EJEMPLO]).
-- Escritura unificada a "Villa Nueva".
-
-## Siguiente
-- Completar el teléfono y el WhatsApp reales. Mientras tanto, van marcados como [EJEMPLO].
-- (Hecho) Escritura unificada a "Villa Nueva" en todo el sitio.
-- Agregar fotos propias en `img/` (el espacio de foto en Inicio está reservado).
-- Revisar la página en celular y pulir detalles.
+## Pendiente
+- [PENDIENTE] Enlaces de Facebook e Instagram (CONFIG en `js/main.js`) cuando existan las cuentas.
+- [PENDIENTE] Teléfono y WhatsApp reales; confirmar con Eli el municipio y cómo cuenta su historia.
+- [PENDIENTE] Decidir si se deja la barra lateral fija además de la barra superior.
+- Logo real, y revisión del dueño de la primera versión.

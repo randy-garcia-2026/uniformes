@@ -2,213 +2,432 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uniformes Eli</title>
-  <meta name="description" content="Confección y bordado de uniformes para empresas y particulares en Villa Nueva, Guatemala.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TÍTULO Y DESCRIPCIÓN PARA BUSCADORES: cambiar aquí si cambia el nombre o el servicio -->
+  <title>Uniformes Eli en Villa Nueva | Confección y bordado de uniformes</title>
+  <meta name="description" content="Uniformes Eli, taller de confección y bordado de uniformes en Villa Nueva, Guatemala. Uniformes para empresas y particulares, con nombre y logo bordados. Cotiza por WhatsApp.">
+  <meta name="theme-color" content="#FBF6EA">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+
+  <!-- Letras: Fraunces (títulos) e Inter (texto). Si no cargan, el sitio usa letras del sistema. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
+
+  <!--
+    ATENCIÓN [EJEMPLO]: estos datos estructurados usan los datos de PRÁCTICA de la ficha
+    (teléfono, horario). DEBEN CAMBIARSE por los reales ANTES DE PUBLICAR el sitio.
+    Este bloque no se rellena solo desde js/main.js: hay que editarlo a mano.
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Uniformes Eli",
+    "description": "Taller de confección y bordado de uniformes para empresas y particulares en Villa Nueva, Guatemala.",
+    "telephone": "+502 6666-0123",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Zona 5",
+      "addressLocality": "Villa Nueva",
+      "addressCountry": "GT"
+    },
+    "areaServed": "Villa Nueva, Guatemala",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00" }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <header class="cabecera">
-    <a class="marca" href="#inicio">Uniformes Eli</a>
-    <nav aria-label="Menú principal">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#que-hacemos">Lo que hacemos</a></li>
-        <li><a href="#cotizar">Cotizar</a></li>
-      </ul>
-    </nav>
+  <!-- Iconos (dibujos simples en línea; se reutilizan con <use>) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+    <symbol id="i-telefono" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  </svg>
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- BARRA SUPERIOR -->
+  <header class="cabecera" id="inicio">
+    <div class="cabecera__fila">
+      <a class="marca" href="#portada" aria-label="Uniformes Eli, ir al inicio">
+        <!-- LOGO PROVISIONAL [EJEMPLO]: reemplazar img/logo.svg por el logo real -->
+        <img src="img/logo.svg" width="168" height="39" alt="Uniformes Eli">
+      </a>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span class="menu-boton__rayas" aria-hidden="true"></span>
+      </button>
+      <nav class="menu" id="menu" aria-label="Menú principal">
+        <ul class="menu__lista">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#rubros">Para quién trabajamos</a></li>
+          <li><a href="#cotizar">Cotizar</a></li>
+        </ul>
+        <a class="boton boton--chico" href="#cotizar" data-enlace="whatsapp">Cotizar por WhatsApp</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main id="contenido">
 
-    <!-- INICIO -->
-    <section class="inicio" id="inicio">
-      <div class="inicio__fondo" role="img" aria-label="Ilustración de la plaza de San Pedro con la iglesia, las montañas y el volcán al fondo"></div>
-      <div class="inicio__texto">
-        <h1>Uniformes hechos a tu medida, con tu nombre y tu logo bordados</h1>
-        <p class="inicio__apoyo">Confeccionamos y bordamos uniformes en Villa Nueva, Guatemala. Para empresas y para particulares.</p>
-        <a class="boton" href="#cotizar">Pedir cotización</a>
+    <!-- 1. PORTADA: la imagen es la única que NO es lazy, porque se ve de inmediato -->
+    <section class="portada" id="portada" aria-labelledby="titulo-portada">
+      <div class="portada__imagen">
+        <!-- FOTO DE PORTADA: cambiar img/san-pedro.jpg (1376 x 768 px). Se muestra a su tamaño máximo, sin estirarse. -->
+        <img src="img/san-pedro.jpg" width="1376" height="768" alt="Ilustración de la plaza de San Pedro con la iglesia, las montañas y el volcán al fondo" fetchpriority="high">
+      </div>
+      <div class="portada__caja">
+        <h1 id="titulo-portada">Uniformes hechos a tu medida, con tu nombre y tu logo bordados</h1>
+        <p class="portada__apoyo">Taller de confección y bordado en Villa Nueva, Guatemala. Trabajamos con empresas y con particulares.</p>
+        <div class="portada__acciones">
+          <a class="boton" href="#cotizar" data-enlace="whatsapp">Cotizar por WhatsApp</a>
+          <a class="enlace-tel" href="#cotizar" data-enlace="telefono">O llámanos al <span data-dato="telefono"></span> <small class="ejemplo">[EJEMPLO]</small></a>
+        </div>
+        <p class="portada__dato">12 años cosiendo y bordando <small class="ejemplo">[EJEMPLO]</small><br>
+          Pedido mínimo: 12 piezas por modelo <small class="ejemplo">[EJEMPLO]</small></p>
       </div>
     </section>
 
-    <hr class="puntadas" aria-hidden="true">
+    <!-- 2. SERVICIOS -->
+    <section class="seccion servicios" id="servicios" aria-labelledby="titulo-servicios">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <h2 id="titulo-servicios">Lo que hacemos</h2>
+          <p>Cinco servicios, todos hechos en nuestro taller.</p>
+        </header>
 
-    <!-- LO QUE HACEMOS -->
-    <section class="hacemos" id="que-hacemos">
-      <h2>Lo que hacemos</h2>
-      <p class="hacemos__intro">Confeccionamos estas prendas a la medida de tu equipo.</p>
+        <!-- Las ilustraciones miden 600 x 600 px y aquí se muestran a 160 px (nítidas). Para cambiar una, editar el src. -->
+        <ol class="servicios__lista">
+          <li class="servicio" data-aparece>
+            <figure class="marco"><img src="img/uniforme-restaurante.svg" width="160" height="160" loading="lazy" alt="Ilustración de un uniforme de restaurante"></figure>
+            <div class="servicio__texto">
+              <h3>Confección de uniformes</h3>
+              <p>Camisas, pantalones, batas, delantales y chaquetas hechos a la medida del personal. <small class="ejemplo">[EJEMPLO]</small></p>
+            </div>
+          </li>
+          <li class="servicio" data-aparece>
+            <figure class="marco"><img src="img/bordado-detalle.svg" width="160" height="160" loading="lazy" alt="Ilustración de un detalle de bordado con hilo"></figure>
+            <div class="servicio__texto">
+              <h3>Bordado de logos y escudos</h3>
+              <p>Bordamos el logo o el escudo que nos entregue el cliente, con hilo firme y puntada pareja. <small class="ejemplo">[EJEMPLO]</small></p>
+            </div>
+          </li>
+          <li class="servicio" data-aparece>
+            <figure class="marco"><img src="img/camisa-universitaria.svg" width="160" height="160" loading="lazy" alt="Ilustración de una camisa de manga larga con bordado institucional"></figure>
+            <div class="servicio__texto">
+              <h3>Camisas para facultades y promociones</h3>
+              <p>Camisas de manga larga con bordado institucional para estudiantes e ingenieros.</p>
+            </div>
+          </li>
+          <li class="servicio" data-aparece>
+            <figure class="marco"><img src="img/polo.svg" width="160" height="160" loading="lazy" alt="Ilustración de una camiseta tipo polo"></figure>
+            <div class="servicio__texto">
+              <h3>Bordado de nombre y cargo</h3>
+              <p>El nombre de cada persona, bordado en su prenda. <small class="ejemplo">[EJEMPLO]</small></p>
+            </div>
+          </li>
+          <li class="servicio" data-aparece>
+            <figure class="marco"><img src="img/pantalon.svg" width="160" height="160" loading="lazy" alt="Ilustración de un pantalón de uniforme"></figure>
+            <div class="servicio__texto">
+              <h3>Ajustes y arreglos</h3>
+              <p>Ajuste de tallas y reparación de uniformes que ya tienes. <small class="ejemplo">[EJEMPLO]</small></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-      <ul class="prendas">
-        <li><img src="img/polo.svg" alt="" width="72" height="72" loading="lazy"><span>Camisa polo</span></li>
-        <li><img src="img/camisa-formal-hombre.svg" alt="" width="72" height="72" loading="lazy"><span>Camisa formal de hombre</span></li>
-        <li><img src="img/camisa-formal-mujer.svg" alt="" width="72" height="72" loading="lazy"><span>Blusa formal de mujer</span></li>
-        <li><img src="img/playera.svg" alt="" width="72" height="72" loading="lazy"><span>Playera</span></li>
-        <li><img src="img/camisa-seguridad.svg" alt="" width="72" height="72" loading="lazy"><span>Camisa de seguridad</span></li>
-        <li><img src="img/filipina-cocina.svg" alt="" width="72" height="72" loading="lazy"><span>Filipina de cocina</span></li>
-        <li><img src="img/uniforme-clinico.svg" alt="" width="72" height="72" loading="lazy"><span>Uniforme clínico</span></li>
-        <li><img src="img/chumpa-capucha.svg" alt="" width="72" height="72" loading="lazy"><span>Chumpa con capucha</span></li>
-        <li><img src="img/uniforme-seguridad.svg" alt="" width="72" height="72" loading="lazy"><span>Uniforme de seguridad</span></li>
-        <li><img src="img/pantalon.svg" alt="" width="72" height="72" loading="lazy"><span>Pantalón de vestir</span></li>
-        <li><img src="img/uniforme-escolar.svg" alt="" width="72" height="72" loading="lazy"><span>Uniforme escolar</span></li>
-        <li><img src="img/overol-industrial.svg" alt="" width="72" height="72" loading="lazy"><span>Overol industrial</span></li>
-        <li><img src="img/uniforme-restaurante.svg" alt="" width="72" height="72" loading="lazy"><span>Uniforme de restaurante</span></li>
-        <li><img src="img/camisa-universitaria.svg" alt="" width="72" height="72" loading="lazy"><span>Camisa para facultades y promociones</span></li>
-        <li><img src="img/articulos-promocionales.svg" alt="" width="72" height="72" loading="lazy"><span>Otros: gorras, tazas, bolsas y sombrillas</span></li>
-      </ul>
-      <p class="aviso-ejemplo">[EJEMPLO] Ilustraciones de muestra, no son fotos de prendas reales del taller.</p>
+    <!-- 3. PARA QUIÉN TRABAJAMOS: lista editorial (no tarjetas). Ilustraciones de 600 px mostradas a 64 px. -->
+    <section class="seccion rubros" id="rubros" aria-labelledby="titulo-rubros">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <h2 id="titulo-rubros">Para quién trabajamos</h2>
+          <p>Trabajamos con empresas y con particulares. Estos son los rubros que atendemos.</p>
+        </header>
 
-      <div class="parche">
-        <img class="parche__imagen" src="img/bordado-detalle.svg" alt="" width="120" height="120" loading="lazy">
-        <div>
-          <h3>Bordado de nombre y de logo</h3>
-          <p>Bordamos el nombre de cada persona y el logo de tu empresa en las prendas que elijas.</p>
+        <ul class="rubros__lista">
+          <li class="rubro" data-aparece>
+            <h3 class="rubro__nombre">Restaurante y cocina</h3>
+            <div class="rubro__detalle">
+              <p>Uniforme de restaurante, filipina de cocina y pantalón.</p>
+              <ul class="prendas">
+                <li><img src="img/uniforme-restaurante.svg" width="64" height="64" loading="lazy" alt="Uniforme de restaurante"></li>
+                <li><img src="img/filipina-cocina.svg" width="64" height="64" loading="lazy" alt="Filipina de cocina"></li>
+                <li><img src="img/pantalon.svg" width="64" height="64" loading="lazy" alt="Pantalón"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="rubro" data-aparece>
+            <h3 class="rubro__nombre">Salud y belleza</h3>
+            <div class="rubro__detalle">
+              <p>Uniforme clínico y pantalón.</p>
+              <ul class="prendas">
+                <li><img src="img/uniforme-clinico.svg" width="64" height="64" loading="lazy" alt="Uniforme clínico"></li>
+                <li><img src="img/pantalon.svg" width="64" height="64" loading="lazy" alt="Pantalón"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="rubro" data-aparece>
+            <h3 class="rubro__nombre">Educación</h3>
+            <div class="rubro__detalle">
+              <p>Uniforme escolar, polo y playera.</p>
+              <ul class="prendas">
+                <li><img src="img/uniforme-escolar.svg" width="64" height="64" loading="lazy" alt="Uniforme escolar"></li>
+                <li><img src="img/polo.svg" width="64" height="64" loading="lazy" alt="Polo"></li>
+                <li><img src="img/playera.svg" width="64" height="64" loading="lazy" alt="Playera"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="rubro" data-aparece>
+            <h3 class="rubro__nombre">Industrial</h3>
+            <div class="rubro__detalle">
+              <p>Overol industrial, camisa de seguridad y chumpa con capucha.</p>
+              <ul class="prendas">
+                <li><img src="img/overol-industrial.svg" width="64" height="64" loading="lazy" alt="Overol industrial"></li>
+                <li><img src="img/camisa-seguridad.svg" width="64" height="64" loading="lazy" alt="Camisa de seguridad"></li>
+                <li><img src="img/chumpa-capucha.svg" width="64" height="64" loading="lazy" alt="Chumpa con capucha"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="rubro" data-aparece>
+            <h3 class="rubro__nombre">Seguridad</h3>
+            <div class="rubro__detalle">
+              <p>Uniforme de seguridad y camisa de seguridad.</p>
+              <ul class="prendas">
+                <li><img src="img/uniforme-seguridad.svg" width="64" height="64" loading="lazy" alt="Uniforme de seguridad"></li>
+                <li><img src="img/camisa-seguridad.svg" width="64" height="64" loading="lazy" alt="Camisa de seguridad"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="rubro" data-aparece>
+            <h3 class="rubro__nombre">Oficinas y comercio</h3>
+            <div class="rubro__detalle">
+              <p>Camisa formal de hombre, camisa formal de mujer y polo.</p>
+              <ul class="prendas">
+                <li><img src="img/camisa-formal-hombre.svg" width="64" height="64" loading="lazy" alt="Camisa formal de hombre"></li>
+                <li><img src="img/camisa-formal-mujer.svg" width="64" height="64" loading="lazy" alt="Camisa formal de mujer"></li>
+                <li><img src="img/polo.svg" width="64" height="64" loading="lazy" alt="Polo"></li>
+              </ul>
+            </div>
+          </li>
+          <li class="rubro" data-aparece>
+            <h3 class="rubro__nombre">Universidades y facultades</h3>
+            <div class="rubro__detalle">
+              <p>Camisa de manga larga con bordado institucional.</p>
+              <ul class="prendas">
+                <li><img src="img/camisa-universitaria.svg" width="64" height="64" loading="lazy" alt="Camisa universitaria de manga larga"></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <p class="nota">Prendas y rubros de ejemplo <small class="ejemplo">[EJEMPLO]</small>. Las ilustraciones son de ejemplo.</p>
+        <p class="rubros__cierre">¿No ves tu rubro? Escríbenos y te decimos si podemos hacerlo.</p>
+      </div>
+    </section>
+
+    <!-- 4. CÓMO COTIZAR -->
+    <section class="seccion pasos" id="como-cotizar" aria-labelledby="titulo-pasos">
+      <div class="contenedor">
+        <header class="seccion__encabezado">
+          <h2 id="titulo-pasos">Cómo cotizar</h2>
+        </header>
+
+        <ol class="pasos__lista">
+          <li class="paso" data-aparece>
+            <span class="paso__numero" aria-hidden="true">1</span>
+            <div>
+              <h3>Escríbenos</h3>
+              <p>Cuéntanos por WhatsApp qué prendas necesitas y para quién son.</p>
+            </div>
+          </li>
+          <li class="paso" data-aparece>
+            <span class="paso__numero" aria-hidden="true">2</span>
+            <div>
+              <h3>Envía tu logo o escudo y las cantidades</h3>
+              <p>Mándanos el diseño que quieres bordar y cuántas piezas de cada prenda.</p>
+            </div>
+          </li>
+          <li class="paso" data-aparece>
+            <span class="paso__numero" aria-hidden="true">3</span>
+            <div>
+              <h3>Recibe tu cotización y fecha de entrega</h3>
+              <p>Te respondemos por escrito, con cantidad, tela, bordado y fecha de entrega. Así sabes qué incluye antes de pagar. <small class="ejemplo">[EJEMPLO]</small></p>
+            </div>
+          </li>
+        </ol>
+
+        <!-- Cifras grandes: vienen de las condiciones de la ficha (datos de ejemplo) -->
+        <dl class="condiciones">
+          <div class="condicion">
+            <dt>Pedido mínimo, en piezas por modelo <small class="ejemplo">[EJEMPLO]</small></dt>
+            <dd class="cifra">12</dd>
+          </div>
+          <div class="condicion">
+            <dt>Entrega, en días hábiles después de confirmar medidas y diseño del bordado <small class="ejemplo">[EJEMPLO]</small></dt>
+            <dd class="cifra">10 a 15</dd>
+          </div>
+        </dl>
+        <p class="nota">Los pedidos grandes se acuerdan por fecha. <small class="ejemplo">[EJEMPLO]</small></p>
+        <a class="boton" href="#cotizar" data-enlace="whatsapp">Cotizar por WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- LÍNEA DE TEJIDO (1 de 2): guiño a San Pedro, San Marcos. Un solo color: variable --teja en estilos.css -->
+    <div class="tejido" aria-hidden="true"></div>
+
+    <!-- 5. NUESTRA RAÍZ -->
+    <section class="seccion raiz" id="raiz" aria-labelledby="titulo-raiz">
+      <div class="contenedor raiz__rejilla">
+        <figure class="marco marco--grande" data-aparece>
+          <img src="img/bordado-detalle.svg" width="320" height="320" loading="lazy" alt="Ilustración de un detalle de bordado con hilo">
+        </figure>
+        <div class="raiz__texto" data-aparece>
+          <h2 id="titulo-raiz">Nuestra raíz</h2>
+          <p class="raiz__cita">Eli nació en San Pedro, San Marcos, y de allí trae el amor por el trabajo bien hecho. Cada uniforme que sale del taller lleva ese orgullo: puntadas firmes, cuidado en los detalles y respeto por quien lo va a vestir cada día. <small class="ejemplo">[EJEMPLO]</small></p>
+          <p>En el taller hablas directamente con quien confecciona. <small class="ejemplo">[EJEMPLO]</small></p>
         </div>
       </div>
-
-      <h3 class="subtitulo">Nuestros servicios</h3>
-      <ul class="servicios">
-        <li><strong>Confección de uniformes.</strong> Camisas, pantalones, batas, delantales y chaquetas hechos a la medida del personal.</li>
-        <li><strong>Bordado de logos y escudos.</strong> Bordamos el logo o el escudo que nos entregues, con hilo firme y puntada pareja.</li>
-        <li><strong>Camisas para facultades y promociones.</strong> Camisas de manga larga con bordado institucional para estudiantes e ingenieros.</li>
-        <li><strong>Bordado de nombre y cargo.</strong> El nombre de cada persona bordado en su prenda.</li>
-        <li><strong>Ajustes y arreglos.</strong> Ajuste de tallas y reparación de uniformes que ya tienes.</li>
-      </ul>
-      <p class="aviso-ejemplo">[EJEMPLO] Descripciones de muestra, Eli las confirmará.</p>
-
-      <h3 class="subtitulo">Rubros que atendemos</h3>
-      <ul class="rubros">
-        <li>Restaurante y cocina</li>
-        <li>Salud y belleza</li>
-        <li>Educación</li>
-        <li>Industrial</li>
-        <li>Seguridad</li>
-        <li>Oficinas y comercio</li>
-        <li>Universidades y facultades</li>
-      </ul>
-
-      <h3 class="subtitulo">Pedido y entrega</h3>
-      <dl class="condiciones">
-        <div><dt>Pedido mínimo</dt><dd>12 piezas por modelo [EJEMPLO]</dd></div>
-        <div><dt>Tiempo de entrega</dt><dd>De 10 a 15 días hábiles, después de confirmar medidas y diseño del bordado [EJEMPLO]</dd></div>
-        <div><dt>Cotización</dt><dd>Por escrito, con cantidad, tela, bordado y fecha de entrega [EJEMPLO]</dd></div>
-      </dl>
     </section>
 
-    <hr class="puntadas" aria-hidden="true">
+    <!-- 6. COTIZAR -->
+    <section class="seccion cotizar" id="cotizar" aria-labelledby="titulo-cotizar">
+      <div class="contenedor cotizar__rejilla">
 
-    <!-- POR QUÉ ELEGIRNOS -->
-    <section class="porque" id="por-que">
-      <h2>Por qué elegirnos</h2>
-      <p class="porque__experiencia">12 años cosiendo y bordando uniformes [EJEMPLO]</p>
-      <ul class="diferenciadores">
-        <li>Cotización clara: sabes qué incluye antes de pagar.</li>
-        <li>Buena costura: costuras reforzadas y bordado revisado pieza por pieza.</li>
-        <li>Fecha de entrega acordada por escrito.</li>
-        <li>Taller propio: hablas directamente con quien confecciona.</li>
-        <li>Atendemos a empresas y a particulares.</li>
-      </ul>
+        <div class="cotizar__info">
+          <h2 id="titulo-cotizar">Cotiza tu uniforme</h2>
+          <p class="cotizar__entrada">Cuéntanos qué necesitas y te respondemos con una cotización clara.</p>
 
-      <h3 class="subtitulo">Lo que dicen nuestros clientes</h3>
-      <div class="testimonios">
-        <blockquote class="testimonio testimonio--grande">
-          <p>“Nos entregaron los uniformes del personal de cocina en la fecha prometida y el bordado quedó muy parejo.”</p>
-          <footer>Restaurante La Brasa Dorada [EJEMPLO]</footer>
-        </blockquote>
-        <blockquote class="testimonio">
-          <p>“La cotización llegó clara y sin sorpresas. Las batas han aguantado muchos lavados.”</p>
-          <footer>Clínica Dental Sonrisa Sana [EJEMPLO]</footer>
-        </blockquote>
-        <blockquote class="testimonio">
-          <p>“Pedimos camisas con el logo para todo el equipo de ventas y llegaron a tiempo.”</p>
-          <footer>Comercial Ferretería El Tornillo [EJEMPLO]</footer>
-        </blockquote>
-      </div>
-      <p class="aviso-ejemplo">[EJEMPLO] Testimonios de empresas ficticias, de muestra.</p>
-    </section>
+          <ul class="contacto">
+            <li><span class="contacto__rotulo">WhatsApp</span>
+              <a href="#" data-enlace="whatsapp"><span data-dato="whatsapp"></span></a> <small class="ejemplo">[EJEMPLO]</small></li>
+            <li><span class="contacto__rotulo">Teléfono</span>
+              <a href="#" data-enlace="telefono"><span data-dato="telefono"></span></a> <small class="ejemplo">[EJEMPLO]</small></li>
+            <li><span class="contacto__rotulo">Dirección</span>
+              <span data-dato="direccion"></span></li>
+          </ul>
 
-    <hr class="puntadas" aria-hidden="true">
+          <h3 class="cotizar__subtitulo">Horario <small class="ejemplo">[EJEMPLO]</small></h3>
+          <dl class="horario" data-dato="horario"></dl>
 
-    <!-- RAÍZ DEL DUEÑO -->
-    <section class="raiz" id="eli">
-      <h2>De San Pedro al taller</h2>
-      <p class="raiz__texto">Eli nació en San Pedro, San Marcos, y de allí trae el amor por el trabajo bien hecho. Cada uniforme que sale del taller lleva ese orgullo: puntadas firmes, cuidado en los detalles y respeto por quien lo va a vestir cada día.</p>
-      <p class="aviso-ejemplo">[EJEMPLO] Texto de muestra. Eli confirmará el municipio exacto y cómo quiere contar su historia.</p>
-    </section>
+          <!-- MAPA: Zona 5, Villa Nueva. Solo la zona está aprobada (sin calle ni número). -->
+          <div class="mapa">
+            <iframe title="Mapa de la Zona 5, Villa Nueva, Guatemala" width="600" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Zona+5,+Villa+Nueva,+Guatemala&amp;output=embed"></iframe>
+          </div>
+        </div>
 
-    <hr class="puntadas" aria-hidden="true">
+        <form class="formulario" id="formulario" novalidate aria-labelledby="titulo-formulario">
+          <h3 id="titulo-formulario">Pide tu cotización</h3>
+          <p class="formulario__ayuda">Los campos con asterisco (*) son obligatorios.</p>
 
-    <!-- COTIZAR -->
-    <section class="cotizar" id="cotizar">
-      <h2>Pide tu cotización</h2>
-      <p class="cotizar__intro">Cuéntanos qué necesitas. Te respondemos con una cotización.</p>
+          <div class="campo">
+            <label for="nombre">Tu nombre *</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Ana López" required aria-describedby="error-nombre">
+            <p class="error" id="error-nombre" hidden>Escribe tu nombre.</p>
+          </div>
 
-      <div class="cotizar__cuerpo">
-        <form class="formulario" id="formulario-cotizacion" novalidate>
-          <label for="nombre">Tu nombre o el de tu empresa</label>
-          <input type="text" id="nombre" name="nombre" required autocomplete="name">
+          <div class="campo">
+            <label for="empresa">Empresa o institución</label>
+            <input type="text" id="empresa" name="empresa" autocomplete="organization" placeholder="Si pides como particular, déjalo en blanco">
+          </div>
 
-          <label for="prenda">¿Qué necesitas?</label>
-          <select id="prenda" name="prenda" required>
-            <option value="">Elige una opción</option>
-            <option>Camisas</option>
-            <option>Pantalones</option>
-            <option>Batas</option>
-            <option>Delantales</option>
-            <option>Gorras</option>
-            <option>Chaquetas</option>
-            <option>Varias prendas</option>
-          </select>
+          <div class="campo">
+            <label for="rubro">Rubro *</label>
+            <select id="rubro" name="rubro" required aria-describedby="error-rubro">
+              <option value="">Elige un rubro</option>
+              <option>Restaurante y cocina</option>
+              <option>Salud y belleza</option>
+              <option>Educación</option>
+              <option>Industrial</option>
+              <option>Seguridad</option>
+              <option>Oficinas y comercio</option>
+              <option>Universidades y facultades</option>
+              <option>Otro</option>
+            </select>
+            <p class="error" id="error-rubro" hidden>Elige el rubro de tu negocio.</p>
+          </div>
 
-          <label for="cantidad">¿Cuántas piezas?</label>
-          <input type="number" id="cantidad" name="cantidad" min="1" inputmode="numeric" required>
+          <div class="campo">
+            <label for="prenda">Prenda que necesitas *</label>
+            <input type="text" id="prenda" name="prenda" placeholder="Camisas con el logo bordado" required aria-describedby="error-prenda">
+            <p class="error" id="error-prenda" hidden>Escribe qué prenda necesitas.</p>
+          </div>
 
-          <label for="bordado">¿Quieres bordado?</label>
-          <select id="bordado" name="bordado">
-            <option>No lo sé todavía</option>
-            <option>Sin bordado</option>
-            <option>Bordado de nombre</option>
-            <option>Bordado de logo</option>
-            <option>Bordado de nombre y de logo</option>
-          </select>
+          <div class="campo">
+            <label for="cantidad">Cantidad aproximada de piezas *</label>
+            <input type="number" id="cantidad" name="cantidad" inputmode="numeric" min="1" step="1" placeholder="15" required aria-describedby="error-cantidad">
+            <p class="error" id="error-cantidad" hidden>Escribe cuántas piezas necesitas (un número mayor que cero).</p>
+          </div>
 
-          <p class="formulario__error" id="formulario-error" role="alert" hidden></p>
-          <button type="submit" class="boton">Enviar por WhatsApp</button>
-          <p class="formulario__nota">Al enviar, se abre WhatsApp con tu pedido ya escrito.</p>
+          <fieldset class="campo campo--opciones" aria-describedby="error-logo">
+            <legend>¿Ya tienes tu logo o escudo en digital? *</legend>
+            <label class="opcion"><input type="radio" name="logo" value="Sí" required> Sí</label>
+            <label class="opcion"><input type="radio" name="logo" value="No"> No</label>
+            <label class="opcion"><input type="radio" name="logo" value="Necesito ayuda"> Necesito ayuda</label>
+            <p class="error" id="error-logo" hidden>Elige una opción.</p>
+          </fieldset>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Colores, tallas, fecha en que lo necesitas…"></textarea>
+          </div>
+
+          <button class="boton boton--completo" type="submit">Enviar por WhatsApp</button>
+          <p class="formulario__nota" id="estado" role="status">Se abrirá WhatsApp con tu pedido ya escrito. Solo tienes que enviarlo.</p>
         </form>
 
-        <div class="contacto">
-          <h3>También puedes escribirnos o llamarnos</h3>
-          <a class="boton boton--claro" id="enlace-whatsapp" href="#">Escribir por WhatsApp</a>
-          <p class="contacto__dato">Teléfono: <a href="tel:+50266660123">6666 0123</a></p>
-          <p class="contacto__dato">WhatsApp: 5555 0123</p>
-          <p class="aviso-ejemplo">[EJEMPLO] Teléfono y WhatsApp de muestra, pendientes del dato real.</p>
-
-          <h3 class="contacto__subtitulo">Horario</h3>
-          <p>Lunes a viernes de 8:00 a 17:00.<br>Sábados de 8:00 a 12:00.<br>Domingos cerrado.</p>
-          <p class="aviso-ejemplo">[EJEMPLO] Horario de muestra.</p>
-
-          <h3 class="contacto__subtitulo">Dónde estamos</h3>
-          <p>4.ª calle 7-35, Zona 5, Villa Nueva, Guatemala. [EJEMPLO]</p>
-          <iframe
-            class="mapa"
-            title="Mapa de Zona 5, Villa Nueva, Guatemala"
-            src="https://www.google.com/maps?q=Zona+5,+Villa+Nueva,+Guatemala&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen></iframe>
-        </div>
       </div>
     </section>
 
   </main>
 
+  <!-- LÍNEA DE TEJIDO (2 de 2) -->
+  <div class="tejido" aria-hidden="true"></div>
+
   <footer class="pie">
-    <p>Uniformes Eli · Villa Nueva, Guatemala</p>
+    <div class="contenedor pie__rejilla">
+      <div>
+        <img src="img/logo.svg" width="168" height="39" loading="lazy" alt="Uniformes Eli">
+        <p>Taller de confección y bordado de uniformes en Villa Nueva, Guatemala.</p>
+        <p class="pie__chico">Logo provisional <small class="ejemplo">[EJEMPLO]</small></p>
+      </div>
+      <div>
+        <h2 class="pie__titulo">Contacto</h2>
+        <p>WhatsApp: <a href="#" data-enlace="whatsapp"><span data-dato="whatsapp"></span></a> <small class="ejemplo">[EJEMPLO]</small></p>
+        <p>Teléfono: <a href="#" data-enlace="telefono"><span data-dato="telefono"></span></a> <small class="ejemplo">[EJEMPLO]</small></p>
+        <p data-dato="direccion"></p>
+      </div>
+      <div>
+        <h2 class="pie__titulo">Horario <small class="ejemplo">[EJEMPLO]</small></h2>
+        <dl class="horario" data-dato="horario"></dl>
+      </div>
+    </div>
+    <p class="contenedor pie__final">© 2026 Uniformes Eli. Los datos marcados [EJEMPLO] son de práctica y se cambiarán por los reales.</p>
   </footer>
+
+  <!-- BARRA DE CONTACTO FIJA: en computadora va al borde derecho; en celular, abajo (solo WhatsApp y teléfono) -->
+  <aside class="barra-contacto" aria-label="Contacto rápido">
+    <a class="barra-contacto__enlace" href="#cotizar" data-enlace="whatsapp">
+      <svg class="icono" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg><span>WhatsApp</span>
+    </a>
+    <a class="barra-contacto__enlace" href="#cotizar" data-enlace="telefono">
+      <svg class="icono" aria-hidden="true" focusable="false"><use href="#i-telefono"/></svg><span>Llamar</span>
+    </a>
+    <!-- [PENDIENTE] Facebook e Instagram: aún no existen las cuentas. Se activan al poner el enlace en js/main.js -->
+    <a class="barra-contacto__enlace barra-contacto__enlace--red" href="#" data-enlace="facebook" aria-label="Facebook (pendiente)">
+      <svg class="icono" aria-hidden="true" focusable="false"><use href="#i-facebook"/></svg>
+    </a>
+    <a class="barra-contacto__enlace barra-contacto__enlace--red" href="#" data-enlace="instagram" aria-label="Instagram (pendiente)">
+      <svg class="icono" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg>
+    </a>
+  </aside>
 
   <script src="js/main.js"></script>
 </body>

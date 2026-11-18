@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LOGO PROVISIONAL [EJEMPLO]: solo texto con subrayado de puntadas que termina en el ojo de una aguja.
+     Cambiar por el logo real cuando Eli lo tenga. Colores: café #2A1F17 y teja #B5532F. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="56" viewBox="0 0 240 56" role="img" aria-labelledby="t d">
+  <title id="t">Uniformes Eli</title>
+  <desc id="d">Logo provisional [EJEMPLO]: texto Uniformes Eli subrayado con puntadas que terminan en el ojo de una aguja.</desc>
+  <!-- Texto: textLength fija el ancho para que no cambie si falta la letra Fraunces -->
+  <text x="0" y="34" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-size="33" font-weight="700" fill="#2A1F17" textLength="214" lengthAdjust="spacing">Uniformes Eli</text>
+  <!-- Puntadas -->
+  <line x1="2" y1="46" x2="206" y2="46" stroke="#B5532F" stroke-width="2.6" stroke-dasharray="11 6" stroke-linecap="round"/>
+  <!-- Ojo de la aguja -->
+  <ellipse cx="224" cy="46" rx="9" ry="3.6" fill="none" stroke="#2A1F17" stroke-width="2"/>
+  <line x1="233" y1="46" x2="239" y2="46" stroke="#2A1F17" stroke-width="2" stroke-linecap="round"/>
+  <!-- El hilo pasa por el ojo -->
+  <path d="M210 46 H226" stroke="#B5532F" stroke-width="2.6" stroke-linecap="round"/>
+</svg>
