@@ -12,6 +12,6 @@
 
 ## Siguiente
 - Completar el teléfono y el WhatsApp reales. Mientras tanto, van marcados como [EJEMPLO].
-- Decidir si se unifica la escritura a "Villa Nueva" en todo el sitio (hoy hay "Villanueva" en varios textos).
+- (Hecho) Escritura unificada a "Villa Nueva" en todo el sitio.
 - Agregar fotos propias en `img/` (el espacio de foto en Inicio está reservado).
 - Revisar la página en celular y pulir detalles.

@@ -1,6 +1,6 @@
 # Brief de diseño: Uniformes Eli
 
-Taller de confección y bordado de uniformes en Villanueva, Guatemala.
+Taller de confección y bordado de uniformes en Villa Nueva, Guatemala.
 
 ## Para quién es el sitio
 Personas particulares y empresas que quieren uniformes.
@@ -43,7 +43,7 @@ Aprobada el 18-nov-2026. Todo lo marcado [EJEMPLO] es dato de práctica, no real
 
 ### Datos generales
 - Negocio: Uniformes Eli, taller de confección y bordado de uniformes para empresas.
-- Dirección: 4.ª calle 7-35, Zona 5, Villanueva, Guatemala [EJEMPLO]. Solo la zona 5 está aprobada.
+- Dirección: 4.ª calle 7-35, Zona 5, Villa Nueva, Guatemala [EJEMPLO]. Solo la zona 5 está aprobada.
 - WhatsApp: 5555-0123 [EJEMPLO]
 - Teléfono: 6666-0123 [EJEMPLO]
 - Horario: lunes a viernes de 8:00 a 17:00, sábados de 8:00 a 12:00, domingos cerrado [EJEMPLO]
@@ -105,4 +105,4 @@ Texto de ejemplo [EJEMPLO]:
 
 ### Decisiones por tomar
 - Menú: hoy tiene 3 enlaces. Si se agrega una sección sobre Eli, pasaría a 4 (el máximo permitido).
-- Escritura: el sitio mezcla "Villa Nueva" y "Villanueva". Falta unificarla.
+- Escritura: decidido por el dueño, siempre "Villa Nueva" (dos palabras).

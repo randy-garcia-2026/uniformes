@@ -1,6 +1,6 @@
 # Reglas de trabajo: Uniformes Eli
 
-Sitio web de "Uniformes Eli", taller de confección y bordado de uniformes para empresas en Villanueva, Guatemala.
+Sitio web de "Uniformes Eli", taller de confección y bordado de uniformes para empresas en Villa Nueva, Guatemala.
 
 ## Reglas
 
