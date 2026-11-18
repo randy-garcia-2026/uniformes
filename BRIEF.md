@@ -32,5 +32,7 @@ Menú de 3 enlaces:
 ## Datos pendientes (hasta tenerlos, van como [EJEMPLO])
 - Número de teléfono.
 - Número de WhatsApp.
-- Dirección del taller.
-- Frase principal de la sección Inicio.
+
+## Datos aprobados
+- Dirección: Zona 5, Villa Nueva, Guatemala (se muestra con mapa de Google Maps en la sección Cotizar).
+- Frase principal de Inicio: "Uniformes hechos a tu medida, con tu nombre y tu logo bordados".

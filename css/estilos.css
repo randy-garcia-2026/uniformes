@@ -221,6 +221,17 @@ main > section {
 .formulario__error { color: var(--texto); font-weight: 700; margin: 1rem 0 0; padding-left: 0.75rem; border-left: 3px solid var(--acento); }
 
 .contacto__dato { font-size: 1.25rem; margin-top: 1.25rem; }
+.contacto__subtitulo { margin-top: 2rem; }
+
+/* Recuadro del mapa */
+.mapa {
+  display: block;
+  width: 100%;
+  height: 18rem;
+  border: 1px solid var(--linea);
+  border-radius: 8px;
+  background: var(--hilo);
+}
 
 /* ---------- Pie ---------- */
 .pie {
