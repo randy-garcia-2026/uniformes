@@ -18,6 +18,20 @@ Artesanal: que se note el trabajo de costura y bordado.
 - Sin neón.
 - Letra: Fraunces para títulos e Inter para el texto.
 
+## Dirección de diseño
+
+Elegida el 18-nov-2026: **A. Hilo y marfil**.
+
+- **Concepto:** un taller de familia donde se ve la mano que cose.
+- **Emoción:** calidez, confianza, oficio.
+- **Paleta:** sin cambios, la de "Colores y letra" (marfil `#FBF6EA`, café `#2A1F17`, verde `#2E5E34`, teja `#B5532F`, recuadros blancos). Decisión del dueño: no se cambia por ahora.
+- **Tipografías:** Fraunces (títulos grandes en mayúsculas) e Inter (texto).
+- **Línea de tejido (detalle discreto):** fila fina de rombos pequeños unidos por una puntada, como guiño al origen de Eli en San Pedro, San Marcos. Diseño propio, sin copiar ningún traje típico.
+- **Fotos e ilustraciones:** sin filtros de color. Cada una va en recuadro blanco con borde fino y esquinas rectas.
+- **Logo para la demo:** "Uniformes Eli" en Fraunces, subrayado con puntadas que terminan en el ojo de una aguja. Solo texto y un detalle, sin escudos ni marcas de terceros.
+- **Contacto:** barra lateral fija con teléfono y WhatsApp, botón de cotizar bien visible y formulario corto.
+- **Prohibido:** neón, degradados, sombras (tampoco en botones), efecto vidrio, marcas de agua, filas de tres tarjetas idénticas y botones "Ver más".
+
 ## Cómo piden cotización
 - Formulario (nombre, qué necesitan y cuántas piezas).
 - Botón de WhatsApp.
