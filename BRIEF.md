@@ -162,11 +162,6 @@ Las imágenes son ilustraciones de ejemplo.
 - Fecha de entrega acordada por escrito.
 - Atención a empresas y a particulares.
 
-### Testimonios (empresas ficticias) [EJEMPLO]
-1. "Nos entregaron los uniformes del personal de cocina en la fecha prometida y el bordado quedó muy parejo." — Restaurante La Brasa Dorada [EJEMPLO]
-2. "La cotización llegó clara y sin sorpresas. Las batas han aguantado muchos lavados." — Clínica Dental Sonrisa Sana [EJEMPLO]
-3. "Pedimos camisas con el logo para todo el equipo de ventas y llegaron a tiempo." — Comercial Ferretería El Tornillo [EJEMPLO]
-
 ### Camisas para facultades universitarias
 - Eli confecciona camisas de manga larga con bordado institucional para estudiantes e ingenieros de facultades. Dato real.
 - [PENDIENTE] No se nombra ninguna universidad ni facultad como cliente hasta que Eli confirme que puede hacerlo.

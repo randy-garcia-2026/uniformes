@@ -15,6 +15,7 @@
   - Cómo cotizar rediseñado (pasos unidos por una puntada y recuadro de condiciones).
   - Prendas en cuadrícula compacta con filtro por rubro, nombre al pasar el cursor y ventana de detalle (tallas y colores [EJEMPLO]).
 - Correcciones tras la revisión en Chrome (18-nov-2026): formulario reducido a los 3 campos del brief, filtros de rubro en una sola fila deslizable en celular, nombres de prendas más legibles y ventana de detalle sin imagen vacía.
+- Control de calidad (18-nov-2026): colores sueltos pasados a variables CSS, cantidad del formulario solo acepta números enteros, borde rojo de errores corregido, orden correcto en "Antes de pedir" y testimonios inventados quitados del brief.
 
 ## Pendiente
 - [PENDIENTE] Enlaces de Facebook e Instagram (CONFIG en `js/main.js`) cuando existan las cuentas.
@@ -25,3 +26,4 @@
 - Servicios: ilustraciones con borde cosido teja y número 01 a 05. Nuestro oficio: más compacto (solo estilos, sin archivos nuevos).
 - Imagen de portada renombrada a `img/portada.jpg` (nombre neutro).
 - `img/bordado-detalle.svg` redibujado: rombo bordado con aguja e hilo, dibujo propio (antes era un emblema circular que podía parecer un sello).
+- [PENDIENTE] Decidir si se sacan `DESIGN.md` e `image.png` (referencia de otra empresa y captura de VS Code) de la carpeta del sitio antes de publicar; y si se ocultan los íconos de Facebook e Instagram hasta tener las cuentas.

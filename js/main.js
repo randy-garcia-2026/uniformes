@@ -130,7 +130,7 @@ function activarFormulario() {
   const reglas = [
     { campo: "nombre", ok: function (v) { return v.trim().length > 1; } },
     { campo: "prenda", ok: function (v) { return v.trim().length > 1; } },
-    { campo: "cantidad", ok: function (v) { return Number(v) >= 1; } }
+    { campo: "cantidad", ok: function (v) { return /^[0-9]+$/.test(v.trim()) && Number(v) >= 1; } }
   ];
 
   function mostrarError(id, hay) {

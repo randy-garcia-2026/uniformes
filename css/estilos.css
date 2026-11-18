@@ -15,6 +15,10 @@
   --teja: #B5532F;          /* puntadas y detalles (no para texto chico) */
   --blanco: #FFFFFF;        /* recuadros */
   --linea: #D8CCB4;         /* líneas finas */
+  --error: #A12B1B;         /* avisos de error del formulario */
+  --texto-guia: #75675A;    /* texto de ejemplo dentro de los campos */
+  --capa-portada: rgba(251, 246, 234, 0.22);  /* capa marfil lisa sobre la portada */
+  --fondo-ventana: rgba(42, 31, 23, 0.55);    /* fondo oscuro detrás de la ventana de detalle */
 
   /* Letras */
   --letra-titulo: "Fraunces", Georgia, "Times New Roman", serif;
@@ -161,7 +165,7 @@ h3 { font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.7rem); line-height: 1.2; }
 .portada__imagen img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
 /* Capa marfil lisa (un solo color, sin degradado) */
 .portada__imagen::after {
-  content: ""; position: absolute; inset: 0; background: rgba(251, 246, 234, 0.22);
+  content: ""; position: absolute; inset: 0; background: var(--capa-portada);
 }
 
 .portada__caja {
@@ -247,7 +251,7 @@ h3 { font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.7rem); line-height: 1.2; }
 
 /* Ventana de detalle */
 .detalle { width: min(92vw, 600px); padding: 0; border: 1px solid var(--cafe); border-radius: 0; background: var(--marfil); color: var(--cafe); }
-.detalle::backdrop { background: rgba(42, 31, 23, 0.55); }
+.detalle::backdrop { background: var(--fondo-ventana); }
 .detalle__cuerpo { display: grid; gap: 20px; padding: 24px 20px 8px; }
 .detalle .marco { justify-self: start; align-self: start; }
 .detalle .marco img { width: 160px; height: 160px; }
@@ -286,7 +290,7 @@ h3 { font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.7rem); line-height: 1.2; }
 .condicion { display: grid; gap: 6px; align-items: center; padding-block: 18px; border-bottom: 1px solid var(--linea); }
 .condicion:first-child { border-top: 1px solid var(--linea); margin-top: 12px; }
 .condicion dt { font-size: 0.92rem; color: var(--cafe-suave); max-width: 30ch; }
-.cifra { font-family: var(--letra-titulo); font-weight: 700; font-size: clamp(2.4rem, 1.8rem + 2vw, 3.4rem); line-height: 1; white-space: nowrap; }
+.cifra { order: -1; font-family: var(--letra-titulo); font-weight: 700; font-size: clamp(2.4rem, 1.8rem + 2vw, 3.4rem); line-height: 1; white-space: nowrap; }
 .condiciones__nota { margin: 16px 0 20px; font-size: 0.9rem; color: var(--cafe-suave); }
 
 /* ---------- Línea de tejido: rombos unidos por una puntada, de un solo color ----------
@@ -336,11 +340,11 @@ h3 { font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.7rem); line-height: 1.2; }
   border: 1px solid var(--cafe-suave); border-radius: 0; padding: 12px; min-height: 48px;
 }
 .campo textarea { resize: vertical; }
-.campo ::placeholder { color: #75675A; opacity: 1; }
-.campo [aria-invalid="true"] { border-color: #A12B1B; border-width: 2px; }
+.campo ::placeholder { color: var(--texto-guia); opacity: 1; }
+.campo input[aria-invalid="true"], .campo select[aria-invalid="true"], .campo textarea[aria-invalid="true"] { border-color: var(--error); border-width: 2px; }
 .campo .opcion { display: flex; align-items: center; gap: 10px; font-weight: 400; min-height: 44px; margin: 0; cursor: pointer; }
 .campo .opcion input { width: 20px; height: 20px; accent-color: var(--verde); margin: 0; }
-.error { margin-top: 6px; font-size: 0.88rem; font-weight: 500; color: #A12B1B; }
+.error { margin-top: 6px; font-size: 0.88rem; font-weight: 500; color: var(--error); }
 .formulario__nota { margin-top: 14px; font-size: 0.9rem; color: var(--cafe-suave); }
 
 /* ---------- Pie ---------- */
