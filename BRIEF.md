@@ -91,7 +91,7 @@ Tres pasos con número cosido con puntada, sin imagen:
 Condiciones: pedido mínimo de 12 piezas por modelo; entrega de 10 a 15 días hábiles después de confirmar medidas y diseño del bordado, y los pedidos grandes se acuerdan por fecha. [EJEMPLO] Botón: **Cotizar por WhatsApp**.
 
 ### 5. Nuestro oficio (antes "Nuestra raíz")
-Imagen: `bordado-detalle.svg`, con la línea de rombos arriba. Texto:
+Imagen: `bordado-detalle.svg` (rombo bordado con aguja e hilo), con la línea de rombos arriba. Texto:
 > En Uniformes Eli creemos en el trabajo bien hecho. Cada uniforme que sale del taller lleva ese cuidado: puntadas firmes, atención a los detalles y respeto por quien lo va a vestir cada día. [EJEMPLO]
 
 Decisión del dueño (18-nov-2026): no se menciona el lugar de nacimiento de Eli ni otros datos personales en el sitio. Tampoco se usa la frase sobre hablar con quien confecciona.
@@ -106,6 +106,25 @@ Dos columnas (se apilan en celular). Entrada: "Cuéntanos qué necesitas y te re
 
 ### Pie de página
 Línea de rombos arriba y tres bloques: logo con "Taller de confección y bordado de uniformes en Villa Nueva, Guatemala."; contacto (WhatsApp y teléfono [EJEMPLO], Zona 5); horario [EJEMPLO]. Línea final: "© 2026 Uniformes Eli. Los datos marcados [EJEMPLO] son de práctica y se cambiarán por los reales." Sin menú repetido ni redes sociales.
+
+## Decisiones de diseño del 18-nov-2026 (sesión de revisión)
+
+Aprobadas por el dueño en chat durante la revisión visual y el control de calidad:
+
+- **Formulario:** solo 3 campos (Tu nombre · ¿Qué uniformes necesitas? · ¿Cuántas piezas?). La cantidad solo acepta números enteros mayores que cero. Los campos con error se marcan con borde rojo y un aviso.
+- **Prendas:** en celular, los botones de filtro por rubro van en una sola fila que se desliza hacia los lados; el nombre de la prenda se lee un poco más grande.
+- **Servicios:** cada ilustración lleva un borde cosido color teja y un número 01 a 05 sobre el título. Las ilustraciones se muestran un poco más grandes en computadora (184 px).
+- **Nuestro oficio:** sección más compacta (ilustración de 240 px alineada con el texto, menos espacio vacío arriba y abajo).
+- **Detalle de bordado (`bordado-detalle.svg`):** redibujado como un rombo bordado con puntada de relleno, hilo teja y una aguja. Dibujo propio, sin círculos, letras ni escudos que puedan parecer el sello de una institución. Se usa en Servicios (02) y en Nuestro oficio.
+- **Portada:** la imagen se llama `img/portada.jpg` (nombre neutro).
+- **Colores:** además de la paleta, el CSS tiene variables para el rojo de error (`--error`), el texto de ejemplo en los campos (`--texto-guia`), la capa marfil de la portada (`--capa-portada`) y el fondo de la ventana de detalle (`--fondo-ventana`). No se escriben colores sueltos fuera de las variables.
+- **Testimonios:** se quitaron del brief los 3 testimonios con empresas inventadas (ya no estaban en el sitio).
+
+**Pendientes de decidir (el dueño dijo "por el momento no hagamos nada"):**
+1. Sacar `DESIGN.md` (guía de estilo de otra empresa) e `image.png` (captura de VS Code) de la carpeta del sitio antes de publicar.
+2. Ocultar los íconos de Facebook e Instagram hasta tener las cuentas reales, o dejarlos apagados como están.
+3. En celular, la cuadrícula de prendas muestra 3 miniaturas por fila: dejarla así o pasarla a 2 columnas.
+4. Barra lateral fija de contacto además de la barra superior (decisión que ya estaba abierta).
 
 ## Datos pendientes (hasta tenerlos, van como [EJEMPLO])
 - Número de teléfono.

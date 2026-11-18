@@ -1,29 +1,29 @@
 # Progreso: Uniformes Eli
 
-## Hecho
-- Reglas de trabajo en `CLAUDE.md` y brief de diseño en `BRIEF.md` (dirección "Hilo y marfil", estructura y textos aprobados).
-- Git iniciado, con puntos de restauración.
-- **Primera versión del sitio** (18-nov-2026): `index.html`, `css/estilos.css`, `js/main.js` e `img/logo.svg` provisional [EJEMPLO].
-  - Portada, Servicios, Prendas para cada rubro, Cómo cotizar, Nuestro oficio y Cotizar, más el pie. Menú: Servicios · Prendas · Cotizar.
-  - Barra de contacto fija (WhatsApp, teléfono, Facebook e Instagram en computadora; solo los dos primeros en celular).
-  - Formulario que valida y abre WhatsApp con el pedido escrito.
-  - Datos que se repiten (WhatsApp, teléfono, dirección, horario, tallas y colores) se cambian en el bloque CONFIG de `js/main.js`.
-  - Datos estructurados LocalBusiness en el `<head>` con datos [EJEMPLO]: editarlos a mano antes de publicar.
-- Ajustes pedidos por el dueño el mismo día:
-  - Portada: titular más pequeño, recuadro angosto y capa marfil suave para ver la ilustración.
-  - Quitado el origen personal del dueño y la frase "hablas directamente con quien confecciona"; la sección ahora se llama "Nuestro oficio".
-  - Cómo cotizar rediseñado (pasos unidos por una puntada y recuadro de condiciones).
-  - Prendas en cuadrícula compacta con filtro por rubro, nombre al pasar el cursor y ventana de detalle (tallas y colores [EJEMPLO]).
-- Correcciones tras la revisión en Chrome (18-nov-2026): formulario reducido a los 3 campos del brief, filtros de rubro en una sola fila deslizable en celular, nombres de prendas más legibles y ventana de detalle sin imagen vacía.
-- Control de calidad (18-nov-2026): colores sueltos pasados a variables CSS, cantidad del formulario solo acepta números enteros, borde rojo de errores corregido, orden correcto en "Antes de pedir" y testimonios inventados quitados del brief.
+Última actualización: 18-nov-2026 (cierre de sesión).
 
-## Pendiente
-- [PENDIENTE] Enlaces de Facebook e Instagram (CONFIG en `js/main.js`) cuando existan las cuentas.
-- [PENDIENTE] Teléfono y WhatsApp reales; tallas y colores reales; logo real.
-- [PENDIENTE] Decidir si se deja la barra lateral fija además de la barra superior.
-- Limpiar del brief la sección "Raíz del dueño".
-- Antes de publicar: cambiar los datos [EJEMPLO] (incluidos los datos estructurados) y revisar el sitio en celular real.
-- Servicios: ilustraciones con borde cosido teja y número 01 a 05. Nuestro oficio: más compacto (solo estilos, sin archivos nuevos).
-- Imagen de portada renombrada a `img/portada.jpg` (nombre neutro).
-- `img/bordado-detalle.svg` redibujado: rombo bordado con aguja e hilo, dibujo propio (antes era un emblema circular que podía parecer un sello).
-- [PENDIENTE] Decidir si se sacan `DESIGN.md` e `image.png` (referencia de otra empresa y captura de VS Code) de la carpeta del sitio antes de publicar; y si se ocultan los íconos de Facebook e Instagram hasta tener las cuentas.
+## Etapas terminadas
+Los archivos no numeran los mensajes de la ruta ni las rondas, así que se listan por etapa (cada una tiene su punto de restauración en Git).
+
+1. **Reglas y brief:** `CLAUDE.md`, `BRIEF.md` con la dirección "Hilo y marfil" (paleta marfil, café, verde y teja; Fraunces e Inter), estructura y textos aprobados, y la ficha del negocio con datos [EJEMPLO].
+2. **Primera versión del sitio:** `index.html`, `css/estilos.css`, `js/main.js` e `img/logo.svg` provisional. Portada, Servicios, Prendas para cada rubro, Cómo cotizar, Nuestro oficio, Cotizar y pie. Menú: Servicios · Prendas · Cotizar. Barra de contacto fija. Datos que se repiten en el bloque CONFIG de `js/main.js`.
+3. **Ajustes del dueño:** portada con titular más pequeño y capa marfil suave; quitado el origen personal del dueño; sección renombrada a "Nuestro oficio"; Cómo cotizar rediseñado (pasos unidos por una puntada y recuadro de condiciones); Prendas en cuadrícula compacta con filtro por rubro y ventana de detalle.
+4. **Revisión visual en Chrome (escritorio y celular simulado):** sin desbordes, sin errores de consola del sitio, sin sombras ni degradados.
+5. **Correcciones de la revisión visual:** formulario reducido a 3 campos; filtros de rubro en una fila deslizable en celular; nombres de prendas más legibles; ventana de detalle sin imagen vacía; Servicios con borde cosido y numeración 01 a 05; Nuestro oficio más compacto; imagen de portada renombrada a `img/portada.jpg`; sello de bordado redibujado (rombo con aguja e hilo).
+6. **Control de calidad (auditoría):** colores sueltos pasados a variables CSS; cantidad del formulario solo con números enteros; borde rojo de errores (estaba tapado por otra regla); orden correcto en "Antes de pedir"; testimonios inventados quitados del brief. Ortografía revisada a mano (el corrector del equipo no trae español): sin errores.
+
+## Decisiones de hoy
+Están detalladas en `BRIEF.md`, sección "Decisiones de diseño del 18-nov-2026". En resumen: formulario de 3 campos, Servicios con borde cosido y números, Nuestro oficio compacto, sello de bordado propio (rombo con aguja), `portada.jpg`, variables de color nuevas y testimonios fuera.
+
+## Pendiente o a medias
+- **Por decidir (el dueño dijo "por el momento no hagamos nada"):**
+  1. Sacar `DESIGN.md` e `image.png` de la carpeta del sitio antes de publicar (son referencia de otra empresa y una captura de VS Code).
+  2. Ocultar los íconos de Facebook e Instagram hasta tener las cuentas, o dejarlos apagados.
+  3. Cuadrícula de prendas: 3 miniaturas por fila en celular, ¿se deja o pasa a 2 columnas?
+  4. Barra lateral fija de contacto además de la barra superior.
+- **Datos reales (al final, como pidió el dueño):** teléfono y WhatsApp, tallas y colores, logo real, enlaces de Facebook e Instagram (CONFIG en `js/main.js`).
+- **Antes de publicar:** cambiar todos los datos [EJEMPLO], incluido el bloque de datos estructurados del `<head>` de `index.html` (se edita a mano), y revisar el sitio en un celular real.
+- **Limpieza menor:** quitar del brief la sección "Raíz del dueño" y borrar `img/articulos-promocionales.svg` (no se usa), si el dueño lo aprueba.
+
+## Siguiente paso (mañana)
+Responder las 4 decisiones de "Por decidir" (basta con "sí" o "no" a cada una). Con eso se aplican los cambios, se vuelve a probar en Chrome y se guarda un punto de restauración. Después queda probar la página en un celular real y, al final, cambiar los datos [EJEMPLO] por los reales.
