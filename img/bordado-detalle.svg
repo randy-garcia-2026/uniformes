@@ -1,108 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Ilustración de ejemplo: primer plano de un bordado de Uniformes Eli. Emblema circular genérico, sin letras ni escudos. No es una foto real de un trabajo del taller. -->
+<!-- Ilustración de ejemplo: primer plano de un bordado de Uniformes Eli. Rombo bordado con puntada de relleno, línea de puntadas y aguja. Dibujo propio, sin letras, escudos ni logos. No es una foto real de un trabajo del taller. -->
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img">
   <title>Detalle de bordado personalizado</title>
-  <defs>
-    <clipPath id="anillo" clip-rule="evenodd"><path clip-rule="evenodd" d="M450 300 A150 150 0 1 0 150 300 A150 150 0 1 0 450 300 Z M395 300 A95 95 0 1 0 205 300 A95 95 0 1 0 395 300 Z"/></clipPath>
-    <clipPath id="centro"><circle cx="300" cy="300" r="68"/></clipPath>
-  </defs>
   <rect x="40" y="40" width="520" height="520" rx="14" fill="#22406B" stroke="#12233D" stroke-width="3"/>
   <rect x="58" y="58" width="484" height="484" rx="8" fill="none" stroke="#9FB3CC" stroke-width="1.5" stroke-dasharray="7 5"/>
-  <g clip-path="url(#anillo)" stroke="#C9D5E4" stroke-width="3.5" stroke-linecap="round">
-    <path d="M150 -150 L450 150"/>
-    <path d="M150 -141 L450 159"/>
-    <path d="M150 -132 L450 168"/>
-    <path d="M150 -123 L450 177"/>
-    <path d="M150 -114 L450 186"/>
-    <path d="M150 -105 L450 195"/>
-    <path d="M150 -96 L450 204"/>
-    <path d="M150 -87 L450 213"/>
-    <path d="M150 -78 L450 222"/>
-    <path d="M150 -69 L450 231"/>
-    <path d="M150 -60 L450 240"/>
-    <path d="M150 -51 L450 249"/>
-    <path d="M150 -42 L450 258"/>
-    <path d="M150 -33 L450 267"/>
-    <path d="M150 -24 L450 276"/>
-    <path d="M150 -15 L450 285"/>
-    <path d="M150 -6 L450 294"/>
-    <path d="M150 3 L450 303"/>
-    <path d="M150 12 L450 312"/>
-    <path d="M150 21 L450 321"/>
-    <path d="M150 30 L450 330"/>
-    <path d="M150 39 L450 339"/>
-    <path d="M150 48 L450 348"/>
-    <path d="M150 57 L450 357"/>
-    <path d="M150 66 L450 366"/>
-    <path d="M150 75 L450 375"/>
-    <path d="M150 84 L450 384"/>
-    <path d="M150 93 L450 393"/>
-    <path d="M150 102 L450 402"/>
-    <path d="M150 111 L450 411"/>
-    <path d="M150 120 L450 420"/>
-    <path d="M150 129 L450 429"/>
-    <path d="M150 138 L450 438"/>
-    <path d="M150 147 L450 447"/>
-    <path d="M150 156 L450 456"/>
-    <path d="M150 165 L450 465"/>
-    <path d="M150 174 L450 474"/>
-    <path d="M150 183 L450 483"/>
-    <path d="M150 192 L450 492"/>
-    <path d="M150 201 L450 501"/>
-    <path d="M150 210 L450 510"/>
-    <path d="M150 219 L450 519"/>
-    <path d="M150 228 L450 528"/>
-    <path d="M150 237 L450 537"/>
-    <path d="M150 246 L450 546"/>
-    <path d="M150 255 L450 555"/>
-    <path d="M150 264 L450 564"/>
-    <path d="M150 273 L450 573"/>
-    <path d="M150 282 L450 582"/>
-    <path d="M150 291 L450 591"/>
-    <path d="M150 300 L450 600"/>
-    <path d="M150 309 L450 609"/>
-    <path d="M150 318 L450 618"/>
-    <path d="M150 327 L450 627"/>
-    <path d="M150 336 L450 636"/>
-    <path d="M150 345 L450 645"/>
-    <path d="M150 354 L450 654"/>
-    <path d="M150 363 L450 663"/>
-    <path d="M150 372 L450 672"/>
-    <path d="M150 381 L450 681"/>
-    <path d="M150 390 L450 690"/>
-    <path d="M150 399 L450 699"/>
-    <path d="M150 408 L450 708"/>
-    <path d="M150 417 L450 717"/>
-    <path d="M150 426 L450 726"/>
-    <path d="M150 435 L450 735"/>
-    <path d="M150 444 L450 744"/>
+  <!-- Rombo exterior: contorno con puntada corrida -->
+  <path d="M300 130 L470 300 L300 470 L130 300 Z" fill="none" stroke="#E9A27F" stroke-width="5" stroke-linejoin="round" stroke-dasharray="14 9" stroke-linecap="round"/>
+  <!-- Rombo interior: puntada de relleno -->
+  <path d="M300 180 L420 300 L300 420 L180 300 Z" fill="#1A3357"/>
+  <g stroke="#F3D9B8" stroke-width="4" stroke-linecap="round"><path d="M184.5 295.5 V304.5"/><path d="M193.5 286.5 V313.5"/><path d="M202.5 277.5 V322.5"/><path d="M211.5 268.5 V331.5"/><path d="M220.5 259.5 V340.5"/><path d="M229.5 250.5 V349.5"/><path d="M238.5 241.5 V358.5"/><path d="M247.5 232.5 V367.5"/><path d="M256.5 223.5 V376.5"/><path d="M265.5 214.5 V385.5"/><path d="M274.5 205.5 V394.5"/><path d="M283.5 196.5 V403.5"/><path d="M292.5 187.5 V412.5"/><path d="M301.5 181.5 V418.5"/><path d="M310.5 190.5 V409.5"/><path d="M319.5 199.5 V400.5"/><path d="M328.5 208.5 V391.5"/><path d="M337.5 217.5 V382.5"/><path d="M346.5 226.5 V373.5"/><path d="M355.5 235.5 V364.5"/><path d="M364.5 244.5 V355.5"/><path d="M373.5 253.5 V346.5"/><path d="M382.5 262.5 V337.5"/><path d="M391.5 271.5 V328.5"/><path d="M400.5 280.5 V319.5"/><path d="M409.5 289.5 V310.5"/><path d="M418.5 298.5 V301.5"/></g>
+  <path d="M300 180 L420 300 L300 420 L180 300 Z" fill="none" stroke="#B5532F" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Rombo pequeño al centro -->
+  <path d="M300 265 L335 300 L300 335 L265 300 Z" fill="#B5532F" stroke="#22406B" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Hilo que sale de la tela hacia la aguja -->
+  <path d="M470 300 C 500 300, 505 215, 470 160" fill="none" stroke="#E9A27F" stroke-width="4" stroke-linecap="round"/>
+  <!-- Aguja -->
+  <g transform="rotate(-35 470 160)">
+    <rect x="462" y="60" width="16" height="190" rx="8" fill="#D9DEE6" stroke="#12233D" stroke-width="2"/>
+    <ellipse cx="470" cy="84" rx="3.5" ry="11" fill="#22406B"/>
+    <path d="M462 250 L470 285 L478 250 Z" fill="#D9DEE6" stroke="#12233D" stroke-width="2" stroke-linejoin="round"/>
   </g>
-  <g clip-path="url(#centro)" stroke="#F2F2F2" stroke-width="3.5" stroke-linecap="round">
-    <path d="M220 228 L380 228"/>
-    <path d="M220 236 L380 236"/>
-    <path d="M220 244 L380 244"/>
-    <path d="M220 252 L380 252"/>
-    <path d="M220 260 L380 260"/>
-    <path d="M220 268 L380 268"/>
-    <path d="M220 276 L380 276"/>
-    <path d="M220 284 L380 284"/>
-    <path d="M220 292 L380 292"/>
-    <path d="M220 300 L380 300"/>
-    <path d="M220 308 L380 308"/>
-    <path d="M220 316 L380 316"/>
-    <path d="M220 324 L380 324"/>
-    <path d="M220 332 L380 332"/>
-    <path d="M220 340 L380 340"/>
-    <path d="M220 348 L380 348"/>
-    <path d="M220 356 L380 356"/>
-    <path d="M220 364 L380 364"/>
-    <path d="M220 372 L380 372"/>
-  </g>
-  <g fill="none" stroke="#F2F2F2" stroke-linecap="round">
-    <circle cx="300" cy="300" r="168" stroke-width="12"/>
-    <circle cx="300" cy="300" r="150" stroke-width="3"/>
-    <circle cx="300" cy="300" r="95" stroke-width="3"/>
-    <circle cx="300" cy="300" r="68" stroke-width="7"/>
-  </g>
-  <circle cx="300" cy="300" r="190" fill="none" stroke="#9FB3CC" stroke-width="2" stroke-dasharray="8 6"/>
 </svg>

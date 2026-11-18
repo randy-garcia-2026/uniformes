@@ -24,4 +24,4 @@
 - Antes de publicar: cambiar los datos [EJEMPLO] (incluidos los datos estructurados) y revisar el sitio en celular real.
 - Servicios: ilustraciones con borde cosido teja y número 01 a 05. Nuestro oficio: más compacto (solo estilos, sin archivos nuevos).
 - Imagen de portada renombrada a `img/portada.jpg` (nombre neutro).
-- Pendiente de decidir: confirmar que `bordado-detalle.svg` no parezca sello de una institución.
+- `img/bordado-detalle.svg` redibujado: rombo bordado con aguja e hilo, dibujo propio (antes era un emblema circular que podía parecer un sello).
