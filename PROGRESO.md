@@ -22,4 +22,5 @@
 - [PENDIENTE] Decidir si se deja la barra lateral fija además de la barra superior.
 - Renombrar `img/san-pedro.jpg` a un nombre neutro (opcional) y limpiar del brief la sección "Raíz del dueño".
 - Antes de publicar: cambiar los datos [EJEMPLO] (incluidos los datos estructurados) y revisar el sitio en celular real.
-- Revisión visual pendiente de decidir: ilustraciones de Servicios muy parecidas al catálogo; sección Nuestro oficio con mucho espacio vacío; renombrar `san-pedro.jpg` (pide aprobación); confirmar que `bordado-detalle.svg` no parezca sello de una institución.
+- Servicios: ilustraciones con borde cosido teja y número 01 a 05. Nuestro oficio: más compacto (solo estilos, sin archivos nuevos).
+- Pendiente de decidir: renombrar `san-pedro.jpg` (pide aprobación); confirmar que `bordado-detalle.svg` no parezca sello de una institución.
