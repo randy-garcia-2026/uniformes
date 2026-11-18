@@ -161,7 +161,7 @@ h3 { font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.7rem); line-height: 1.2; }
 .portada__imagen img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
 /* Capa marfil lisa (un solo color, sin degradado) */
 .portada__imagen::after {
-  content: ""; position: absolute; inset: 0; background: rgba(251, 246, 234, 0.6);
+  content: ""; position: absolute; inset: 0; background: rgba(251, 246, 234, 0.22);
 }
 
 .portada__caja {
@@ -171,11 +171,12 @@ h3 { font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.7rem); line-height: 1.2; }
   margin: -48px 8px 0;
   padding: 24px 20px 28px;
 }
+.portada h1 { font-size: clamp(1.6rem, 1.2rem + 2vw, 2.3rem); line-height: 1.12; }
 .portada__apoyo { margin-top: 16px; max-width: 46ch; color: var(--cafe-suave); }
 .portada__acciones { margin-top: 24px; display: grid; gap: 14px; justify-items: start; }
 .enlace-tel { font-weight: 500; text-underline-offset: 4px; text-decoration-color: var(--teja); text-decoration-thickness: 2px; }
 .enlace-tel:hover { text-decoration-color: var(--cafe); }
-.portada__dato { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--linea); font-size: 0.9rem; color: var(--cafe-suave); }
+.portada__dato { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--linea); font-size: 0.9rem; color: var(--cafe-suave); }
 
 /* ---------- Secciones ---------- */
 .seccion { padding-block: 72px; }
@@ -329,10 +330,10 @@ h3 { font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.7rem); line-height: 1.2; }
   .portada { padding-top: 32px; padding-right: 60px; position: relative; } /* 60px: deja libre el borde de la barra de contacto */
   .portada__imagen img { aspect-ratio: 1376 / 768; }
   .portada__caja {
-    position: absolute; left: calc(var(--margen) + 48px); top: calc(50% + 16px); transform: translateY(-50%);
-    width: min(560px, 52%); margin: 0; padding: 40px 40px 36px;
+    position: absolute; left: calc(var(--margen) + 24px); bottom: 24px; top: auto;
+    width: min(440px, 40%); margin: 0; padding: 28px 28px 24px;
   }
-  .portada__acciones { grid-auto-flow: column; justify-content: start; align-items: center; gap: 24px; }
+  .portada__acciones { gap: 14px; }
 
   .seccion { padding-block: 112px; }
   .seccion__encabezado { margin-bottom: 64px; }
