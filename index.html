@@ -232,50 +232,56 @@
       </div>
     </section>
 
-    <!-- 4. CÓMO COTIZAR -->
+    <!-- 4. CÓMO COTIZAR: a la izquierda los 3 pasos unidos por una puntada; a la derecha las condiciones con cifras -->
     <section class="seccion pasos" id="como-cotizar" aria-labelledby="titulo-pasos">
       <div class="contenedor">
         <header class="seccion__encabezado">
           <h2 id="titulo-pasos">Cómo cotizar</h2>
+          <p>Tres pasos para saber cuánto cuesta y cuándo lo recibes.</p>
         </header>
 
-        <ol class="pasos__lista">
-          <li class="paso" data-aparece>
-            <span class="paso__numero" aria-hidden="true">1</span>
-            <div>
-              <h3>Escríbenos</h3>
-              <p>Cuéntanos por WhatsApp qué prendas necesitas y para quién son.</p>
-            </div>
-          </li>
-          <li class="paso" data-aparece>
-            <span class="paso__numero" aria-hidden="true">2</span>
-            <div>
-              <h3>Envía tu logo o escudo y las cantidades</h3>
-              <p>Mándanos el diseño que quieres bordar y cuántas piezas de cada prenda.</p>
-            </div>
-          </li>
-          <li class="paso" data-aparece>
-            <span class="paso__numero" aria-hidden="true">3</span>
-            <div>
-              <h3>Recibe tu cotización y fecha de entrega</h3>
-              <p>Te respondemos por escrito, con cantidad, tela, bordado y fecha de entrega. Así sabes qué incluye antes de pagar. <small class="ejemplo">[EJEMPLO]</small></p>
-            </div>
-          </li>
-        </ol>
+        <div class="pasos__rejilla">
+          <ol class="pasos__lista">
+            <li class="paso" data-aparece>
+              <span class="paso__numero" aria-hidden="true">1</span>
+              <div class="paso__texto">
+                <h3>Escríbenos</h3>
+                <p>Cuéntanos por WhatsApp qué prendas necesitas y para quién son.</p>
+              </div>
+            </li>
+            <li class="paso" data-aparece>
+              <span class="paso__numero" aria-hidden="true">2</span>
+              <div class="paso__texto">
+                <h3>Envía tu logo o escudo y las cantidades</h3>
+                <p>Mándanos el diseño que quieres bordar y cuántas piezas de cada prenda.</p>
+              </div>
+            </li>
+            <li class="paso" data-aparece>
+              <span class="paso__numero" aria-hidden="true">3</span>
+              <div class="paso__texto">
+                <h3>Recibe tu cotización y fecha de entrega</h3>
+                <p>Te respondemos por escrito, con cantidad, tela, bordado y fecha de entrega. Así sabes qué incluye antes de pagar. <small class="ejemplo">[EJEMPLO]</small></p>
+              </div>
+            </li>
+          </ol>
 
-        <!-- Cifras grandes: vienen de las condiciones de la ficha (datos de ejemplo) -->
-        <dl class="condiciones">
-          <div class="condicion">
-            <dt>Pedido mínimo, en piezas por modelo <small class="ejemplo">[EJEMPLO]</small></dt>
-            <dd class="cifra">12</dd>
-          </div>
-          <div class="condicion">
-            <dt>Entrega, en días hábiles después de confirmar medidas y diseño del bordado <small class="ejemplo">[EJEMPLO]</small></dt>
-            <dd class="cifra">10 a 15</dd>
-          </div>
-        </dl>
-        <p class="nota">Los pedidos grandes se acuerdan por fecha. <small class="ejemplo">[EJEMPLO]</small></p>
-        <a class="boton" href="#cotizar" data-enlace="whatsapp">Cotizar por WhatsApp</a>
+          <!-- Condiciones: cifras de la ficha (datos de ejemplo) -->
+          <aside class="condiciones" aria-labelledby="titulo-condiciones" data-aparece>
+            <h3 id="titulo-condiciones">Antes de pedir</h3>
+            <dl class="condiciones__lista">
+              <div class="condicion">
+                <dd class="cifra">12</dd>
+                <dt>piezas por modelo es el pedido mínimo <small class="ejemplo">[EJEMPLO]</small></dt>
+              </div>
+              <div class="condicion">
+                <dd class="cifra">10 a 15</dd>
+                <dt>días hábiles de entrega, después de confirmar medidas y diseño del bordado <small class="ejemplo">[EJEMPLO]</small></dt>
+              </div>
+            </dl>
+            <p class="condiciones__nota">Los pedidos grandes se acuerdan por fecha. <small class="ejemplo">[EJEMPLO]</small></p>
+            <a class="boton boton--completo" href="#cotizar" data-enlace="whatsapp">Cotizar por WhatsApp</a>
+          </aside>
+        </div>
       </div>
     </section>
 

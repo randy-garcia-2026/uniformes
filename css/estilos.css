@@ -211,22 +211,35 @@ h3 { font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.7rem); line-height: 1.2; }
 .rubros__cierre { margin-top: 32px; font-family: var(--letra-titulo); font-size: 1.35rem; font-weight: 600; max-width: 28ch; line-height: 1.25; }
 
 /* ---------- Cómo cotizar ---------- */
-.pasos { background: var(--blanco); border-block: 1px solid var(--linea); }
-.pasos__lista { display: grid; gap: 28px; }
-.paso { display: grid; grid-template-columns: 52px 1fr; gap: 16px; align-items: start; }
-.paso__numero {
-  font-family: var(--letra-titulo); font-weight: 700; font-size: 2.4rem; line-height: 1;
-  text-align: center; padding-bottom: 8px;
-  /* número "cosido": puntadas debajo */
-  border-bottom: 3px dashed var(--teja);
-}
-.paso p { margin-top: 6px; max-width: 50ch; color: var(--cafe-suave); }
+.pasos { border-block: 1px solid var(--linea); }
+.pasos__rejilla { display: grid; gap: 48px; }
 
-.condiciones { display: grid; gap: 28px; margin-block: 48px 8px; }
-.condicion { display: flex; flex-direction: column-reverse; gap: 6px; }
-.condicion dt { max-width: 34ch; font-size: 0.92rem; color: var(--cafe-suave); }
-.cifra { font-family: var(--letra-titulo); font-weight: 700; font-size: clamp(3.4rem, 2rem + 7vw, 6.4rem); line-height: 1; letter-spacing: -0.01em; }
-.pasos .boton { margin-top: 32px; }
+/* Pasos unidos por una puntada vertical */
+.pasos__lista { display: grid; }
+.paso { position: relative; display: grid; grid-template-columns: 52px 1fr; gap: 20px; padding-bottom: 36px; }
+.paso:last-child { padding-bottom: 0; }
+.paso::before { /* la puntada que une un paso con el siguiente */
+  content: ""; position: absolute; left: 25px; top: 60px; bottom: 8px;
+  border-left: 2px dashed var(--teja);
+}
+.paso:last-child::before { display: none; }
+.paso__numero {
+  width: 52px; height: 52px; display: grid; place-items: center;
+  font-family: var(--letra-titulo); font-weight: 700; font-size: 1.5rem; line-height: 1;
+  background: var(--blanco); border: 2px dashed var(--teja); border-radius: 50%;
+}
+.paso__texto { padding-top: 10px; }
+.paso p { margin-top: 6px; max-width: 46ch; color: var(--cafe-suave); }
+
+/* Recuadro de condiciones con las cifras */
+.condiciones { background: var(--blanco); border: 1px solid var(--linea); padding: 24px 20px 28px; align-self: start; }
+.condiciones h3 { margin-bottom: 8px; }
+.condiciones__lista { display: grid; }
+.condicion { display: grid; gap: 6px; align-items: center; padding-block: 18px; border-bottom: 1px solid var(--linea); }
+.condicion:first-child { border-top: 1px solid var(--linea); margin-top: 12px; }
+.condicion dt { font-size: 0.92rem; color: var(--cafe-suave); max-width: 30ch; }
+.cifra { font-family: var(--letra-titulo); font-weight: 700; font-size: clamp(2.4rem, 1.8rem + 2vw, 3.4rem); line-height: 1; white-space: nowrap; }
+.condiciones__nota { margin: 16px 0 20px; font-size: 0.9rem; color: var(--cafe-suave); }
 
 /* ---------- Línea de tejido: rombos unidos por una puntada, de un solo color ----------
    El color sale de --teja (arriba). Es un dibujo propio, no copia ningún traje típico. */
@@ -350,13 +363,11 @@ h3 { font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.7rem); line-height: 1.2; }
   .rubro__detalle { justify-self: start; }
   .prendas img { width: 112px; height: 112px; }  /* computadora */
 
-  /* Pasos escalonados */
-  .pasos__lista { grid-template-columns: repeat(3, 1fr); gap: 56px; align-items: start; }
-  .paso { grid-template-columns: 1fr; gap: 20px; }
-  .paso__numero { text-align: left; font-size: 3.4rem; width: 90px; }
-  .paso:nth-child(2) { margin-top: 48px; }
-  .paso:nth-child(3) { margin-top: 96px; }
-  .condiciones { grid-template-columns: auto auto; justify-content: start; gap: 96px; margin-top: 80px; }
+  /* Cómo cotizar: pasos a la izquierda y condiciones a la derecha */
+  .pasos__rejilla { grid-template-columns: 6fr 5fr; gap: 96px; align-items: start; }
+  .paso { gap: 28px; padding-bottom: 48px; }
+  .condiciones { padding: 36px 36px 40px; }
+  .condicion { grid-template-columns: 11.5rem 1fr; gap: 16px; }
 
   /* Raíz: ilustración chica a la izquierda y texto desplazado */
   .raiz__rejilla { grid-template-columns: 320px 1fr; gap: 96px; align-items: start; }
