@@ -581,3 +581,16 @@ h3 { font-family: var(--letra-texto); font-weight: 600; letter-spacing: -0.0125e
   }
   .menu__lista a { color: #fff; }
 }
+
+/* ---------- Servicios: lista desplegable en celular (flecha) ---------- */
+.solo-lectores { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.servicios__flecha {
+  list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  min-height: 48px; border: 1px solid var(--tinta); border-radius: 28px; color: var(--tinta);
+}
+.servicios__flecha::-webkit-details-marker { display: none; }
+.servicios__flecha:hover { background: var(--papel); }
+.servicios__icono { width: 28px; height: 28px; fill: none; stroke: currentColor; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.2s; }
+.servicios__desplegable[open] .servicios__icono { transform: rotate(180deg); }
+.servicios__desplegable[open] .servicios__flecha { margin-bottom: 8px; }
+@media (min-width: 900px) { .servicios__flecha { display: none; } }

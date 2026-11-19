@@ -103,6 +103,12 @@
         </header>
 
         <!-- Las ilustraciones miden 600 x 600 px y aquí se muestran a 160 px (nítidas). Para cambiar una, editar el src. -->
+        <!-- En celular la lista arranca cerrada y se abre con la flecha; en computadora siempre se ve abierta (ver js/main.js). -->
+        <details class="servicios__desplegable" open>
+          <summary class="servicios__flecha">
+            <span class="solo-lectores">Mostrar u ocultar los cinco servicios</span>
+            <svg class="servicios__icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
         <ol class="servicios__lista">
           <li class="servicio" data-aparece>
             <figure class="marco"><img src="img/uniforme-restaurante.svg" width="160" height="160" loading="lazy" alt="Ilustración de un uniforme de restaurante"></figure>
@@ -140,6 +146,7 @@
             </div>
           </li>
         </ol>
+        </details>
       </div>
     </section>
 

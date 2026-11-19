@@ -274,9 +274,20 @@ function activarAparicion() {
   elementos.forEach(function (el) { observador.observe(el); });
 }
 
+/* ---------- Servicios: desplegable solo en celular ---------- */
+function activarServicios() {
+  const caja = document.querySelector(".servicios__desplegable");
+  if (!caja) return;
+  const computadora = window.matchMedia("(min-width: 900px)");
+  function ajustar() { caja.open = computadora.matches; } // computadora: abierta; celular: cerrada
+  ajustar();
+  computadora.addEventListener("change", ajustar);
+}
+
 document.documentElement.classList.add("js");
 rellenarDatos();
 activarMenu();
 activarFormulario();
 activarPrendas();
 activarAparicion();
+activarServicios();
