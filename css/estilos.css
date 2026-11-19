@@ -608,3 +608,8 @@ h3 { font-family: var(--letra-texto); font-weight: 600; letter-spacing: -0.0125e
 /* ---------- Pie más corto: logo y contacto en una línea + horario ---------- */
 .pie__contacto { max-width: none; }
 @media (min-width: 900px) { .pie__rejilla { grid-template-columns: 1.6fr 1fr; } }
+
+/* ---------- Portada en celular: texto directo sobre el verde, sin recuadro y sin tapar la imagen ---------- */
+@media (max-width: 899px) {
+  .portada__caja { background: transparent; border: 0; border-radius: 0; margin: 28px 0 0; padding: 0 4px; }
+}

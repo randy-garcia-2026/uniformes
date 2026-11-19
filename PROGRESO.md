@@ -19,6 +19,9 @@ Los archivos no numeran los mensajes de la ruta ni las rondas, así que se lista
 ## Desplegables en celular (19-nov-2026)
 En celular, las secciones **Servicios**, **Cómo cotizar** y **Nuestro oficio** arrancan cerradas y se abren con una flecha (▾). En computadora se ven abiertas, sin flecha. Funciona con un desplegable estándar (`<details class="desplegable">`) y una función en `js/main.js`. Falta ver cómo se ve en un celular real. Si la flecha sola no se entiende, se puede agregar un texto junto a ella.
 
+## Portada en celular (19-nov-2026)
+En celular, el recuadro del titular ya no tiene fondo ni borde: el texto va directo sobre el verde bosque, debajo de la imagen completa. En computadora sigue el recuadro sobre la imagen. Aprobado por el dueño.
+
 ## Pie más corto (19-nov-2026)
 El pie ya no repite todo el contacto: queda el logo con su frase, WhatsApp y teléfono en una sola línea, y el horario. La zona y el mapa están solo en la sección Cotizar. Pendiente: verlo en pantalla en celular y escritorio.
 
