@@ -594,3 +594,13 @@ h3 { font-family: var(--letra-texto); font-weight: 600; letter-spacing: -0.0125e
 .desplegable[open] .desplegable__icono { transform: rotate(180deg); }
 .desplegable[open] .desplegable__flecha { margin-bottom: 8px; }
 @media (min-width: 900px) { .desplegable__flecha { display: none; } }
+
+/* ---------- Nuestro oficio: título doble (celular / computadora) y flecha sobre fondo oscuro ---------- */
+.raiz__titulo-movil { margin-bottom: 20px; }
+.raiz__titulo-pc { display: none; }
+.raiz .desplegable__flecha { border-color: rgba(255, 255, 255, 0.6); color: #fff; }
+.raiz .desplegable__flecha:hover { background: rgba(255, 255, 255, 0.12); }
+@media (min-width: 900px) {
+  .raiz__titulo-movil { display: none; }
+  .raiz__titulo-pc { display: block; }
+}

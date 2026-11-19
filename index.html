@@ -327,15 +327,26 @@
     <div class="tejido" aria-hidden="true"></div>
 
     <!-- 5. NUESTRO OFICIO -->
-    <section class="seccion raiz" id="raiz" aria-labelledby="titulo-raiz">
-      <div class="contenedor raiz__rejilla">
+    <section class="seccion raiz" id="raiz" aria-label="Nuestro oficio">
+      <div class="contenedor">
+        <!-- Título para celular (encima de la flecha). En computadora se usa el que está junto al texto. -->
+        <h2 class="raiz__titulo-movil">Nuestro oficio</h2>
+        <!-- En celular arranca cerrado y se abre con la flecha; en computadora siempre abierto (ver js/main.js). -->
+        <details class="desplegable" open>
+          <summary class="desplegable__flecha">
+            <span class="solo-lectores">Mostrar u ocultar la información de Nuestro oficio</span>
+            <svg class="desplegable__icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+        <div class="raiz__rejilla">
         <figure class="marco marco--grande" data-aparece>
           <img src="img/bordado-detalle.svg" width="320" height="320" loading="lazy" alt="Ilustración de un detalle de bordado con hilo">
         </figure>
         <div class="raiz__texto" data-aparece>
-          <h2 id="titulo-raiz">Nuestro oficio</h2>
+          <h2 class="raiz__titulo-pc">Nuestro oficio</h2>
           <p class="raiz__cita">En Uniformes Eli creemos en el trabajo bien hecho. Cada uniforme que sale del taller lleva ese cuidado: puntadas firmes, atención a los detalles y respeto por quien lo va a vestir cada día. <small class="ejemplo">[EJEMPLO]</small></p>
         </div>
+        </div>
+        </details>
       </div>
     </section>
 
