@@ -5,7 +5,7 @@ Sitio web de "Uniformes Eli", taller de confección y bordado de uniformes para 
 ## Reglas
 
 1. Trabajar solo dentro de la carpeta `uniformes_eli`.
-2. Usar el plugin frontend-design, pero la dirección de diseño aprobada por el dueño (guardada en `BRIEF.md`) manda sobre cualquier preferencia estética: sin neón, sin filas de tres tarjetas idénticas, y sin degradados (el fondo de la página es marfil liso) y sin sombras.
+2. Usar el plugin frontend-design, pero la dirección de diseño aprobada por el dueño (guardada en `BRIEF.md`) manda sobre cualquier preferencia estética: estilo "verde bosque" (ver `DESIGN.md`): fondos verde bosque y blanco o crema verdoso, verde neón solo en botones principales y frases cortas destacadas (nunca en párrafos ni en fondos grandes), sin filas de tres tarjetas idénticas, sin degradados y sin sombras.
 3. El sitio es de una sola página, pensada para que personas particulares y empresas pidan cotización de uniformes. Sin carrito, sin buscador, sin cuentas de usuario, sin precios, y con un menú de 4 enlaces como máximo.
 4. Todo el texto del sitio va en español, sin palabras en inglés.
 5. No copiar el logo, las fotos, los textos ni las cifras de ninguna otra empresa. No dibujar ni usar escudos, logos o marcas de universidades, instituciones o empresas, ni nombrarlas como clientes sin permiso del dueño.

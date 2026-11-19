@@ -1,6 +1,6 @@
 # Progreso: Uniformes Eli
 
-Última actualización: 18-nov-2026 (cierre de sesión).
+Última actualización: 19-nov-2026 (cambio a estilo verde bosque).
 
 ## Etapas terminadas
 Los archivos no numeran los mensajes de la ruta ni las rondas, así que se listan por etapa (cada una tiene su punto de restauración en Git).
@@ -12,7 +12,10 @@ Los archivos no numeran los mensajes de la ruta ni las rondas, así que se lista
 5. **Correcciones de la revisión visual:** formulario reducido a 3 campos; filtros de rubro en una fila deslizable en celular; nombres de prendas más legibles; ventana de detalle sin imagen vacía; Servicios con borde cosido y numeración 01 a 05; Nuestro oficio más compacto; imagen de portada renombrada a `img/portada.jpg`; sello de bordado redibujado (rombo con aguja e hilo).
 6. **Control de calidad (auditoría):** colores sueltos pasados a variables CSS; cantidad del formulario solo con números enteros; borde rojo de errores (estaba tapado por otra regla); orden correcto en "Antes de pedir"; testimonios inventados quitados del brief. Ortografía revisada a mano (el corrector del equipo no trae español): sin errores.
 
-## Decisiones de hoy
+## Cambio de diseño del 19-nov-2026
+7. **Estilo "verde bosque":** el dueño aprobó reemplazar `DESIGN.md` por la guía de Tomorro y aplicarla al sitio (barra, portada, "Nuestro oficio" y pie en verde bosque; bandas blancas y crema verdoso; botones en cápsula; neón solo en el botón principal y una frase; letra Lilita One + Inter). Se actualizaron las reglas que chocaban: regla 2 de `CLAUDE.md` y las secciones de colores, letra y prohibiciones de `BRIEF.md`. Pendiente: revisar el nuevo diseño en celular y escritorio con Chrome.
+
+## Decisiones del 18-nov-2026
 Están detalladas en `BRIEF.md`, sección "Decisiones de diseño del 18-nov-2026". En resumen: formulario de 3 campos, Servicios con borde cosido y números, Nuestro oficio compacto, sello de bordado propio (rombo con aguja), `portada.jpg`, variables de color nuevas y testimonios fuera.
 
 ## Pendiente o a medias

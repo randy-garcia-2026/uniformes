@@ -1,5 +1,6 @@
 /* Estilos de Uniformes Eli
-   Diseño "Hilo y marfil": fondo marfil liso, sin degradados y sin sombras.
+   Diseño "Verde bosque" (19-nov-2026, ver DESIGN.md): sin degradados y sin sombras.
+   Los colores marfil/café/teja de arriba se reemplazan en el bloque final "TEMA VERDE BOSQUE".
    Pensado primero para celular; las reglas @media (min-width) lo adaptan a computadora. */
 
 /* ==========================================================
@@ -452,4 +453,129 @@ h3 { font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.7rem); line-height: 1.2; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
   .con-aparicion [data-aparece] { opacity: 1; transform: none; }
+}
+
+/* ==========================================================
+   PRUEBA: TEMA "VERDE BOSQUE" (según DESIGN.md)
+   Todo lo de este bloque se puede borrar para volver al diseño marfil.
+   (Para volver completo: git restore css/estilos.css index.html)
+   ========================================================== */
+:root {
+  --bosque: #122314;        /* fondo oscuro: portada y pie */
+  --tinta: #273f2b;         /* texto principal y botón oscuro */
+  --musgo: #3e5b43;         /* botón oscuro al pasar el cursor */
+  --neon: #68ef3f;          /* botón principal y frase destacada (poco, nunca en párrafos) */
+  --neon-hover: #32d200;
+  --hoja: #26a200;          /* puntadas y números sobre fondo claro */
+  --papel: #f2f5eb;         /* bandas claras alternas */
+  --salvia: #b7bda5;        /* texto de apoyo sobre fondo oscuro */
+
+  --marfil: #FFFFFF;
+  --cafe: var(--tinta);
+  --cafe-suave: #30322a;
+  --verde: var(--tinta);
+  --verde-oscuro: var(--musgo);
+  --teja: var(--hoja);
+  --linea: #d9deca;
+  --texto-guia: #7e8371;
+  --capa-portada: rgba(18, 35, 20, 0.5);
+  --fondo-ventana: rgba(18, 35, 20, 0.7);
+
+  --letra-titulo: "Lilita One", Arial, sans-serif;
+}
+
+body { background: #fff; }
+:focus-visible { outline-color: var(--hoja); }
+
+/* Títulos: letra condensada, mayúsculas y muy juntos */
+h1, h2 { font-weight: 400; line-height: 0.95; letter-spacing: -0.01em; word-spacing: 0.08em; }
+h2 { font-size: clamp(2.3rem, 1.4rem + 3.6vw, 4.5rem); }
+h3 { font-family: var(--letra-texto); font-weight: 600; letter-spacing: -0.0125em; }
+.pie__titulo { font-family: var(--letra-texto); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--neon); }
+.cifra, .paso__numero, .servicio__texto::before { font-weight: 400; }
+.rubros__cierre, .raiz__cita, .contacto a { font-family: var(--letra-texto); font-weight: 500; letter-spacing: -0.0125em; }
+.resalte { color: var(--neon); }
+
+/* Botones en cápsula */
+.boton {
+  border-radius: 28px; padding: 13px 22px; min-height: 48px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--tinta); border-color: var(--tinta); color: #fff;
+}
+.boton:hover { background: var(--musgo); border-color: var(--musgo); }
+.boton--completo { display: flex; }
+.boton--claro { background: transparent; color: var(--tinta); border-color: var(--tinta); }
+.boton--claro:hover { background: var(--papel); border-color: var(--tinta); }
+/* Botón principal (neón) sobre fondos oscuros */
+.cabecera .boton, .portada .boton { background: var(--neon); border-color: var(--neon); color: var(--tinta); }
+.cabecera .boton:hover, .portada .boton:hover { background: var(--neon-hover); border-color: var(--neon-hover); }
+
+/* Barra superior verde bosque */
+.cabecera { background: var(--bosque); color: #fff; border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
+.marca img { filter: brightness(0) invert(1); }   /* el logo de texto se ve blanco sobre el verde */
+.menu-boton { border-color: rgba(255, 255, 255, 0.6); border-radius: 12px; }
+.menu-boton__rayas, .menu-boton__rayas::before, .menu-boton__rayas::after { background: #fff; }
+.menu__lista a { border-bottom-color: rgba(255, 255, 255, 0.16); }
+.menu__lista a:hover { text-decoration-color: var(--neon); }
+.cabecera :focus-visible, .portada :focus-visible, .raiz :focus-visible, .pie :focus-visible { outline-color: var(--neon); }
+
+/* Portada: escenario verde bosque a lo ancho */
+.portada {
+  max-width: none; margin: 0; background: var(--bosque); color: #fff;
+  padding: 24px max(var(--margen), calc((100% - 1376px) / 2 + var(--margen))) 56px;
+}
+.portada__imagen { border-radius: 24px; overflow: hidden; border-color: rgba(255, 255, 255, 0.16); background: transparent; }
+.portada__caja { background: var(--tinta); border-color: rgba(255, 255, 255, 0.16); border-radius: 16px; }
+.portada__apoyo { color: #dcdfe3; }
+.portada__dato { border-top-color: rgba(255, 255, 255, 0.16); color: var(--salvia); }
+.portada .ejemplo, .raiz .ejemplo, .pie .ejemplo { color: var(--salvia); }
+.portada .enlace-tel { text-decoration-color: var(--neon); }
+.portada .enlace-tel:hover { text-decoration-color: #fff; }
+
+/* Servicios y rótulos */
+.marco { border-radius: 8px; }
+.servicio .marco::after { border-radius: 4px; }
+
+/* Prendas: banda crema */
+.rubros { background: var(--papel); }
+.filtro { border-radius: 28px; border-color: var(--cafe-suave); }
+.filtro:hover { background: #fff; }
+.filtro[aria-pressed="true"] { background: var(--tinta); border-color: var(--tinta); color: #fff; }
+.prenda { border-radius: 8px; }
+.prenda__nombre { background: var(--tinta); color: #fff; }
+
+/* Cómo cotizar */
+.condiciones { background: var(--papel); border-color: var(--linea); border-radius: 16px; }
+.paso__numero { background: var(--papel); }
+
+/* Nuestro oficio: capítulo oscuro */
+.raiz { background: var(--bosque); color: #fff; }
+.raiz__texto p + p, .raiz__cita { color: inherit; }
+.raiz .marco { border-color: transparent; }
+
+/* Cotizar: banda crema */
+.cotizar { background: var(--papel); }
+.formulario { border-radius: 24px; border-color: var(--linea); }
+.campo input[type="text"], .campo input[type="number"], .campo select, .campo textarea { border-radius: 6px; background: #fff; border-color: #7e8371; }
+.mapa { border-radius: 16px; overflow: hidden; }
+
+/* Pie verde bosque */
+.pie { background: var(--bosque); color: #fff; padding-block: 56px 40px; }
+.pie__chico, .pie__final { color: var(--salvia); }
+.pie__final { border-top-color: rgba(255, 255, 255, 0.16); }
+.pie a:hover { color: var(--neon); }
+
+/* Barra de contacto fija */
+.barra-contacto { border-color: var(--tinta); }
+
+/* Ventana de detalle */
+.detalle { border-radius: 16px; border-color: var(--tinta); overflow: hidden; }
+
+@media (min-width: 900px) {
+  .portada { padding-right: max(60px, calc((100% - 1376px) / 2 + 60px)); padding-top: 40px; padding-bottom: 72px; }
+  .portada__caja {
+    left: max(calc(var(--margen) + 24px), calc((100% - 1376px) / 2 + var(--margen) + 24px));
+    bottom: 96px; border-radius: 16px;
+  }
+  .menu__lista a { color: #fff; }
 }

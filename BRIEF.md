@@ -13,10 +13,14 @@ Personas particulares y empresas que quieren uniformes.
 Artesanal: que se note el trabajo de costura y bordado.
 
 ## Colores y letra
-- (Cambio aprobado 18-nov-2026) Inicio con la ilustración de portada (`img/portada.jpg`) de fondo, con capa marfil lisa y recuadro de texto legible.
-- Fondo de la página: marfil liso `#FBF6EA`, sin degradados (el degradado azul se quitó por decisión del dueño). Texto café `#2A1F17`, botones verde `#2E5E34`, puntadas y detalles color teja `#B5532F`. Recuadros blancos.
-- Sin neón.
-- Letra: Fraunces para títulos e Inter para el texto.
+- (Cambio aprobado 18-nov-2026) Inicio con la ilustración de portada (`img/portada.jpg`) de fondo, con capa verde bosque lisa (antes marfil) y recuadro de texto legible.
+- **(Cambio aprobado 19-nov-2026) Estilo "verde bosque", según `DESIGN.md`.** Reemplaza al marfil, café, verde y teja anteriores.
+- Fondos: verde bosque `#122314` (barra superior, portada, "Nuestro oficio" y pie); blanco `#FFFFFF` y crema verdoso `#F2F5EB` en las demás bandas. Sin degradados.
+- Texto: verde tinta `#273F2B` sobre fondo claro; blanco y salvia `#B7BDA5` sobre fondo oscuro. Botón oscuro `#273F2B` (al pasar el cursor `#3E5B43`). Puntadas y números en verde hoja `#26A200`.
+- Verde neón `#68EF3F`: solo en el botón principal sobre fondo oscuro y en una frase corta destacada. Nunca en párrafos ni en fondos grandes.
+- Botones en forma de cápsula.
+- Letra: Lilita One (sustituto de la letra condensada de la guía) para títulos en mayúsculas, e Inter para el texto.
+- (Antes: marfil `#FBF6EA`, café `#2A1F17`, verde `#2E5E34`, teja `#B5532F`, Fraunces. Quedó reemplazado.)
 
 ## Dirección de diseño
 
@@ -24,13 +28,14 @@ Elegida el 18-nov-2026: **A. Hilo y marfil**.
 
 - **Concepto:** un taller de familia donde se ve la mano que cose.
 - **Emoción:** calidez, confianza, oficio.
-- **Paleta:** sin cambios, la de "Colores y letra" (marfil `#FBF6EA`, café `#2A1F17`, verde `#2E5E34`, teja `#B5532F`, recuadros blancos). Decisión del dueño: no se cambia por ahora.
-- **Tipografías:** Fraunces (títulos grandes en mayúsculas) e Inter (texto).
+- **Paleta:** la de "Colores y letra" (verde bosque, blanco, crema verdoso y neón controlado). Cambió el 19-nov-2026 por decisión del dueño; antes era marfil, café, verde y teja.
+- **Tipografías:** Lilita One (títulos grandes en mayúsculas) e Inter (texto).
 - **Línea de tejido (detalle discreto):** fila fina de rombos pequeños unidos por una puntada, como guiño al origen de Eli en San Pedro, San Marcos. Diseño propio, sin copiar ningún traje típico.
 - **Fotos e ilustraciones:** sin filtros de color. Cada una va en recuadro blanco con borde fino y esquinas rectas.
 - **Logo para la demo:** "Uniformes Eli" en Fraunces, subrayado con puntadas que terminan en el ojo de una aguja. Solo texto y un detalle, sin escudos ni marcas de terceros.
 - **Contacto:** barra lateral fija con teléfono y WhatsApp, botón de cotizar bien visible y formulario corto.
-- **Prohibido:** neón, degradados, sombras (tampoco en botones), efecto vidrio, marcas de agua, filas de tres tarjetas idénticas y botones "Ver más".
+- **Prohibido:** neón fuera de los usos permitidos (botón principal y una frase corta), degradados, sombras (tampoco en botones), efecto vidrio, marcas de agua, filas de tres tarjetas idénticas y botones "Ver más".
+- **Nota sobre `DESIGN.md`:** es una guía de estilo de otra empresa (Tomorro). Se usa solo como referencia visual: no se copian sus nombres, textos, cifras, logos ni imágenes. Si algo de la guía choca con este brief (por ejemplo, sombras o degradados), manda este brief.
 
 ## Cómo piden cotización
 - Formulario (nombre, qué necesitan y cuántas piezas).
