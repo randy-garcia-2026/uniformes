@@ -25,6 +25,9 @@ En celular, el recuadro del titular ya no tiene fondo ni borde: el texto va dire
 ## Pie más corto (19-nov-2026)
 El pie ya no repite todo el contacto: queda el logo con su frase, WhatsApp y teléfono en una sola línea, y el horario. La zona y el mapa están solo en la sección Cotizar. Pendiente: verlo en pantalla en celular y escritorio.
 
+## Revisión completa en Chrome (19-nov-2026)
+Se revisó todo de nuevo en computadora y en celular simulado (menú, desplegables, ventana de prenda, formulario). Único fallo: el borde rojo de los campos con error no se veía, porque una regla del estilo verde bosque lo pintaba gris. Arreglado en `css/estilos.css` y probado. Falta verlo en un celular real.
+
 ## Decisión del dueño (19-nov-2026)
 Le gusta cómo quedó la interfaz verde bosque y se mantiene tal cual. No se cambia el diseño sin que él lo pida. `DESIGN.md` (guía de Tomorro) queda en la carpeta como referencia del estilo; `BRIEF.md` manda si algo choca.
 
