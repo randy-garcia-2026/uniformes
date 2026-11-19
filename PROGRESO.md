@@ -14,6 +14,7 @@ Los archivos no numeran los mensajes de la ruta ni las rondas, así que se lista
 
 ## Cambio de diseño del 19-nov-2026
 7. **Estilo "verde bosque":** el dueño aprobó reemplazar `DESIGN.md` por la guía de Tomorro y aplicarla al sitio (barra, portada, "Nuestro oficio" y pie en verde bosque; bandas blancas y crema verdoso; botones en cápsula; neón solo en el botón principal y una frase; letra Lilita One + Inter). Se actualizaron las reglas que chocaban: regla 2 de `CLAUDE.md` y las secciones de colores, letra y prohibiciones de `BRIEF.md`. Pendiente: revisar el nuevo diseño en celular y escritorio con Chrome.
+8. **Revisión visual del estilo verde bosque (19-nov-2026):** hecha en Chrome (escritorio y marco de 390×844 px). Arreglado en el pie: logo en blanco y días del horario en salvia (no se leían). Mapa de Cotizar: ahora apunta a Villa Nueva (antes salía la Zona 5 de la capital). Sin desbordes ni errores de consola. Falta probar en un celular real.
 
 ## Decisiones del 18-nov-2026
 Están detalladas en `BRIEF.md`, sección "Decisiones de diseño del 18-nov-2026". En resumen: formulario de 3 campos, Servicios con borde cosido y números, Nuestro oficio compacto, sello de bordado propio (rombo con aguja), `portada.jpg`, variables de color nuevas y testimonios fuera.
