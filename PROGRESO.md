@@ -16,6 +16,9 @@ Los archivos no numeran los mensajes de la ruta ni las rondas, así que se lista
 7. **Estilo "verde bosque":** el dueño aprobó reemplazar `DESIGN.md` por la guía de Tomorro y aplicarla al sitio (barra, portada, "Nuestro oficio" y pie en verde bosque; bandas blancas y crema verdoso; botones en cápsula; neón solo en el botón principal y una frase; letra Lilita One + Inter). Se actualizaron las reglas que chocaban: regla 2 de `CLAUDE.md` y las secciones de colores, letra y prohibiciones de `BRIEF.md`. Pendiente: revisar el nuevo diseño en celular y escritorio con Chrome.
 8. **Revisión visual del estilo verde bosque (19-nov-2026):** hecha en Chrome (escritorio y marco de 390×844 px). Arreglado en el pie: logo en blanco y días del horario en salvia (no se leían). Mapa de Cotizar: ahora apunta a Villa Nueva (antes salía la Zona 5 de la capital). Sin desbordes ni errores de consola. Falta probar en un celular real.
 
+## Decisión del dueño (19-nov-2026)
+Le gusta cómo quedó la interfaz verde bosque y se mantiene tal cual. No se cambia el diseño sin que él lo pida. `DESIGN.md` (guía de Tomorro) queda en la carpeta como referencia del estilo; `BRIEF.md` manda si algo choca.
+
 ## Decisiones del 18-nov-2026
 Están detalladas en `BRIEF.md`, sección "Decisiones de diseño del 18-nov-2026". En resumen: formulario de 3 campos, Servicios con borde cosido y números, Nuestro oficio compacto, sello de bordado propio (rombo con aguja), `portada.jpg`, variables de color nuevas y testimonios fuera.
 
@@ -29,5 +32,5 @@ Están detalladas en `BRIEF.md`, sección "Decisiones de diseño del 18-nov-2026
 - **Antes de publicar:** cambiar todos los datos [EJEMPLO], incluido el bloque de datos estructurados del `<head>` de `index.html` (se edita a mano), y revisar el sitio en un celular real.
 - **Limpieza menor:** quitar del brief la sección "Raíz del dueño" y borrar `img/articulos-promocionales.svg` (no se usa), si el dueño lo aprueba.
 
-## Siguiente paso (mañana)
-Responder las 4 decisiones de "Por decidir" (basta con "sí" o "no" a cada una). Con eso se aplican los cambios, se vuelve a probar en Chrome y se guarda un punto de restauración. Después queda probar la página en un celular real y, al final, cambiar los datos [EJEMPLO] por los reales.
+## Siguiente paso
+Mientras el dueño no responda, las 4 decisiones se quedan como están (nada cambia). Cuando responda, las 4 decisiones de "Por decidir" (basta con "sí" o "no" a cada una). Con eso se aplican los cambios, se vuelve a probar en Chrome y se guarda un punto de restauración. Después queda probar la página en un celular real y, al final, cambiar los datos [EJEMPLO] por los reales.
