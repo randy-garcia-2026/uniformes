@@ -604,3 +604,7 @@ h3 { font-family: var(--letra-texto); font-weight: 600; letter-spacing: -0.0125e
   .raiz__titulo-movil { display: none; }
   .raiz__titulo-pc { display: block; }
 }
+
+/* ---------- Pie más corto: logo y contacto en una línea + horario ---------- */
+.pie__contacto { max-width: none; }
+@media (min-width: 900px) { .pie__rejilla { grid-template-columns: 1.6fr 1fr; } }
