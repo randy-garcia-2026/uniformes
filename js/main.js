@@ -274,12 +274,12 @@ function activarAparicion() {
   elementos.forEach(function (el) { observador.observe(el); });
 }
 
-/* ---------- Servicios: desplegable solo en celular ---------- */
+/* ---------- Desplegables solo en celular (Servicios y Cómo cotizar) ---------- */
 function activarServicios() {
-  const caja = document.querySelector(".servicios__desplegable");
-  if (!caja) return;
+  const cajas = document.querySelectorAll(".desplegable");
+  if (!cajas.length) return;
   const computadora = window.matchMedia("(min-width: 900px)");
-  function ajustar() { caja.open = computadora.matches; } // computadora: abierta; celular: cerrada
+  function ajustar() { cajas.forEach(function (caja) { caja.open = computadora.matches; }); } // computadora: abiertas; celular: cerradas
   ajustar();
   computadora.addEventListener("change", ajustar);
 }
