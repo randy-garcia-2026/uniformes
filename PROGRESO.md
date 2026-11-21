@@ -46,3 +46,6 @@ Están detalladas en `BRIEF.md`, sección "Decisiones de diseño del 18-nov-2026
 
 ## Siguiente paso
 Mientras el dueño no responda, las 4 decisiones se quedan como están (nada cambia). Cuando responda, las 4 decisiones de "Por decidir" (basta con "sí" o "no" a cada una). Con eso se aplican los cambios, se vuelve a probar en Chrome y se guarda un punto de restauración. Después queda probar la página en un celular real y, al final, cambiar los datos [EJEMPLO] por los reales.
+
+## Prendas con textura de tela (21-nov-2026)
+Se rediseñaron 3 ilustraciones con tejido, costuras con puntadas y pliegues en tonos planos (sin sombras ni degradados): `camisa-formal-hombre.svg`, `pantalon.svg` y `uniforme-escolar.svg`. El dueño las aprobó y pidió dejarlas así. Las otras 11 prendas quedan como estaban; se pueden rediseñar con el mismo estilo si el dueño lo pide.
